@@ -1,3 +1,4 @@
+#include <bitset>
 #include <boost/ut.hpp>
 #include <libembeddedhal/percent.hpp>
 
@@ -167,81 +168,101 @@ boost::ut::suite percent_signed_test = []() {
 
   "8-bit_scaling"_test = []() {
     // Setup
+    embed::percent value;
+
     // Exercise
+    for (int16_t i = -128; i < 0; i++) {
+      value = embed::percent::convert<8>(i);
+
+      const int32_t expected = static_cast<int32_t>(i) << 24;
+      expect(that % expected == value.raw_value());
+    }
+
+    for (int16_t i = 0; i < 128; i++) {
+      value = embed::percent::convert<8>(i);
+
+      int32_t expected = 0;
+      expected |= i << 24;
+      expected |= (i & 0x7F) << 17;
+      expected |= (i & 0x7F) << 10;
+      expected |= (i & 0x7F) << 3;
+      expected |= (i & 0x70) >> 4;
+      expect(that % expected == value.raw_value());
+    }
   };
 
   "12-bit_scaling"_test = []() {
     // Setup
+    embed::percent value;
+
     // Exercise
+    for (int16_t i = -2048; i < 0; i++) {
+      value = embed::percent::convert<12>(i);
+
+      const int32_t expected = static_cast<int32_t>(i) << 20;
+      expect(that % expected == value.raw_value());
+    }
+
+    for (int16_t i = 0; i < 2048; i++) {
+      value = embed::percent::convert<12>(i);
+
+      uint32_t expected = 0;
+      expected |= static_cast<uint32_t>(i & 0xFFF) << 20;
+      expected |= static_cast<uint32_t>(i & 0x7FF) << 9;
+      expected |= static_cast<uint32_t>(i & 0x7FF) >> 2;
+
+      expect(that % expected == value.raw_value());
+    }
   };
 
   "15-bit_scaling"_test = []() {
     // Setup
+    embed::percent value;
+
     // Exercise
+    for (int16_t i = -16384; i < 0; i++) {
+      value = embed::percent::convert<15>(i);
+
+      const int32_t expected = static_cast<int32_t>(i) << 17;
+      expect(that % expected == value.raw_value());
+    }
+
+    for (int16_t i = 0; i < 16384; i++) {
+      value = embed::percent::convert<15>(i);
+
+      // |                                           | | 31 30 29 28 27 26 25 24
+      // 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+      uint32_t expected = 0;
+      expected |= static_cast<uint32_t>(i & 0x7FFF) << 17;
+      expected |= static_cast<uint32_t>(i & 0x3FFF) << 3;
+      expected |= static_cast<uint32_t>(i & 0x3800) >> 11;
+
+      expect(that % expected == value.raw_value());
+    }
   };
 
   "16-bit_scaling"_test = []() {
     // Setup
     embed::percent value;
-    int32_t expected = 0;
 
     // Exercise
-    value = embed::percent::convert<16>((1 << 15) - 1);
-    expect(that % 0b0111'1111'1111'1111'1111'1111'1111'1111 ==
-           value.raw_value());
+    for (int16_t i = -32767; i < 0; i++) {
+      value = embed::percent::convert<16>(i);
 
-    value = embed::percent::convert<16>(0x0ABC);
-    expect(that % (0x0ABC'0000 | (0x0ABC << 1)) == value.raw_value());
+      const int32_t expected = static_cast<int32_t>(i) << 16;
+      expect(that % expected == value.raw_value());
+    }
 
-    // value = embed::percent::convert<16>(5);
-    // expect(that % 0b0 == value.raw_value());
+    for (int16_t i = 0; i < 32767; i++) {
+      value = embed::percent::convert<16>(i);
 
-    // value = embed::percent::convert<16>(4);
-    // expect(that % 0b0 == value.raw_value());
+      int32_t expected = 0;
+      expected |= static_cast<uint32_t>(i) << 16;
+      expected |= static_cast<uint32_t>(i & 0x7FFF) << 1;
+      expected |= static_cast<uint32_t>(i & 0x4000) >> 14;
 
-    // value = embed::percent::convert<16>(3);
-    // expect(that % 0b0 == value.raw_value());
-
-    // value = embed::percent::convert<16>(2);
-    // expect(that % 0b0 == value.raw_value());
-
-    value = embed::percent::convert<16>(1);
-    expect(that % (0x0001'0000 | (0x0001 << 1)) == value.raw_value());
-
-    value = embed::percent::convert<16>(0);
-    expect(that % 0 == value.raw_value());
-
-    value = embed::percent::convert<16>(-1);
-    expected = 0b1111'1111'1111'1111 << 16;
-    expect(that % expected == value.raw_value());
-
-    value = embed::percent::convert<16>(-2);
-    expected = 0b1111'1111'1111'1110 << 16;
-    expect(that % expected == value.raw_value());
-
-    value = embed::percent::convert<16>(-3);
-    expected = 0b1111'1111'1111'1101 << 16;
-    expect(that % expected == value.raw_value());
-
-    value = embed::percent::convert<16>(-4);
-    expected = 0b1111'1111'1111'1100 << 16;
-    expect(that % expected == value.raw_value());
-
-    value = embed::percent::convert<16>(-5);
-    expected = 0b1111'1111'1111'1011 << 16;
-    expect(that % expected == value.raw_value());
-
-    value = embed::percent::convert<16>(-6);
-    expected = 0b1111'1111'1111'1010 << 16;
-    expect(that % expected == value.raw_value());
-
-    value = embed::percent::convert<16>(-7);
-    expected = 0b1111'1111'1111'1001 << 16;
-    expect(that % expected == value.raw_value());
-
-    value = embed::percent::convert<16>(-8);
-    expected = 0b1111'1111'1111'1000 << 16;
-    expect(that % expected == value.raw_value());
+      expect(that % expected == value.raw_value());
+    }
   };
 
   "19-bit_scaling"_test = []() {
