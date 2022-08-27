@@ -1,0 +1,4 @@
+<map id="hal::duration_from_cycles" name="hal::duration_from_cycles">
+<area shape="rect" id="node1" title="Calculate the amount of time it takes a frequency to oscillate a number of cycles." alt="" coords="188,5,312,47"/>
+<area shape="rect" id="node2" href="$classhal_1_1uptime__counter.html#a12132e48d7d61c26f3a2535d42d2692c" title="Calculates the number of nanoseconds since the counter has started." alt="" coords="5,5,140,47"/>
+</map>

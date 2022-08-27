@@ -1,0 +1,4 @@
+<map id="hal::never_timeout" name="hal::never_timeout">
+<area shape="rect" id="node1" title="Create a timeout that will never time out." alt="" coords="131,5,257,32"/>
+<area shape="rect" id="node2" href="$group__i2c.html#gad1ce95a0f68875e29428e13cc53c3387" title="probe the i2c bus to see if a device exists" alt="" coords="5,5,83,32"/>
+</map>

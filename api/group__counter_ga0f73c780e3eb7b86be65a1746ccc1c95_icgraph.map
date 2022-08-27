@@ -1,0 +1,4 @@
+<map id="hal::create_timeout" name="hal::create_timeout">
+<area shape="rect" id="node1" title="Create a timeout object based on hal::counter." alt="" coords="128,29,259,56"/>
+<area shape="rect" id="node2" href="$group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" title="Delay execution for a duration of time using a hardware counter." alt="" coords="5,29,80,56"/>
+</map>

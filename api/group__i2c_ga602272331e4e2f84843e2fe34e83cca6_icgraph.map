@@ -1,0 +1,4 @@
+<map id="hal::write" name="hal::write">
+<area shape="rect" id="node1" title="write data to a target device on the i2c bus" alt="" coords="191,5,264,32"/>
+<area shape="rect" id="node2" href="$group__spi.html#ga0304f6c421db748182386f3dc4547916" title="Write data to the SPI bus and ignore data sent from peripherals on the bus then read data from the SP..." alt="" coords="5,5,143,32"/>
+</map>

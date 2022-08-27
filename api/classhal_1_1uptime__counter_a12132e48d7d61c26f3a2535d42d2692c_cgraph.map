@@ -1,0 +1,6 @@
+<map id="hal::uptime_counter::uptime" name="hal::uptime_counter::uptime">
+<area shape="rect" id="node1" title="Calculates the number of nanoseconds since the counter has started." alt="" coords="5,51,140,93"/>
+<area shape="rect" id="node2" href="$group__utility.html#gad3e3226fbdfad6db38eb093f1420489c" title="Calculate the amount of time it takes a frequency to oscillate a number of cycles." alt="" coords="193,22,317,63"/>
+<area shape="rect" id="node4" href="$classhal_1_1counter.html#a1b99ef1f3847e5f24e2cb69e5988e54f" title="Get the uptime of the counter since it has started." alt="" coords="188,88,321,115"/>
+<area shape="rect" id="node3" href="$namespacehal.html#a09499a696428213091b196699563099f" title=" " alt="" coords="369,29,472,56"/>
+</map>

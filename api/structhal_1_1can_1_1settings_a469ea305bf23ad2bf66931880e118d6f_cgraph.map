@@ -1,0 +1,4 @@
+<map id="hal::can::settings::operator==" name="hal::can::settings::operator==">
+<area shape="rect" id="node1" title="Operators ==." alt="" coords="5,5,124,47"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga0edbd3360d379f8c1864447f60a79271" title="Determines if two values are equal within a relative error." alt="" coords="172,13,255,39"/>
+</map>

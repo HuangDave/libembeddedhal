@@ -1,0 +1,12 @@
+<map id="hal::new_error" name="hal::new_error">
+<area shape="rect" id="node1" title=" " alt="" coords="527,189,629,215"/>
+<area shape="rect" id="node2" href="$classhal_1_1counter__timeout.html#aca5b940f8e89106b393fb34cb61aff14" title="Create a counter_timeout." alt="" coords="325,5,464,47"/>
+<area shape="rect" id="node4" href="$group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" title="Delay execution for a duration of time using a hardware counter." alt="" coords="5,45,80,71"/>
+<area shape="rect" id="node5" href="$group__utility.html#gad3e3226fbdfad6db38eb093f1420489c" title="Calculate the amount of time it takes a frequency to oscillate a number of cycles." alt="" coords="333,123,457,164"/>
+<area shape="rect" id="node7" href="$group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90" title="Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ..." alt="" coords="350,189,439,215"/>
+<area shape="rect" id="node8" href="$classhal_1_1counter__timeout.html#a7f1f5f55749d89dcc65d423cf702de3b" title="Call this object to check if it has timed out." alt="" coords="325,240,464,281"/>
+<area shape="rect" id="node9" href="$classhal_1_1spy__handler.html#ab2ed5f0197c8aa76f896815225779b0a" title="Record the arguments of a function being spied on." alt="" coords="317,306,473,333"/>
+<area shape="rect" id="node10" href="$classhal_1_1can__network.html#a05e6dc010a762511bb4d459ee55d42ac" title="Associate a can id with a node in the can network." alt="" coords="311,357,479,399"/>
+<area shape="rect" id="node3" href="$group__counter.html#ga0f73c780e3eb7b86be65a1746ccc1c95" title="Create a timeout object based on hal::counter." alt="" coords="130,17,261,43"/>
+<area shape="rect" id="node6" href="$classhal_1_1uptime__counter.html#a12132e48d7d61c26f3a2535d42d2692c" title="Calculates the number of nanoseconds since the counter has started." alt="" coords="128,123,263,164"/>
+</map>

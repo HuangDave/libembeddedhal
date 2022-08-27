@@ -1,0 +1,8 @@
+<map id="hal::counter::uptime" name="hal::counter::uptime">
+<area shape="rect" id="node1" title="Get the uptime of the counter since it has started." alt="" coords="493,95,627,121"/>
+<area shape="rect" id="node2" href="$classhal_1_1counter__timeout.html#aca5b940f8e89106b393fb34cb61aff14" title="Create a counter_timeout." alt="" coords="307,22,445,63"/>
+<area shape="rect" id="node5" href="$classhal_1_1counter__timeout.html#a7f1f5f55749d89dcc65d423cf702de3b" title="Call this object to check if it has timed out." alt="" coords="307,87,445,129"/>
+<area shape="rect" id="node6" href="$classhal_1_1uptime__counter.html#a12132e48d7d61c26f3a2535d42d2692c" title="Calculates the number of nanoseconds since the counter has started." alt="" coords="309,153,443,194"/>
+<area shape="rect" id="node3" href="$group__counter.html#ga0f73c780e3eb7b86be65a1746ccc1c95" title="Create a timeout object based on hal::counter." alt="" coords="128,29,259,56"/>
+<area shape="rect" id="node4" href="$group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" title="Delay execution for a duration of time using a hardware counter." alt="" coords="5,29,80,56"/>
+</map>

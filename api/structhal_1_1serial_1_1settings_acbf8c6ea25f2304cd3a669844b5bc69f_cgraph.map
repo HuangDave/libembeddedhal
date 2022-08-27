@@ -1,0 +1,4 @@
+<map id="hal::serial::settings::operator==" name="hal::serial::settings::operator==">
+<area shape="rect" id="node1" title="Operators ==." alt="" coords="5,5,133,47"/>
+<area shape="rect" id="node2" href="$group__utility.html#ga0edbd3360d379f8c1864447f60a79271" title="Determines if two values are equal within a relative error." alt="" coords="181,13,264,39"/>
+</map>

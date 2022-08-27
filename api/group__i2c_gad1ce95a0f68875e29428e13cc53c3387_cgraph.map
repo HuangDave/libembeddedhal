@@ -1,0 +1,5 @@
+<map id="hal::probe" name="hal::probe">
+<area shape="rect" id="node1" title="probe the i2c bus to see if a device exists" alt="" coords="5,31,83,57"/>
+<area shape="rect" id="node2" href="$group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1" title="Create a timeout that will never time out." alt="" coords="133,5,260,32"/>
+<area shape="rect" id="node3" href="$classhal_1_1i2c.html#a6fdda0db9f4e4aaa48750914d02b4a73" title="perform an i2c transaction with another device on the bus. The type of transaction depends on values ..." alt="" coords="131,56,263,83"/>
+</map>
