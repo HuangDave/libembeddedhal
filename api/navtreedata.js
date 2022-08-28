@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "libhal", "index.html", [
+  [ "My Project", "index.html", [
     [ "API Documentation", "index.html", [
       [ "Modules", "index.html#autotoc_md1", null ]
     ] ],
