@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structhal_1_1counter_1_1uptime__t.html" title="Representation of a counter&#39;s uptime." alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node1" href="$classhal_1_1i2c.html" title="Inter&#45;integrated Circuit (I2C) hardware abstract interface." alt="" coords="5,5,68,32"/>
+<area shape="rect" id="node2" href="$classhal_1_1minimum__speed__i2c.html" title="A i2c wrapper to ensure that the lowest i2c device frequency is used." alt="" coords="116,5,280,32"/>
 </map>

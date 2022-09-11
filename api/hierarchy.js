@@ -4,13 +4,8 @@ var hierarchy =
       [ "hal::mock::adc", "structhal_1_1mock_1_1adc.html", null ]
     ] ],
     [ "hal::bit_limits< BitWidth, int_t >", "structhal_1_1bit__limits.html", null ],
-    [ "hal::serial::bytes_available_t", "structhal_1_1serial_1_1bytes__available__t.html", null ],
     [ "hal::can", "classhal_1_1can.html", null ],
     [ "hal::can_network", "classhal_1_1can__network.html", null ],
-    [ "hal::counter", "classhal_1_1counter.html", [
-      [ "hal::mock::counter", "structhal_1_1mock_1_1counter.html", null ]
-    ] ],
-    [ "hal::counter_timeout", "classhal_1_1counter__timeout.html", null ],
     [ "hal::dac", "classhal_1_1dac.html", [
       [ "hal::mock::dac", "structhal_1_1mock_1_1dac.html", null ]
     ] ],
@@ -39,10 +34,10 @@ var hierarchy =
       [ "hal::mock::output_pin", "structhal_1_1mock_1_1output__pin.html", null ]
     ] ],
     [ "hal::overflow_counter< CountBitWidth >", "classhal_1_1overflow__counter.html", null ],
-    [ "hal::percentage_t< float_t >", "classhal_1_1percentage__t.html", null ],
     [ "hal::pwm", "classhal_1_1pwm.html", [
       [ "hal::mock::pwm", "structhal_1_1mock_1_1pwm.html", null ]
     ] ],
+    [ "hal::serial::read_t", "structhal_1_1serial_1_1read__t.html", null ],
     [ "hal::serial", "classhal_1_1serial.html", null ],
     [ "hal::servo", "classhal_1_1servo.html", [
       [ "hal::mock::servo", "structhal_1_1mock_1_1servo.html", null ],
@@ -60,14 +55,17 @@ var hierarchy =
     ] ],
     [ "hal::spy_handler< args_t >", "classhal_1_1spy__handler.html", null ],
     [ "hal::spy_handler< bool >", "classhal_1_1spy__handler.html", null ],
-    [ "hal::spy_handler< hal::percentage_t >", "classhal_1_1spy__handler.html", null ],
+    [ "hal::spy_handler< float >", "classhal_1_1spy__handler.html", null ],
     [ "hal::spy_handler< hertz >", "classhal_1_1spy__handler.html", null ],
     [ "hal::spy_handler< settings >", "classhal_1_1spy__handler.html", null ],
     [ "hal::static_callable< owner_class, reference_designator, signature >", "classhal_1_1static__callable.html", null ],
     [ "hal::static_callable< owner_class, reference_designator, return_t(args_t... p_args)>", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html", null ],
+    [ "hal::steady_clock", "classhal_1_1steady__clock.html", [
+      [ "hal::mock::steady_clock", "structhal_1_1mock_1_1steady__clock.html", null ]
+    ] ],
+    [ "hal::steady_clock_timeout", "classhal_1_1steady__clock__timeout.html", null ],
     [ "hal::timer", "classhal_1_1timer.html", [
       [ "hal::mock::timer", "structhal_1_1mock_1_1timer.html", null ]
     ] ],
-    [ "hal::uptime_counter", "classhal_1_1uptime__counter.html", null ],
-    [ "hal::counter::uptime_t", "structhal_1_1counter_1_1uptime__t.html", null ]
+    [ "hal::serial::write_t", "structhal_1_1serial_1_1write__t.html", null ]
 ];

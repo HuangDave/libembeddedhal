@@ -8,5 +8,6 @@ var error_8hpp =
     [ "attempt", "error_8hpp.html#a9a7de389180e282529be31044c0e57ae", null ],
     [ "attempt_all", "error_8hpp.html#a2ddc6d68616e60836f36a50b6a78e036", null ],
     [ "new_error", "error_8hpp.html#a09499a696428213091b196699563099f", null ],
+    [ "success", "error_8hpp.html#a557593a710d85719fff67b743268293a", null ],
     [ "invalid_option", "error_8hpp.html#a151ae365408ad61b9f503cd1047ec39d", null ]
 ];

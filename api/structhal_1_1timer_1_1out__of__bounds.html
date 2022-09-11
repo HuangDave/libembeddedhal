@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: hal::timer::out_of_bounds Struct Reference</title>
+  <title>libhal: hal::timer::out_of_bounds Struct Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -106,41 +106,17 @@ $(document).ready(function(){initNavTree('structhal_1_1timer_1_1out__of__bounds.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af2ff59c4e280b0c50f49a3ed1c24533d"><td class="memItemLeft" align="right" valign="top">std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1timer_1_1out__of__bounds.html#af2ff59c4e280b0c50f49a3ed1c24533d">invalid</a></td></tr>
-<tr class="memdesc:af2ff59c4e280b0c50f49a3ed1c24533d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The invalid delay given to the schedule function.  <a href="structhal_1_1timer_1_1out__of__bounds.html#af2ff59c4e280b0c50f49a3ed1c24533d">More...</a><br /></td></tr>
-<tr class="separator:af2ff59c4e280b0c50f49a3ed1c24533d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0e3babd469fd53931ef375fc943430b"><td class="memItemLeft" align="right" valign="top">std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1timer_1_1out__of__bounds.html#af0e3babd469fd53931ef375fc943430b">minimum</a></td></tr>
-<tr class="memdesc:af0e3babd469fd53931ef375fc943430b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum possible delay allowed.  <a href="structhal_1_1timer_1_1out__of__bounds.html#af0e3babd469fd53931ef375fc943430b">More...</a><br /></td></tr>
-<tr class="separator:af0e3babd469fd53931ef375fc943430b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27940c18c02c018be0e2ab73ddfcfa96"><td class="memItemLeft" align="right" valign="top">std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1timer_1_1out__of__bounds.html#a27940c18c02c018be0e2ab73ddfcfa96">tick_period</a></td></tr>
+<tr class="memdesc:a27940c18c02c018be0e2ab73ddfcfa96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tick period.  <a href="structhal_1_1timer_1_1out__of__bounds.html#a27940c18c02c018be0e2ab73ddfcfa96">More...</a><br /></td></tr>
+<tr class="separator:a27940c18c02c018be0e2ab73ddfcfa96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a885746cf84b96da464891b89d46155cf"><td class="memItemLeft" align="right" valign="top">std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1timer_1_1out__of__bounds.html#a885746cf84b96da464891b89d46155cf">maximum</a></td></tr>
 <tr class="memdesc:a885746cf84b96da464891b89d46155cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum possible delay allowed.  <a href="structhal_1_1timer_1_1out__of__bounds.html#a885746cf84b96da464891b89d46155cf">More...</a><br /></td></tr>
 <tr class="separator:a885746cf84b96da464891b89d46155cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Error type indicating that the desired time delay is not achievable with this timer. </p>
-<p >Usually this occurs if the time delay is too small or too big based on what is possible with the driving frequency of the timer and along with any pre-scalars before the counting register.</p>
-<p ><b>How to handle these errors:</b></p>
-<ul>
-<li>In cases where the program is scanning for the fastest delay, this is to be expected. The error will report the minimum possible delay which can then be assigned. Same for the maximum possible delay.</li>
-<li>In most other cases, this is usually a bug in the code and cannot be handled in code and should be treated as such. Drivers using a timer, if they need an exact number will not be usable with this timer if it throws this error, which will either require another timer that can perform this work be used or increasing the clock rate fed into the timer in order to increase its frequency range. </li>
-</ul>
+<p >This occurs if the time delay is too large based on the tick period of the timer. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="af2ff59c4e280b0c50f49a3ed1c24533d" name="af2ff59c4e280b0c50f49a3ed1c24533d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2ff59c4e280b0c50f49a3ed1c24533d">&#9670;&nbsp;</a></span>invalid</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::chrono::nanoseconds hal::timer::out_of_bounds::invalid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The invalid delay given to the schedule function. </p>
-
-</div>
-</div>
 <a id="a885746cf84b96da464891b89d46155cf" name="a885746cf84b96da464891b89d46155cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a885746cf84b96da464891b89d46155cf">&#9670;&nbsp;</a></span>maximum</h2>
 
@@ -157,19 +133,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af0e3babd469fd53931ef375fc943430b" name="af0e3babd469fd53931ef375fc943430b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0e3babd469fd53931ef375fc943430b">&#9670;&nbsp;</a></span>minimum</h2>
+<a id="a27940c18c02c018be0e2ab73ddfcfa96" name="a27940c18c02c018be0e2ab73ddfcfa96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27940c18c02c018be0e2ab73ddfcfa96">&#9670;&nbsp;</a></span>tick_period</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::chrono::nanoseconds hal::timer::out_of_bounds::minimum</td>
+          <td class="memname">std::chrono::nanoseconds hal::timer::out_of_bounds::tick_period</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The minimum possible delay allowed. </p>
+<p>The tick period. </p>
 
 </div>
 </div>

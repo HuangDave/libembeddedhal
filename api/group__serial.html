@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: Serial</title>
+  <title>libhal: Serial</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -107,9 +107,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaaa5b03ce12092b1d95e5fc426c3bbf6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#gaaa5b03ce12092b1d95e5fc426c3bbf6d">hal::write_partial</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out) noexcept</td></tr>
-<tr class="memdesc:gaaa5b03ce12092b1d95e5fc426c3bbf6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#gaaa5b03ce12092b1d95e5fc426c3bbf6d">More...</a><br /></td></tr>
-<tr class="separator:gaaa5b03ce12092b1d95e5fc426c3bbf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1serial_1_1write__t.html">serial::write_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">hal::write_partial</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out) noexcept</td></tr>
+<tr class="memdesc:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">More...</a><br /></td></tr>
+<tr class="separator:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga58f116057547375e7bcdc6f29ef3786c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">hal::read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_in, timeout auto p_timeout) noexcept</td></tr>
 <tr class="memdesc:ga58f116057547375e7bcdc6f29ef3786c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from a serial port.  <a href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">More...</a><br /></td></tr>
 <tr class="separator:ga58f116057547375e7bcdc6f29ef3786c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,7 +177,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::span&lt;hal::byte&gt;&gt;</a> - return an error if a call to <a class="el" href="classhal_1_1serial.html#a245de557152f925be91ff552535ed53a" title="Copy bytes from working buffer into passed buffer.">serial::read</a> or <a class="el" href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" title="Delay execution for a duration of time using a hardware counter.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::span&lt;hal::byte&gt;&gt;</a> - return an error if a call to <a class="el" href="classhal_1_1serial.html#a4fd7b08d681d44a13e2ef5d7254263e6" title="Copy bytes from working buffer into passed buffer.">serial::read</a> or <a class="el" href="group__steady__clock.html#ga80cd2610c280e615d52e03d83dad28f6" title="Delay execution for a duration of time using a hardware steady_clock.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
 
 </div>
 </div>
@@ -232,7 +232,7 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;hal::byte, BytesToRead&gt;&gt;</a> - return an error if a call to <a class="el" href="classhal_1_1serial.html#a245de557152f925be91ff552535ed53a" title="Copy bytes from working buffer into passed buffer.">serial::read</a> or <a class="el" href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d" title="Delay execution for a duration of time using a hardware counter.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;hal::byte, BytesToRead&gt;&gt;</a> - return an error if a call to <a class="el" href="classhal_1_1serial.html#a4fd7b08d681d44a13e2ef5d7254263e6" title="Copy bytes from working buffer into passed buffer.">serial::read</a> or <a class="el" href="group__steady__clock.html#ga80cd2610c280e615d52e03d83dad28f6" title="Delay execution for a duration of time using a hardware steady_clock.">delay()</a> returns an error from the serial port or a span with the number of bytes read and a pointer to where the read bytes are. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -242,8 +242,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="gaaa5b03ce12092b1d95e5fc426c3bbf6d" name="gaaa5b03ce12092b1d95e5fc426c3bbf6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa5b03ce12092b1d95e5fc426c3bbf6d">&#9670;&nbsp;</a></span>write_partial()</h2>
+<a id="ga9fcfdc8a8fa26b039d5a8a6f9b6b6962" name="ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">&#9670;&nbsp;</a></span>write_partial()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +252,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; size_t &gt; hal::write_partial </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1serial_1_1write__t.html">serial::write_t</a> &gt; hal::write_partial </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classhal_1_1serial.html">serial</a> &amp;&#160;</td>
           <td class="paramname"><em>p_serial</em>, </td>
@@ -284,11 +284,11 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>result&lt;size_t&gt; - success or failure <a class="el" href="classhal_1_1serial.html#a6ba7623501b3dc5c467bb91cf4cb8c60" title="Write data to the transmitter line of the serial port.">serial::write</a> returns an error from the serial port. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>result&lt;size_t&gt; - success or failure <a class="el" href="classhal_1_1serial.html#a8bf08705c18e054e7788a551b3e7742e" title="Write data to the transmitter line of the serial port.">serial::write</a> returns an error from the serial port. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_gaaa5b03ce12092b1d95e5fc426c3bbf6d_icgraph.svg" width="311" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_ga9fcfdc8a8fa26b039d5a8a6f9b6b6962_icgraph.svg" width="311" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -351,7 +351,7 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>status - success or failure or <a class="el" href="classhal_1_1serial.html#a6ba7623501b3dc5c467bb91cf4cb8c60" title="Write data to the transmitter line of the serial port.">serial::write()</a> returns an error from the serial port or success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>status - success or failure or <a class="el" href="classhal_1_1serial.html#a8bf08705c18e054e7788a551b3e7742e" title="Write data to the transmitter line of the serial port.">serial::write()</a> returns an error from the serial port or success. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -419,7 +419,7 @@ template&lt;size_t BytesToRead&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;hal::byte, BytesToRead&gt;&gt;</a> - return an error if a call to <a class="el" href="classhal_1_1serial.html#a245de557152f925be91ff552535ed53a" title="Copy bytes from working buffer into passed buffer.">serial::read</a> or <a class="el" href="classhal_1_1serial.html#a6ba7623501b3dc5c467bb91cf4cb8c60" title="Write data to the transmitter line of the serial port.">serial::write()</a> returns an error from the serial port or an array of read bytes. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;hal::byte, BytesToRead&gt;&gt;</a> - return an error if a call to <a class="el" href="classhal_1_1serial.html#a4fd7b08d681d44a13e2ef5d7254263e6" title="Copy bytes from working buffer into passed buffer.">serial::read</a> or <a class="el" href="classhal_1_1serial.html#a8bf08705c18e054e7788a551b3e7742e" title="Write data to the transmitter line of the serial port.">serial::write()</a> returns an error from the serial port or an array of read bytes. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

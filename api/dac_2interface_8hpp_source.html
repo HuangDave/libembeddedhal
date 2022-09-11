@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: /github/workspace/include/libhal/dac/interface.hpp Source File</title>
+  <title>libhal: /github/workspace/include/libhal/dac/interface.hpp Source File</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -101,25 +101,23 @@ $(document).ready(function(){initNavTree('dac_2interface_8hpp_source.html',''); 
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;../config.hpp&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;../error.hpp&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../percentage.hpp&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehal.html">hal</a> {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classhal_1_1dac.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classhal_1_1dac.html">dac</a></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classhal_1_1dac.html#a7b463cc8c9b731094138a7f7c17c7d7c">   32</a></span>  [[nodiscard]] <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> <a class="code hl_function" href="classhal_1_1dac.html#a7b463cc8c9b731094138a7f7c17c7d7c">write</a>(<a class="code hl_class" href="classhal_1_1percentage__t.html">percentage</a> p_value) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> driver_write(p_value);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> driver_write(<a class="code hl_class" href="classhal_1_1percentage__t.html">percentage</a> p_value) <span class="keyword">noexcept</span> = 0;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}  <span class="comment">// namespace hal</span></div>
-<div class="ttc" id="aclasshal_1_1dac_html"><div class="ttname"><a href="classhal_1_1dac.html">hal::dac</a></div><div class="ttdoc">Digital to Analog Converter (DAC) hardware abstraction interface.</div><div class="ttdef"><b>Definition:</b> interface.hpp:24</div></div>
-<div class="ttc" id="aclasshal_1_1dac_html_a7b463cc8c9b731094138a7f7c17c7d7c"><div class="ttname"><a href="classhal_1_1dac.html#a7b463cc8c9b731094138a7f7c17c7d7c">hal::dac::write</a></div><div class="ttdeci">status write(percentage p_value) noexcept</div><div class="ttdoc">Set the output voltage of the DAC.</div><div class="ttdef"><b>Definition:</b> interface.hpp:32</div></div>
-<div class="ttc" id="aclasshal_1_1percentage__t_html"><div class="ttname"><a href="classhal_1_1percentage__t.html">hal::percentage_t</a></div><div class="ttdoc">A type representing a percentage value.</div><div class="ttdef"><b>Definition:</b> percentage.hpp:20</div></div>
-<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:9</div></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehal.html">hal</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classhal_1_1dac.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classhal_1_1dac.html">dac</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classhal_1_1dac.html#a792f9212995dba252d645a33a868dc46">   31</a></span>  [[nodiscard]] <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> <a class="code hl_function" href="classhal_1_1dac.html#a792f9212995dba252d645a33a868dc46">write</a>(<span class="keywordtype">float</span> p_value) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> driver_write(p_value);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> driver_write(<span class="keywordtype">float</span> p_value) <span class="keyword">noexcept</span> = 0;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}  <span class="comment">// namespace hal</span></div>
+<div class="ttc" id="aclasshal_1_1dac_html"><div class="ttname"><a href="classhal_1_1dac.html">hal::dac</a></div><div class="ttdoc">Digital to Analog Converter (DAC) hardware abstraction interface.</div><div class="ttdef"><b>Definition:</b> interface.hpp:23</div></div>
+<div class="ttc" id="aclasshal_1_1dac_html_a792f9212995dba252d645a33a868dc46"><div class="ttname"><a href="classhal_1_1dac.html#a792f9212995dba252d645a33a868dc46">hal::dac::write</a></div><div class="ttdeci">status write(float p_value) noexcept</div><div class="ttdoc">Set the output voltage of the DAC.</div><div class="ttdef"><b>Definition:</b> interface.hpp:31</div></div>
+<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
 <div class="ttc" id="anamespacehal_html_a1607e3547737e35235f946a9c67b61cf"><div class="ttname"><a href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">hal::status</a></div><div class="ttdeci">result&lt; void &gt; status</div><div class="ttdef"><b>Definition:</b> error.hpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

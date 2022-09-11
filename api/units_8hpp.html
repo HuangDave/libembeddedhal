@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: /github/workspace/include/libhal/units.hpp File Reference</title>
+  <title>libhal: /github/workspace/include/libhal/units.hpp File Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('units_8hpp.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &quot;<a class="el" href="config_8hpp_source.html">config.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="error_8hpp_source.html">error.hpp</a>&quot;</code><br />
@@ -116,8 +117,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga89e49ea6082c4753dbd3dbc61c16ed77"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> = std::chrono::duration&lt; std::int32_t, std::micro &gt;</td></tr>
-<tr class="separator:ga89e49ea6082c4753dbd3dbc61c16ed77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga858b08a6e4e3eb5752d8e0daaad5ed00"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a> = std::chrono::nanoseconds</td></tr>
+<tr class="memdesc:ga858b08a6e4e3eb5752d8e0daaad5ed00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The standard time durations in libhal std::chrono::nanoseconds.  <a href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">More...</a><br /></td></tr>
+<tr class="separator:ga858b08a6e4e3eb5752d8e0daaad5ed00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa21f8ca97410869aabb284a575b2021d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> = std::uint8_t</td></tr>
 <tr class="separator:gaa21f8ca97410869aabb284a575b2021d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54dc271deb8f266e52926836c0582598"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hal::hertz</a> = float</td></tr>
@@ -155,7 +157,7 @@ Functions</h2></td></tr>
 <tr class="separator:a84d69db4cceae5a5e57a9abb8b627f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bf02d8cedc87ef4273e1f8edaf58169"><td class="memItemLeft" align="right" valign="top">consteval meters&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal_1_1literals.html#a2bf02d8cedc87ef4273e1f8edaf58169">hal::literals::operator&quot;&quot;_miles</a> (long double p_value) noexcept</td></tr>
 <tr class="separator:a2bf02d8cedc87ef4273e1f8edaf58169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="memItemLeft" align="right" valign="top">constexpr std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749">hal::cycles_per</a> (hertz p_source, <a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> p_duration) noexcept</td></tr>
+<tr class="memitem:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="memItemLeft" align="right" valign="top">constexpr std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749">hal::cycles_per</a> (hertz p_source, <a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a> p_duration) noexcept</td></tr>
 <tr class="memdesc:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the number of cycles of this frequency within the time duration. This function is meant for timers to determine how many count cycles are needed to reach a particular time duration at this frequency.  <a href="group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749">More...</a><br /></td></tr>
 <tr class="separator:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80ad6db29189e74fcb1a49dc801897b3"><td class="memTemplParams" colspan="2">template&lt;typename Period &gt; </td></tr>

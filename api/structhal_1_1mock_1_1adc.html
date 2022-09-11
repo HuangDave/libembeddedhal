@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: hal::mock::adc Struct Reference</title>
+  <title>libhal: hal::mock::adc Struct Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -118,19 +118,19 @@ Collaboration diagram for hal::mock::adc:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ff414b5812c5803d39a47b722cbf65b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1mock_1_1adc.html#a6ff414b5812c5803d39a47b722cbf65b">set</a> (std::queue&lt; <a class="el" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a> &gt; &amp;p_adc_values)</td></tr>
-<tr class="memdesc:a6ff414b5812c5803d39a47b722cbf65b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues the percentages to be returned for <a class="el" href="classhal_1_1adc.html#a0e61fbb26119559e5afdd8b281940915" title="Read a sample from the analog to digital converter.">read()</a>  <a href="structhal_1_1mock_1_1adc.html#a6ff414b5812c5803d39a47b722cbf65b">More...</a><br /></td></tr>
-<tr class="separator:a6ff414b5812c5803d39a47b722cbf65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c14ea19f6464a6b67964a214b786a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1mock_1_1adc.html#a84c14ea19f6464a6b67964a214b786a8">set</a> (std::queue&lt; float &gt; &amp;p_adc_values)</td></tr>
+<tr class="memdesc:a84c14ea19f6464a6b67964a214b786a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues the floats to be returned for <a class="el" href="classhal_1_1adc.html#ad72a224c67255eb883f80718643cbf3b" title="Read a sample from the analog to digital converter.">read()</a>  <a href="structhal_1_1mock_1_1adc.html#a84c14ea19f6464a6b67964a214b786a8">More...</a><br /></td></tr>
+<tr class="separator:a84c14ea19f6464a6b67964a214b786a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhal_1_1adc"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhal_1_1adc')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhal_1_1adc.html">hal::adc</a></td></tr>
-<tr class="memitem:a0e61fbb26119559e5afdd8b281940915 inherit pub_methods_classhal_1_1adc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1adc.html#a0e61fbb26119559e5afdd8b281940915">read</a> () noexcept</td></tr>
-<tr class="memdesc:a0e61fbb26119559e5afdd8b281940915 inherit pub_methods_classhal_1_1adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a sample from the analog to digital converter.  <a href="classhal_1_1adc.html#a0e61fbb26119559e5afdd8b281940915">More...</a><br /></td></tr>
-<tr class="separator:a0e61fbb26119559e5afdd8b281940915 inherit pub_methods_classhal_1_1adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72a224c67255eb883f80718643cbf3b inherit pub_methods_classhal_1_1adc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1adc.html#ad72a224c67255eb883f80718643cbf3b">read</a> () noexcept</td></tr>
+<tr class="memdesc:ad72a224c67255eb883f80718643cbf3b inherit pub_methods_classhal_1_1adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a sample from the analog to digital converter.  <a href="classhal_1_1adc.html#ad72a224c67255eb883f80718643cbf3b">More...</a><br /></td></tr>
+<tr class="separator:ad72a224c67255eb883f80718643cbf3b inherit pub_methods_classhal_1_1adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Mock adc implementation for use in unit tests and simulations. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6ff414b5812c5803d39a47b722cbf65b" name="a6ff414b5812c5803d39a47b722cbf65b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ff414b5812c5803d39a47b722cbf65b">&#9670;&nbsp;</a></span>set()</h2>
+<a id="a84c14ea19f6464a6b67964a214b786a8" name="a84c14ea19f6464a6b67964a214b786a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c14ea19f6464a6b67964a214b786a8">&#9670;&nbsp;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void hal::mock::adc::set </td>
           <td>(</td>
-          <td class="paramtype">std::queue&lt; <a class="el" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::queue&lt; float &gt; &amp;&#160;</td>
           <td class="paramname"><em>p_adc_values</em></td><td>)</td>
           <td></td>
         </tr>
@@ -153,10 +153,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Queues the percentages to be returned for <a class="el" href="classhal_1_1adc.html#a0e61fbb26119559e5afdd8b281940915" title="Read a sample from the analog to digital converter.">read()</a> </p>
+<p>Queues the floats to be returned for <a class="el" href="classhal_1_1adc.html#ad72a224c67255eb883f80718643cbf3b" title="Read a sample from the analog to digital converter.">read()</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_adc_values</td><td>- queue of percentages </td></tr>
+    <tr><td class="paramname">p_adc_values</td><td>- queue of floats </td></tr>
   </table>
   </dd>
 </dl>

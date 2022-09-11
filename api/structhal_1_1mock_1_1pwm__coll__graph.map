@@ -1,6 +1,6 @@
 <map id="hal::mock::pwm" name="hal::mock::pwm">
-<area shape="rect" id="node1" title="Mock pwm implementation for use in unit tests and simulations with spy functions for frequency() and ..." alt="" coords="129,109,240,136"/>
-<area shape="rect" id="node2" href="$classhal_1_1pwm.html" title="Pulse Width Modulation (PWM) channel hardware abstraction." alt="" coords="5,13,79,39"/>
-<area shape="rect" id="node3" href="$classhal_1_1spy__handler.html" title=" " alt="" coords="103,13,267,39"/>
-<area shape="rect" id="node4" href="$classhal_1_1spy__handler.html" title=" " alt="" coords="291,5,433,47"/>
+<area shape="rect" id="node1" title="Mock pwm implementation for use in unit tests and simulations with spy functions for frequency() and ..." alt="" coords="129,95,240,121"/>
+<area shape="rect" id="node2" href="$classhal_1_1pwm.html" title="Pulse Width Modulation (PWM) channel hardware abstraction." alt="" coords="5,5,79,32"/>
+<area shape="rect" id="node3" href="$classhal_1_1spy__handler.html" title=" " alt="" coords="103,5,267,32"/>
+<area shape="rect" id="node4" href="$classhal_1_1spy__handler.html" title=" " alt="" coords="291,5,451,32"/>
 </map>

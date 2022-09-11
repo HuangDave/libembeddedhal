@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: hal Namespace Reference</title>
+  <title>libhal: hal Namespace Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -128,12 +128,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1can__network.html">can_network</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage, store, and organize messages received on the can bus.  <a href="classhal_1_1can__network.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1counter.html">counter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware Counter abstraction interface.  <a href="classhal_1_1counter.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1counter__timeout.html">counter_timeout</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout object based on <a class="el" href="classhal_1_1counter.html" title="Hardware Counter abstraction interface.">hal::counter</a>.  <a href="classhal_1_1counter__timeout.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1dac.html">dac</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital to Analog Converter (DAC) hardware abstraction interface.  <a href="classhal_1_1dac.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,9 +151,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1overflow__counter.html">overflow_counter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend a counter's count from an arbitrary bit width to 64-bits by detecting overflows in the count. Each detected overflow is added to an overflow counter which is combined with the current count in order create a count up to 64-bits in length.  <a href="classhal_1_1overflow__counter.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1percentage__t.html">percentage_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type representing a percentage value.  <a href="classhal_1_1percentage__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1pwm.html">pwm</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pulse Width Modulation (PWM) channel hardware abstraction.  <a href="classhal_1_1pwm.html#details">More...</a><br /></td></tr>
@@ -188,15 +179,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1static__memory__resource.html">static_memory_resource</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classhal_1_1static__memory__resource.html" title="The static_memory_resource is the polymorphic memory resource allocator that allows libhal&#39;s librarie...">static_memory_resource</a> is the polymorphic memory resource allocator that allows libhal's libraries to use a C++ standard container such as std::pmr::vector, std::pmr::string, std::pmr::unordered_map, and more without requiring dynamic memory allocation from the heap. It provides a simple way to create an allocator with built in storage, with its size indicated by a single template parameter. It also provides statistics regarding the amount of memory allocated such that developers can determine if they need to reduce or increase the size of the buffer. Memory statistics can also give programs the insight into how much memory space is available and make decisions based on that. In the event that the memory of the static allocator is exceeded, a std::bad_alloc exception is thrown.  <a href="classhal_1_1static__memory__resource.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1steady__clock.html">steady_clock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware abstraction interface for a steady clock mechanism.  <a href="classhal_1_1steady__clock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1steady__clock__timeout.html">steady_clock_timeout</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout object based on <a class="el" href="classhal_1_1steady__clock.html" title="Hardware abstraction interface for a steady clock mechanism.">hal::steady_clock</a>.  <a href="classhal_1_1steady__clock__timeout.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html">timer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer hardware abstraction interface.  <a href="classhal_1_1timer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1uptime__counter.html">uptime_counter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">uptime counter takes a hardware counter and calculates the uptime in nanoseconds.  <a href="classhal_1_1uptime__counter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
 Concepts</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="concepthal_1_1convertible__to__bytes.html">convertible_to_bytes</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="concepthal_1_1enumeration.html">enumeration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">concept for enumeration types <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,13 +209,12 @@ Typedefs</h2></td></tr>
 <tr class="separator:a22b1708df761b2dc40dd4afa2ac0c401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1607e3547737e35235f946a9c67b61cf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> = <a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; void &gt;</td></tr>
 <tr class="separator:a1607e3547737e35235f946a9c67b61cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3655ebdcae8b4ebd8e68eb6fda1b898f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a> = <a class="el" href="classhal_1_1percentage__t.html">percentage_t</a>&lt; float &gt;</td></tr>
-<tr class="separator:a3655ebdcae8b4ebd8e68eb6fda1b898f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ca200d14bc94cb64c41994e2abb2401"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga8ca200d14bc94cb64c41994e2abb2401">timeout_function</a> = <a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>(void)</td></tr>
 <tr class="memdesc:ga8ca200d14bc94cb64c41994e2abb2401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout is a callable object or function that signals to a procedure that the procedure has exceeded its time allotment and should return control to the calling function.  <a href="group__utility.html#ga8ca200d14bc94cb64c41994e2abb2401">More...</a><br /></td></tr>
 <tr class="separator:ga8ca200d14bc94cb64c41994e2abb2401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89e49ea6082c4753dbd3dbc61c16ed77"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">time_duration</a> = std::chrono::duration&lt; std::int32_t, std::micro &gt;</td></tr>
-<tr class="separator:ga89e49ea6082c4753dbd3dbc61c16ed77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga858b08a6e4e3eb5752d8e0daaad5ed00"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">time_duration</a> = std::chrono::nanoseconds</td></tr>
+<tr class="memdesc:ga858b08a6e4e3eb5752d8e0daaad5ed00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The standard time durations in libhal std::chrono::nanoseconds.  <a href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">More...</a><br /></td></tr>
+<tr class="separator:ga858b08a6e4e3eb5752d8e0daaad5ed00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa21f8ca97410869aabb284a575b2021d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">byte</a> = std::uint8_t</td></tr>
 <tr class="separator:gaa21f8ca97410869aabb284a575b2021d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54dc271deb8f266e52926836c0582598"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a> = float</td></tr>
@@ -242,6 +237,19 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:abc5ba0c7349a43a7d68cc2960f871ebc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abc5ba0c7349a43a7d68cc2960f871ebc"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacehal.html#abc5ba0c7349a43a7d68cc2960f871ebc">as_writable_bytes</a> (T *p_address, size_t p_number_of_elements)</td></tr>
+<tr class="separator:abc5ba0c7349a43a7d68cc2960f871ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7facad0d80497e875c8fcb9a764ae278"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7facad0d80497e875c8fcb9a764ae278"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacehal.html#a7facad0d80497e875c8fcb9a764ae278">as_bytes</a> (const T *p_address, size_t p_number_of_elements)</td></tr>
+<tr class="separator:a7facad0d80497e875c8fcb9a764ae278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c57d270d9d9b47275f58a752c57e272"><td class="memItemLeft" align="right" valign="top">constexpr std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a8c57d270d9d9b47275f58a752c57e272">as_writable_bytes</a> (convertible_to_bytes auto &amp;p_container)</td></tr>
+<tr class="separator:a8c57d270d9d9b47275f58a752c57e272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e786d23767c6a5285a103f1a691d52e"><td class="memItemLeft" align="right" valign="top">constexpr std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a4e786d23767c6a5285a103f1a691d52e">as_bytes</a> (const convertible_to_bytes auto &amp;p_container)</td></tr>
+<tr class="separator:a4e786d23767c6a5285a103f1a691d52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec4058f180c42bd84acc11283fe3069b"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:aec4058f180c42bd84acc11283fe3069b"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacehal.html#aec4058f180c42bd84acc11283fe3069b">as_bytes</a> (const T(&amp;array)[N])</td></tr>
+<tr class="separator:aec4058f180c42bd84acc11283fe3069b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3dfaa496cc1c025b4bb28abc39e451e2"><td class="memTemplParams" colspan="2">template&lt;size_t BitWidth, std::integral T&gt; </td></tr>
 <tr class="memitem:ga3dfaa496cc1c025b4bb28abc39e451e2"><td class="memTemplItemLeft" align="right" valign="top">consteval T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga3dfaa496cc1c025b4bb28abc39e451e2">generate_field_of_ones</a> () noexcept</td></tr>
 <tr class="memdesc:ga3dfaa496cc1c025b4bb28abc39e451e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a mask of 1s at compile time.  <a href="group__utility.html#ga3dfaa496cc1c025b4bb28abc39e451e2">More...</a><br /></td></tr>
@@ -252,15 +260,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a455862d0a10293e15661ca3cd780673d"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a455862d0a10293e15661ca3cd780673d">is_a_test</a> () noexcept</td></tr>
 <tr class="memdesc:a455862d0a10293e15661ca3cd780673d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the application is a test.  <a href="namespacehal.html#a455862d0a10293e15661ca3cd780673d">More...</a><br /></td></tr>
 <tr class="separator:a455862d0a10293e15661ca3cd780673d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f73c780e3eb7b86be65a1746ccc1c95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="classhal_1_1counter__timeout.html">hal::counter_timeout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__counter.html#ga0f73c780e3eb7b86be65a1746ccc1c95">create_timeout</a> (<a class="el" href="classhal_1_1counter.html">hal::counter</a> &amp;p_counter, <a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> p_duration)</td></tr>
-<tr class="memdesc:ga0f73c780e3eb7b86be65a1746ccc1c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a timeout object based on <a class="el" href="classhal_1_1counter.html" title="Hardware Counter abstraction interface.">hal::counter</a>.  <a href="group__counter.html#ga0f73c780e3eb7b86be65a1746ccc1c95">More...</a><br /></td></tr>
-<tr class="separator:ga0f73c780e3eb7b86be65a1746ccc1c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b4d520b8fbf98436b255041f73b9a8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d">delay</a> (<a class="el" href="classhal_1_1counter.html">hal::counter</a> &amp;p_counter, <a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> p_duration) noexcept</td></tr>
-<tr class="memdesc:ga8b4d520b8fbf98436b255041f73b9a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay execution for a duration of time using a hardware counter.  <a href="group__counter.html#ga8b4d520b8fbf98436b255041f73b9a8d">More...</a><br /></td></tr>
-<tr class="separator:ga8b4d520b8fbf98436b255041f73b9a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa88cd03f91cf5b2ae267c13d6c86af18"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa88cd03f91cf5b2ae267c13d6c86af18">value</a> (enumeration auto p_enum_value) noexcept</td></tr>
 <tr class="memdesc:gaa88cd03f91cf5b2ae267c13d6c86af18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to convert an enum to its integral value.  <a href="group__utility.html#gaa88cd03f91cf5b2ae267c13d6c86af18">More...</a><br /></td></tr>
 <tr class="separator:gaa88cd03f91cf5b2ae267c13d6c86af18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557593a710d85719fff67b743268293a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a557593a710d85719fff67b743268293a">success</a> ()</td></tr>
+<tr class="memdesc:a557593a710d85719fff67b743268293a"><td class="mdescLeft">&#160;</td><td class="mdescRight">a readability function for returning successful results;  <a href="namespacehal.html#a557593a710d85719fff67b743268293a">More...</a><br /></td></tr>
+<tr class="separator:a557593a710d85719fff67b743268293a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a7de389180e282529be31044c0e57ae"><td class="memTemplParams" colspan="2">template&lt;class TryBlock , class... H&gt; </td></tr>
 <tr class="memitem:a9a7de389180e282529be31044c0e57ae"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacehal.html#a9a7de389180e282529be31044c0e57ae">attempt</a> (TryBlock &amp;&amp;p_try_block, H &amp;&amp;... p_handlers)</td></tr>
 <tr class="separator:a9a7de389180e282529be31044c0e57ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,9 +321,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0edbd3360d379f8c1864447f60a79271"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga0edbd3360d379f8c1864447f60a79271">equals</a> (std::floating_point auto p_value1, std::floating_point auto p_value2, float p_epsilon=1e-9f)</td></tr>
 <tr class="memdesc:ga0edbd3360d379f8c1864447f60a79271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if two values are equal within a relative error.  <a href="group__utility.html#ga0edbd3360d379f8c1864447f60a79271">More...</a><br /></td></tr>
 <tr class="separator:ga0edbd3360d379f8c1864447f60a79271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa5b03ce12092b1d95e5fc426c3bbf6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#gaaa5b03ce12092b1d95e5fc426c3bbf6d">write_partial</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out) noexcept</td></tr>
-<tr class="memdesc:gaaa5b03ce12092b1d95e5fc426c3bbf6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#gaaa5b03ce12092b1d95e5fc426c3bbf6d">More...</a><br /></td></tr>
-<tr class="separator:gaaa5b03ce12092b1d95e5fc426c3bbf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1serial_1_1write__t.html">serial::write_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">write_partial</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out) noexcept</td></tr>
+<tr class="memdesc:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">More...</a><br /></td></tr>
+<tr class="separator:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga58f116057547375e7bcdc6f29ef3786c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_in, timeout auto p_timeout) noexcept</td></tr>
 <tr class="memdesc:ga58f116057547375e7bcdc6f29ef3786c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from a serial port.  <a href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">More...</a><br /></td></tr>
 <tr class="separator:ga58f116057547375e7bcdc6f29ef3786c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,6 +355,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gae5414224d552a6e33ad7c7a49c44bc8b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::array&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a>, BytesToRead &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__spi.html#gae5414224d552a6e33ad7c7a49c44bc8b">write_then_read</a> (<a class="el" href="classhal_1_1spi.html">spi</a> &amp;p_spi, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out, <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> p_filler=<a class="el" href="classhal_1_1spi.html#a33e2442ae4061231938416efcf54b124">spi::default_filler</a>) noexcept</td></tr>
 <tr class="memdesc:gae5414224d552a6e33ad7c7a49c44bc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the SPI bus and ignore data sent from peripherals on the bus then read data from the SPI, fill the write line with filler bytes and return an array of bytes.  <a href="group__spi.html#gae5414224d552a6e33ad7c7a49c44bc8b">More...</a><br /></td></tr>
 <tr class="separator:gae5414224d552a6e33ad7c7a49c44bc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c92db3eb5ae3b8e67f16261a6f71d91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="classhal_1_1steady__clock__timeout.html">hal::steady_clock_timeout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__steady__clock.html#ga8c92db3eb5ae3b8e67f16261a6f71d91">create_timeout</a> (<a class="el" href="classhal_1_1steady__clock.html">hal::steady_clock</a> &amp;p_steady_clock, <a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a> p_duration)</td></tr>
+<tr class="memdesc:ga8c92db3eb5ae3b8e67f16261a6f71d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a timeout object based on <a class="el" href="classhal_1_1steady__clock.html" title="Hardware abstraction interface for a steady clock mechanism.">hal::steady_clock</a>.  <a href="group__steady__clock.html#ga8c92db3eb5ae3b8e67f16261a6f71d91">More...</a><br /></td></tr>
+<tr class="separator:ga8c92db3eb5ae3b8e67f16261a6f71d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80cd2610c280e615d52e03d83dad28f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__steady__clock.html#ga80cd2610c280e615d52e03d83dad28f6">delay</a> (<a class="el" href="classhal_1_1steady__clock.html">hal::steady_clock</a> &amp;p_steady_clock, <a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a> p_duration) noexcept</td></tr>
+<tr class="memdesc:ga80cd2610c280e615d52e03d83dad28f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay execution for a duration of time using a hardware <a class="el" href="classhal_1_1steady__clock.html" title="Hardware abstraction interface for a steady clock mechanism.">steady_clock</a>.  <a href="group__steady__clock.html#ga80cd2610c280e615d52e03d83dad28f6">More...</a><br /></td></tr>
+<tr class="separator:ga80cd2610c280e615d52e03d83dad28f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8077eaec8d8c94b949159f04582abc38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga8077eaec8d8c94b949159f04582abc38">delay</a> (timeout auto p_timeout) noexcept</td></tr>
 <tr class="memdesc:ga8077eaec8d8c94b949159f04582abc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the execution of the application or thread for a duration of time.  <a href="group__utility.html#ga8077eaec8d8c94b949159f04582abc38">More...</a><br /></td></tr>
 <tr class="separator:ga8077eaec8d8c94b949159f04582abc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,7 +371,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9e8c4111664297ec9a8af392a3ee03a4"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::array&lt; char, N+1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga9e8c4111664297ec9a8af392a3ee03a4">to_array</a> (std::string_view p_view) noexcept</td></tr>
 <tr class="memdesc:ga9e8c4111664297ec9a8af392a3ee03a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string_view into a std::array of N number of characters.  <a href="group__utility.html#ga9e8c4111664297ec9a8af392a3ee03a4">More...</a><br /></td></tr>
 <tr class="separator:ga9e8c4111664297ec9a8af392a3ee03a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="memItemLeft" align="right" valign="top">constexpr std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749">cycles_per</a> (<a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a> p_source, <a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> p_duration) noexcept</td></tr>
+<tr class="memitem:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="memItemLeft" align="right" valign="top">constexpr std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749">cycles_per</a> (<a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a> p_source, <a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a> p_duration) noexcept</td></tr>
 <tr class="memdesc:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the number of cycles of this frequency within the time duration. This function is meant for timers to determine how many count cycles are needed to reach a particular time duration at this frequency.  <a href="group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749">More...</a><br /></td></tr>
 <tr class="separator:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80ad6db29189e74fcb1a49dc801897b3"><td class="memTemplParams" colspan="2">template&lt;typename Period &gt; </td></tr>
@@ -385,20 +396,6 @@ template&lt;typename T , T value&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespacehal.html#aaa16a4dc9af5b4b625da1b21a118c2a1">hal::match</a> = typedef boost::leaf::match&lt;T, <a class="el" href="group__utility.html#gaa88cd03f91cf5b2ae267c13d6c86af18">value</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3655ebdcae8b4ebd8e68eb6fda1b898f" name="a3655ebdcae8b4ebd8e68eb6fda1b898f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3655ebdcae8b4ebd8e68eb6fda1b898f">&#9670;&nbsp;</a></span>percentage</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">hal::percentage</a> = typedef <a class="el" href="classhal_1_1percentage__t.html">percentage_t</a>&lt;float&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -436,6 +433,192 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a4e786d23767c6a5285a103f1a691d52e" name="a4e786d23767c6a5285a103f1a691d52e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e786d23767c6a5285a103f1a691d52e">&#9670;&nbsp;</a></span>as_bytes() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; hal::as_bytes </td>
+          <td>(</td>
+          <td class="paramtype">const convertible_to_bytes auto &amp;&#160;</td>
+          <td class="paramname"><em>p_container</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a4e786d23767c6a5285a103f1a691d52e_cgraph.svg" width="254" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a7facad0d80497e875c8fcb9a764ae278" name="a7facad0d80497e875c8fcb9a764ae278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7facad0d80497e875c8fcb9a764ae278">&#9670;&nbsp;</a></span>as_bytes() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; hal::as_bytes </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>p_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>p_number_of_elements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a7facad0d80497e875c8fcb9a764ae278_icgraph.svg" width="254" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aec4058f180c42bd84acc11283fe3069b" name="aec4058f180c42bd84acc11283fe3069b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec4058f180c42bd84acc11283fe3069b">&#9670;&nbsp;</a></span>as_bytes() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; hal::as_bytes </td>
+          <td>(</td>
+          <td class="paramtype">const T(&amp;)&#160;</td>
+          <td class="paramname"><em>array</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_aec4058f180c42bd84acc11283fe3069b_cgraph.svg" width="254" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8c57d270d9d9b47275f58a752c57e272" name="a8c57d270d9d9b47275f58a752c57e272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c57d270d9d9b47275f58a752c57e272">&#9670;&nbsp;</a></span>as_writable_bytes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; hal::as_writable_bytes </td>
+          <td>(</td>
+          <td class="paramtype">convertible_to_bytes auto &amp;&#160;</td>
+          <td class="paramname"><em>p_container</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a8c57d270d9d9b47275f58a752c57e272_cgraph.svg" width="358" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="abc5ba0c7349a43a7d68cc2960f871ebc" name="abc5ba0c7349a43a7d68cc2960f871ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5ba0c7349a43a7d68cc2960f871ebc">&#9670;&nbsp;</a></span>as_writable_bytes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; hal::as_writable_bytes </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>p_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>p_number_of_elements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_abc5ba0c7349a43a7d68cc2960f871ebc_icgraph.svg" width="358" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a9a7de389180e282529be31044c0e57ae" name="a9a7de389180e282529be31044c0e57ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9a7de389180e282529be31044c0e57ae">&#9670;&nbsp;</a></span>attempt()</h2>
 
@@ -677,7 +860,45 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a09499a696428213091b196699563099f_icgraph.svg" width="635" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a09499a696428213091b196699563099f_icgraph.svg" width="332" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a557593a710d85719fff67b743268293a" name="a557593a710d85719fff67b743268293a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557593a710d85719fff67b743268293a">&#9670;&nbsp;</a></span>success()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::success </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>a readability function for returning successful results; </p>
+<p >For functions that return <code>status</code>, rather than returning <code>{}</code> to default initialize the status object as "success", use this function to make it more clear to the reader.</p>
+<p >EXAMPLE: </p><pre class="fragment">status some_function() {
+   return success();
+}
+</pre> <dl class="section return"><dt>Returns</dt><dd>status - that is always successful </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a557593a710d85719fff67b743268293a_icgraph.svg" width="324" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

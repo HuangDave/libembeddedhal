@@ -2,5 +2,4 @@
 <area shape="rect" id="node1" title="Factory function to create a rc_servo object." alt="" coords="5,31,143,57"/>
 <area shape="rect" id="node2" href="$classhal_1_1pwm.html#a64c8e392db6e0fd690f02d02566fbb55" title="Set the pwm waveform frequency." alt="" coords="191,5,325,32"/>
 <area shape="rect" id="node3" href="$group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3" title="Calculates and returns the wavelength in seconds." alt="" coords="203,56,313,83"/>
-<area shape="rect" id="node4" href="$group__utility.html#ga0edbd3360d379f8c1864447f60a79271" title="Determines if two values are equal within a relative error." alt="" coords="373,56,456,83"/>
 </map>

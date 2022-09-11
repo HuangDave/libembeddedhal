@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: Utility</title>
+  <title>libhal: Utility</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -138,8 +138,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga8ca200d14bc94cb64c41994e2abb2401"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga8ca200d14bc94cb64c41994e2abb2401">hal::timeout_function</a> = <a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>(void)</td></tr>
 <tr class="memdesc:ga8ca200d14bc94cb64c41994e2abb2401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout is a callable object or function that signals to a procedure that the procedure has exceeded its time allotment and should return control to the calling function.  <a href="group__utility.html#ga8ca200d14bc94cb64c41994e2abb2401">More...</a><br /></td></tr>
 <tr class="separator:ga8ca200d14bc94cb64c41994e2abb2401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89e49ea6082c4753dbd3dbc61c16ed77"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> = std::chrono::duration&lt; std::int32_t, std::micro &gt;</td></tr>
-<tr class="separator:ga89e49ea6082c4753dbd3dbc61c16ed77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga858b08a6e4e3eb5752d8e0daaad5ed00"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a> = std::chrono::nanoseconds</td></tr>
+<tr class="memdesc:ga858b08a6e4e3eb5752d8e0daaad5ed00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The standard time durations in libhal std::chrono::nanoseconds.  <a href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">More...</a><br /></td></tr>
+<tr class="separator:ga858b08a6e4e3eb5752d8e0daaad5ed00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa21f8ca97410869aabb284a575b2021d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> = std::uint8_t</td></tr>
 <tr class="separator:gaa21f8ca97410869aabb284a575b2021d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54dc271deb8f266e52926836c0582598"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hal::hertz</a> = float</td></tr>
@@ -192,7 +193,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9e8c4111664297ec9a8af392a3ee03a4"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::array&lt; char, N+1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga9e8c4111664297ec9a8af392a3ee03a4">hal::to_array</a> (std::string_view p_view) noexcept</td></tr>
 <tr class="memdesc:ga9e8c4111664297ec9a8af392a3ee03a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string_view into a std::array of N number of characters.  <a href="group__utility.html#ga9e8c4111664297ec9a8af392a3ee03a4">More...</a><br /></td></tr>
 <tr class="separator:ga9e8c4111664297ec9a8af392a3ee03a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="memItemLeft" align="right" valign="top">constexpr std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749">hal::cycles_per</a> (<a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a> p_source, <a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> p_duration) noexcept</td></tr>
+<tr class="memitem:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="memItemLeft" align="right" valign="top">constexpr std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749">hal::cycles_per</a> (<a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a> p_source, <a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a> p_duration) noexcept</td></tr>
 <tr class="memdesc:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the number of cycles of this frequency within the time duration. This function is meant for timers to determine how many count cycles are needed to reach a particular time duration at this frequency.  <a href="group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749">More...</a><br /></td></tr>
 <tr class="separator:ga4f7dbaa1167fbee1c7a3387de676a749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80ad6db29189e74fcb1a49dc801897b3"><td class="memTemplParams" colspan="2">template&lt;typename Period &gt; </td></tr>
@@ -271,18 +272,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga89e49ea6082c4753dbd3dbc61c16ed77" name="ga89e49ea6082c4753dbd3dbc61c16ed77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga89e49ea6082c4753dbd3dbc61c16ed77">&#9670;&nbsp;</a></span>time_duration</h2>
+<a id="ga858b08a6e4e3eb5752d8e0daaad5ed00" name="ga858b08a6e4e3eb5752d8e0daaad5ed00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga858b08a6e4e3eb5752d8e0daaad5ed00">&#9670;&nbsp;</a></span>time_duration</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a> = typedef std::chrono::duration&lt;std::int32_t, std::micro&gt;</td>
+          <td class="memname">using <a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a> = typedef std::chrono::nanoseconds</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >The standard time durations in libhal is set to microseconds held within an std::int32_t integer. </p>
+
+<p>The standard time durations in libhal std::chrono::nanoseconds. </p>
 
 </div>
 </div>
@@ -379,7 +381,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77">hal::time_duration</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a>&#160;</td>
           <td class="paramname"><em>p_duration</em>&#160;</td>
         </tr>
         <tr>
@@ -404,12 +406,6 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::int64_t - number of cycles </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga4f7dbaa1167fbee1c7a3387de676a749_icgraph.svg" width="606" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 
 </div>
 </div>
@@ -563,12 +559,6 @@ Here is the call graph for this function:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gad3e3226fbdfad6db38eb093f1420489c_cgraph.svg" width="286" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_gad3e3226fbdfad6db38eb093f1420489c_icgraph.svg" width="318" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 
 </div>
 </div>
@@ -627,7 +617,7 @@ false - difference is more than epsilon </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga0edbd3360d379f8c1864447f60a79271_icgraph.svg" width="455" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga0edbd3360d379f8c1864447f60a79271_icgraph.svg" width="270" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1003,12 +993,6 @@ template&lt;typename Period &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::chrono::duration&lt;int64_t, Period&gt; - time based wavelength of the frequency. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__utility_ga80ad6db29189e74fcb1a49dc801897b3_cgraph.svg" width="252" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

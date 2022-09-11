@@ -1,0 +1,6 @@
+<map id="hal::steady_clock_timeout::create" name="hal::steady_clock_timeout::create">
+<area shape="rect" id="node1" title="Create a steady_clock_timeout." alt="" coords="5,71,176,112"/>
+<area shape="rect" id="node2" href="$classhal_1_1steady__clock.html#a1649f15f2c141378cb37ed3b5c5e9819" title=" " alt="" coords="246,5,373,47"/>
+<area shape="rect" id="node3" href="$classhal_1_1steady__clock__timeout.html#aa508fa6272c371739ecca4ff69babe41" title="Construct a new counter timeout object." alt="" coords="224,71,395,112"/>
+<area shape="rect" id="node4" href="$classhal_1_1steady__clock.html#acfb741df8313f6b67b9cbe5b425014b4" title=" " alt="" coords="246,136,373,177"/>
+</map>

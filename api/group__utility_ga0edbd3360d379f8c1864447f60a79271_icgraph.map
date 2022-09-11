@@ -1,11 +1,8 @@
 <map id="hal::equals" name="hal::equals">
-<area shape="rect" id="node1" title="Determines if two values are equal within a relative error." alt="" coords="367,177,449,203"/>
-<area shape="rect" id="node2" href="$classhal_1_1percentage__t.html#a8ced119c33c374397afc799002c4fdda" title=" " alt="" coords="191,5,318,47"/>
-<area shape="rect" id="node4" href="$structhal_1_1can_1_1settings.html#a469ea305bf23ad2bf66931880e118d6f" title="Operators ==." alt="" coords="195,71,314,112"/>
-<area shape="rect" id="node5" href="$structhal_1_1i2c_1_1settings.html#a14d2a0afad4c6c449af7b844da807427" title="Operators ==." alt="" coords="197,136,312,177"/>
-<area shape="rect" id="node6" href="$structhal_1_1serial_1_1settings.html#acbf8c6ea25f2304cd3a669844b5bc69f" title="Operators ==." alt="" coords="191,201,319,243"/>
-<area shape="rect" id="node7" href="$structhal_1_1spi_1_1settings.html#ad109043fce765ae6c8d6a70c6e6460ec" title="Operators ==." alt="" coords="197,267,312,308"/>
-<area shape="rect" id="node8" href="$group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3" title="Calculates and returns the wavelength in seconds." alt="" coords="199,333,310,359"/>
-<area shape="rect" id="node3" href="$classhal_1_1percentage__t.html#abbd93a131984685995ecd6e50aecd8f6" title=" " alt="" coords="11,5,137,47"/>
-<area shape="rect" id="node9" href="$classhal_1_1rc__servo.html#a4b6b2863a7ea2f9e426f32c89a29c8c5" title="Factory function to create a rc_servo object." alt="" coords="5,333,143,359"/>
+<area shape="rect" id="node1" title="Determines if two values are equal within a relative error." alt="" coords="181,143,264,170"/>
+<area shape="rect" id="node2" href="$structhal_1_1can_1_1settings.html#a469ea305bf23ad2bf66931880e118d6f" title="Operators ==." alt="" coords="10,5,129,47"/>
+<area shape="rect" id="node3" href="$structhal_1_1i2c_1_1settings.html#a14d2a0afad4c6c449af7b844da807427" title="Operators ==." alt="" coords="12,71,127,112"/>
+<area shape="rect" id="node4" href="$structhal_1_1serial_1_1settings.html#acbf8c6ea25f2304cd3a669844b5bc69f" title="Operators ==." alt="" coords="5,136,133,177"/>
+<area shape="rect" id="node5" href="$structhal_1_1spi_1_1settings.html#ad109043fce765ae6c8d6a70c6e6460ec" title="Operators ==." alt="" coords="12,201,127,243"/>
+<area shape="rect" id="node6" href="$group__utility.html#gac884b3e7857a710a51651bf449c5dd86" title="Calculates and returns the wavelength in seconds as a float." alt="" coords="14,267,125,294"/>
 </map>

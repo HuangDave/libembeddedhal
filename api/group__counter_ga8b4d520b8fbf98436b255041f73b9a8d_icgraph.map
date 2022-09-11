@@ -1,3 +1,0 @@
-<map id="hal::delay" name="hal::delay">
-<area shape="rect" id="node1" title="Delay execution for a duration of time using a hardware counter." alt="" coords="5,29,80,56"/>
-</map>

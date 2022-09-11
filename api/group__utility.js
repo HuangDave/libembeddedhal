@@ -29,7 +29,7 @@ var group__utility =
     [ "hal::g_force", "group__utility.html#gabc3d1451352ebbab2ab26f3dcbc51ed9", null ],
     [ "hal::hertz", "group__utility.html#ga54dc271deb8f266e52926836c0582598", null ],
     [ "hal::meters", "group__utility.html#ga309a799c0b8da9cd99fb5fad7c29208c", null ],
-    [ "hal::time_duration", "group__utility.html#ga89e49ea6082c4753dbd3dbc61c16ed77", null ],
+    [ "hal::time_duration", "group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00", null ],
     [ "hal::timeout_function", "group__utility.html#ga8ca200d14bc94cb64c41994e2abb2401", null ],
     [ "hal::absolute_value", "group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9", null ],
     [ "hal::cycles_per", "group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749", null ],

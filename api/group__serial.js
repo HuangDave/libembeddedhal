@@ -1,9 +1,11 @@
 var group__serial =
 [
     [ "hal::serial", "classhal_1_1serial.html", [
-      [ "bytes_available_t", "structhal_1_1serial_1_1bytes__available__t.html", [
-        [ "available", "structhal_1_1serial_1_1bytes__available__t.html#af24237f5f53877eb23b02f10e2230da1", null ],
-        [ "capacity", "structhal_1_1serial_1_1bytes__available__t.html#af9ff9f93c1d03d9637187b2dff49d4e0", null ]
+      [ "read_t", "structhal_1_1serial_1_1read__t.html", [
+        [ "available", "structhal_1_1serial_1_1read__t.html#a9a65d6dc025b66913775eb8ef4874eaf", null ],
+        [ "capacity", "structhal_1_1serial_1_1read__t.html#a771e05da8e08a309dd66c983e93ded60", null ],
+        [ "received", "structhal_1_1serial_1_1read__t.html#ae8589060cf894006b629a82c4d86b882", null ],
+        [ "remaining", "structhal_1_1serial_1_1read__t.html#a220533b1f5a4adc955837fc93dfad503", null ]
       ] ],
       [ "settings", "structhal_1_1serial_1_1settings.html", [
         [ "parity", "structhal_1_1serial_1_1settings.html#aee797087091653ae671994c28528e1b1", [
@@ -23,15 +25,18 @@ var group__serial =
         [ "parity", "structhal_1_1serial_1_1settings.html#a3258bc17846d6170f9f6603fe3de3006", null ],
         [ "stop", "structhal_1_1serial_1_1settings.html#ab1962693d243656902829372fdaddd93", null ]
       ] ],
-      [ "bytes_available", "classhal_1_1serial.html#a05b027b5f5d575aa5d47f98a42010b78", null ],
+      [ "write_t", "structhal_1_1serial_1_1write__t.html", [
+        [ "remaining", "structhal_1_1serial_1_1write__t.html#afe529ee689b39f53b628073b263916cb", null ],
+        [ "transmitted", "structhal_1_1serial_1_1write__t.html#a17f7f6dd1083b7f1c1dac4c677b8de58", null ]
+      ] ],
       [ "configure", "classhal_1_1serial.html#ad3d247776562df9621fd002333677ca5", null ],
       [ "flush", "classhal_1_1serial.html#a808aec1ec3948baf8b55d115fc3a17da", null ],
-      [ "read", "classhal_1_1serial.html#a245de557152f925be91ff552535ed53a", null ],
-      [ "write", "classhal_1_1serial.html#a6ba7623501b3dc5c467bb91cf4cb8c60", null ]
+      [ "read", "classhal_1_1serial.html#a4fd7b08d681d44a13e2ef5d7254263e6", null ],
+      [ "write", "classhal_1_1serial.html#a8bf08705c18e054e7788a551b3e7742e", null ]
     ] ],
     [ "hal::read", "group__serial.html#ga58f116057547375e7bcdc6f29ef3786c", null ],
     [ "hal::read", "group__serial.html#ga1a286f05a92dbc946d4e0a79db6683da", null ],
-    [ "hal::write_partial", "group__serial.html#gaaa5b03ce12092b1d95e5fc426c3bbf6d", null ],
+    [ "hal::write_partial", "group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962", null ],
     [ "hal::write_then_read", "group__serial.html#ga2d9abf5cca98ceab03b2bcae88c8231a", null ],
     [ "hal::write_then_read", "group__serial.html#gaa56cced130d5fe0233e0035616209b52", null ]
 ];

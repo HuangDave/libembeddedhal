@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trigger_0',['trigger',['../structhal_1_1interrupt__pin_1_1settings.html#a0550a3974283296feb9c07c24f6f88ac',1,'hal::interrupt_pin::settings']]]
+  ['write_5frecord_0',['write_record',['../structhal_1_1mock_1_1write__only__spi.html#aeee238a30c3170666faba97c8555099c',1,'hal::mock::write_only_spi']]]
 ];

@@ -1,21 +1,21 @@
 <map id="/github/workspace/include/libhal" name="/github/workspace/include/libhal">
-<area shape="rect" id="node2" href="dir_760cf9f2e29fdfaf39859eff3eda63b7.html" title="adc" alt="" coords="1125,63,1197,111"/>
-<area shape="rect" id="node3" href="dir_2f5068785988f516822d761fe16d825f.html" title="can" alt="" coords="1029,63,1101,111"/>
-<area shape="rect" id="node4" href="dir_f9c1af1af619c9a49b19e8c97dd52d62.html" title="counter" alt="" coords="933,63,1005,111"/>
-<area shape="rect" id="node5" href="dir_98d4b174cb46c6ac17649649dfdb4b33.html" title="dac" alt="" coords="837,63,909,111"/>
-<area shape="rect" id="node6" href="dir_6f76471a93761b4e094be6eeb81723a9.html" title="i2c" alt="" coords="741,63,813,111"/>
-<area shape="rect" id="node7" href="dir_db2548d0b28832a13bb2343f2aacd6e9.html" title="input_pin" alt="" coords="529,159,604,207"/>
-<area shape="rect" id="node8" href="dir_5b2c9e9d78f68f88c2fc294cf0766c78.html" title="interrupt_pin" alt="" coords="624,63,717,111"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000008_000007.html" title="1" alt="" coords="607,145,615,160"/>
-<area shape="rect" id="node9" href="dir_fcd238e3841b1690f4c3a80c89919e4e.html" title="motor" alt="" coords="528,63,600,111"/>
-<area shape="rect" id="node10" href="dir_e096103ef1381f9eab03149936094d80.html" title="output_pin" alt="" coords="421,63,504,111"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000011_000007.html" title="1" alt="" coords="529,133,537,147"/>
-<area shape="rect" id="node11" href="dir_682b10d87ee4d63011575fde6658375d.html" title="pwm" alt="" coords="229,159,301,207"/>
-<area shape="rect" id="node12" href="dir_ae7f3d9437384d5d0cf8a0d75335f597.html" title="serial" alt="" coords="325,63,397,111"/>
-<area shape="rect" id="node13" href="dir_39b37ccde8b9e5cc002bbe6ba530bb6e.html" title="servo" alt="" coords="229,63,301,111"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000014_000012.html" title="1" alt="" coords="270,133,278,148"/>
-<area shape="rect" id="node14" href="dir_bd7c36f4df99d4c2b92bd82d9a68b893.html" title="spi" alt="" coords="133,63,205,111"/>
+<area shape="rect" id="node2" href="dir_760cf9f2e29fdfaf39859eff3eda63b7.html" title="adc" alt="" coords="1152,63,1224,111"/>
+<area shape="rect" id="node3" href="dir_2f5068785988f516822d761fe16d825f.html" title="can" alt="" coords="1056,63,1128,111"/>
+<area shape="rect" id="node4" href="dir_98d4b174cb46c6ac17649649dfdb4b33.html" title="dac" alt="" coords="960,63,1032,111"/>
+<area shape="rect" id="node5" href="dir_6f76471a93761b4e094be6eeb81723a9.html" title="i2c" alt="" coords="864,63,936,111"/>
+<area shape="rect" id="node6" href="dir_db2548d0b28832a13bb2343f2aacd6e9.html" title="input_pin" alt="" coords="652,159,727,207"/>
+<area shape="rect" id="node7" href="dir_5b2c9e9d78f68f88c2fc294cf0766c78.html" title="interrupt_pin" alt="" coords="747,63,840,111"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000007_000006.html" title="1" alt="" coords="730,145,738,160"/>
+<area shape="rect" id="node8" href="dir_fcd238e3841b1690f4c3a80c89919e4e.html" title="motor" alt="" coords="651,63,723,111"/>
+<area shape="rect" id="node9" href="dir_e096103ef1381f9eab03149936094d80.html" title="output_pin" alt="" coords="544,63,627,111"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000010_000006.html" title="1" alt="" coords="652,133,660,147"/>
+<area shape="rect" id="node10" href="dir_682b10d87ee4d63011575fde6658375d.html" title="pwm" alt="" coords="352,159,424,207"/>
+<area shape="rect" id="node11" href="dir_ae7f3d9437384d5d0cf8a0d75335f597.html" title="serial" alt="" coords="448,63,520,111"/>
+<area shape="rect" id="node12" href="dir_39b37ccde8b9e5cc002bbe6ba530bb6e.html" title="servo" alt="" coords="352,63,424,111"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000013_000011.html" title="1" alt="" coords="392,133,400,148"/>
+<area shape="rect" id="node13" href="dir_bd7c36f4df99d4c2b92bd82d9a68b893.html" title="spi" alt="" coords="256,63,328,111"/>
+<area shape="rect" id="node14" href="dir_ade55ffdd4604fb559c18178634a20fb.html" title="steady_clock" alt="" coords="133,63,232,111"/>
 <area shape="rect" id="node15" href="dir_81e5849e9c890799da201f6a87e8f4ff.html" title="timer" alt="" coords="37,63,109,111"/>
-<area shape="rect" id="clust2" href="dir_6f6138918d4430761755642443839fe1.html" alt="" coords="27,52,1304,217"/>
-<area shape="rect" id="clust1" href="dir_d44c64559bbebec7f509842c48db8b23.html" title="include" alt="" coords="16,16,1315,228"/>
+<area shape="rect" id="clust2" href="dir_6f6138918d4430761755642443839fe1.html" alt="" coords="27,52,1331,217"/>
+<area shape="rect" id="clust1" href="dir_d44c64559bbebec7f509842c48db8b23.html" title="include" alt="" coords="16,16,1341,228"/>
 </map>

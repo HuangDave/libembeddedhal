@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
+  [ "libhal", "index.html", [
     [ "API Documentation", "index.html", [
       [ "Modules", "index.html#autotoc_md1", null ]
     ] ],
@@ -65,7 +65,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adc_2interface_8hpp.html",
-"group__utility.html#gaa88cd03f91cf5b2ae267c13d6c86af18"
+"motor_2mock_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

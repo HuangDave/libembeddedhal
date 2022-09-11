@@ -1,0 +1,6 @@
+<map id="hal::steady_clock_timeout::operator()" name="hal::steady_clock_timeout::operator()">
+<area shape="rect" id="node1" title="Call this object to check if it has timed out." alt="" coords="5,73,176,114"/>
+<area shape="rect" id="node2" href="$namespacehal.html#a09499a696428213091b196699563099f" title=" " alt="" coords="236,29,339,56"/>
+<area shape="rect" id="node3" href="$namespacehal.html#a557593a710d85719fff67b743268293a" title="a readability function for returning successful results;" alt="" coords="240,80,335,107"/>
+<area shape="rect" id="node4" href="$classhal_1_1steady__clock.html#acfb741df8313f6b67b9cbe5b425014b4" title=" " alt="" coords="224,131,351,173"/>
+</map>

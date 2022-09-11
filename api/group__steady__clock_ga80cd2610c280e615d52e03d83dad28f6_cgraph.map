@@ -1,0 +1,8 @@
+<map id="hal::delay" name="hal::delay">
+<area shape="rect" id="node1" title="Delay execution for a duration of time using a hardware steady_clock." alt="" coords="5,78,80,105"/>
+<area shape="rect" id="node2" href="$group__steady__clock.html#ga8c92db3eb5ae3b8e67f16261a6f71d91" title="Create a timeout object based on hal::steady_clock." alt="" coords="128,78,259,105"/>
+<area shape="rect" id="node3" href="$classhal_1_1steady__clock__timeout.html#a99c29478d0ba4dbe114bb644ae060398" title="Create a steady_clock_timeout." alt="" coords="307,71,477,112"/>
+<area shape="rect" id="node4" href="$classhal_1_1steady__clock.html#a1649f15f2c141378cb37ed3b5c5e9819" title=" " alt="" coords="547,5,674,47"/>
+<area shape="rect" id="node5" href="$classhal_1_1steady__clock__timeout.html#aa508fa6272c371739ecca4ff69babe41" title="Construct a new counter timeout object." alt="" coords="525,71,696,112"/>
+<area shape="rect" id="node6" href="$classhal_1_1steady__clock.html#acfb741df8313f6b67b9cbe5b425014b4" title=" " alt="" coords="547,136,674,177"/>
+</map>

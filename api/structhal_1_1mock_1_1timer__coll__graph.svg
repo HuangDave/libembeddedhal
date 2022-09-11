@@ -65,7 +65,7 @@
 <title>Node4&#45;&gt;Node1</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M143.46,-16.29C170.51,-19.77 201.54,-25.07 229,-33 243.2,-37.1 258.44,-43.88 269.87,-49.5"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="143.66,-12.78 133.31,-15.04 142.81,-19.73 143.66,-12.78"/>
-<text text-anchor="middle" x="196.5" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00"> spy_clear</text>
+<text text-anchor="middle" x="196.5" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00"> spy_cancel</text>
 <text text-anchor="middle" x="196.5" y="-36" font-family="Helvetica,sans-Serif" font-size="10.00">spy_is_running</text>
 </g>
 </g>

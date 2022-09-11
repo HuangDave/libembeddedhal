@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['percentage_0',['percentage',['../namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f',1,'hal']]]
+  ['result_0',['result',['../namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401',1,'hal']]]
 ];

@@ -4,7 +4,7 @@ var units_8hpp =
     [ "g_force", "units_8hpp.html#gabc3d1451352ebbab2ab26f3dcbc51ed9", null ],
     [ "hertz", "units_8hpp.html#ga54dc271deb8f266e52926836c0582598", null ],
     [ "meters", "units_8hpp.html#ga309a799c0b8da9cd99fb5fad7c29208c", null ],
-    [ "time_duration", "units_8hpp.html#ga89e49ea6082c4753dbd3dbc61c16ed77", null ],
+    [ "time_duration", "units_8hpp.html#ga858b08a6e4e3eb5752d8e0daaad5ed00", null ],
     [ "cycles_per", "units_8hpp.html#ga4f7dbaa1167fbee1c7a3387de676a749", null ],
     [ "duration_from_cycles", "units_8hpp.html#gad3e3226fbdfad6db38eb093f1420489c", null ],
     [ "operator\"\"_g", "units_8hpp.html#a06582cce5597d61768bd68bcd355fe05", null ],

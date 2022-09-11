@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: hal::pwm Class Reference</title>
+  <title>libhal: hal::pwm Class Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -115,9 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a64c8e392db6e0fd690f02d02566fbb55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1pwm.html#a64c8e392db6e0fd690f02d02566fbb55">frequency</a> (<a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a> p_frequency) noexcept</td></tr>
 <tr class="memdesc:a64c8e392db6e0fd690f02d02566fbb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pwm waveform frequency.  <a href="classhal_1_1pwm.html#a64c8e392db6e0fd690f02d02566fbb55">More...</a><br /></td></tr>
 <tr class="separator:a64c8e392db6e0fd690f02d02566fbb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a177f8c517382f93e309b43e5cf7cf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1pwm.html#a0a177f8c517382f93e309b43e5cf7cf6">duty_cycle</a> (<a class="el" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a> p_duty_cycle) noexcept</td></tr>
-<tr class="memdesc:a0a177f8c517382f93e309b43e5cf7cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pwm waveform duty cycle.  <a href="classhal_1_1pwm.html#a0a177f8c517382f93e309b43e5cf7cf6">More...</a><br /></td></tr>
-<tr class="separator:a0a177f8c517382f93e309b43e5cf7cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c22bfb45a2602474ffd757f4144db4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1pwm.html#a58c22bfb45a2602474ffd757f4144db4">duty_cycle</a> (float p_duty_cycle) noexcept</td></tr>
+<tr class="memdesc:a58c22bfb45a2602474ffd757f4144db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pwm waveform duty cycle.  <a href="classhal_1_1pwm.html#a58c22bfb45a2602474ffd757f4144db4">More...</a><br /></td></tr>
+<tr class="separator:a58c22bfb45a2602474ffd757f4144db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Pulse Width Modulation (PWM) channel hardware abstraction. </p>
@@ -136,12 +136,12 @@ Public Member Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line"> If each segment is 1us then the <a class="code hl_function" href="group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3">wavelength</a> is 25us</div>
 <div class="line"> Thus <a class="code hl_function" href="classhal_1_1pwm.html#a64c8e392db6e0fd690f02d02566fbb55">frequency</a> is (1 / 25us) = 40kHz</div>
-<div class="ttc" id="aclasshal_1_1pwm_html_a64c8e392db6e0fd690f02d02566fbb55"><div class="ttname"><a href="classhal_1_1pwm.html#a64c8e392db6e0fd690f02d02566fbb55">hal::pwm::frequency</a></div><div class="ttdeci">status frequency(hertz p_frequency) noexcept</div><div class="ttdoc">Set the pwm waveform frequency.</div><div class="ttdef"><b>Definition:</b> interface.hpp:57</div></div>
+<div class="ttc" id="aclasshal_1_1pwm_html_a64c8e392db6e0fd690f02d02566fbb55"><div class="ttname"><a href="classhal_1_1pwm.html#a64c8e392db6e0fd690f02d02566fbb55">hal::pwm::frequency</a></div><div class="ttdeci">status frequency(hertz p_frequency) noexcept</div><div class="ttdoc">Set the pwm waveform frequency.</div><div class="ttdef"><b>Definition:</b> interface.hpp:56</div></div>
 <div class="ttc" id="agroup__utility_html_ga80ad6db29189e74fcb1a49dc801897b3"><div class="ttname"><a href="group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3">hal::wavelength</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; int64_t, Period &gt; wavelength(hertz p_source)</div><div class="ttdoc">Calculates and returns the wavelength in seconds.</div><div class="ttdef"><b>Definition:</b> units.hpp:155</div></div>
 </div><!-- fragment --><p >PWM is used for power control like motor control, lighting, transmitting signals to servos, sending telemetry and much more. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0a177f8c517382f93e309b43e5cf7cf6" name="a0a177f8c517382f93e309b43e5cf7cf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a177f8c517382f93e309b43e5cf7cf6">&#9670;&nbsp;</a></span>duty_cycle()</h2>
+<a id="a58c22bfb45a2602474ffd757f4144db4" name="a58c22bfb45a2602474ffd757f4144db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c22bfb45a2602474ffd757f4144db4">&#9670;&nbsp;</a></span>duty_cycle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,7 +152,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::pwm::duty_cycle </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a>&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>p_duty_cycle</em></td><td>)</td>
           <td></td>
         </tr>

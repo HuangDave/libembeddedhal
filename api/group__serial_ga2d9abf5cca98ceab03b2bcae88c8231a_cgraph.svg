@@ -36,7 +36,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="group__serial.html#gaaa5b03ce12092b1d95e5fc426c3bbf6d" target="_top" xlink:title="Write bytes to a serial port.">
+<g id="a_node4"><a xlink:href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962" target="_top" xlink:title="Write bytes to a serial port.">
 <polygon fill="white" stroke="black" points="139,-0.5 139,-19.5 225,-19.5 225,-0.5 139,-0.5"/>
 <text text-anchor="middle" x="182" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal::write_partial</text>
 </a>

@@ -1,0 +1,7 @@
+<map id="hal::steady_clock::uptime" name="hal::steady_clock::uptime">
+<area shape="rect" id="node1" title=" " alt="" coords="525,55,652,97"/>
+<area shape="rect" id="node2" href="$classhal_1_1steady__clock__timeout.html#a99c29478d0ba4dbe114bb644ae060398" title="Create a steady_clock_timeout." alt="" coords="307,22,477,63"/>
+<area shape="rect" id="node5" href="$classhal_1_1steady__clock__timeout.html#a32ed45d3e33492a6c5c9370edf97ac1d" title="Call this object to check if it has timed out." alt="" coords="307,87,477,129"/>
+<area shape="rect" id="node3" href="$group__steady__clock.html#ga8c92db3eb5ae3b8e67f16261a6f71d91" title="Create a timeout object based on hal::steady_clock." alt="" coords="128,29,259,56"/>
+<area shape="rect" id="node4" href="$group__steady__clock.html#ga80cd2610c280e615d52e03d83dad28f6" title="Delay execution for a duration of time using a hardware steady_clock." alt="" coords="5,29,80,56"/>
+</map>

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: hal::timer Class Reference</title>
+  <title>libhal: hal::timer Class Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -122,19 +122,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f93345e114f4a45c70e711d386d1224"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#a8f93345e114f4a45c70e711d386d1224">is_running</a> () noexcept</td></tr>
 <tr class="memdesc:a8f93345e114f4a45c70e711d386d1224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the timer is currently running.  <a href="classhal_1_1timer.html#a8f93345e114f4a45c70e711d386d1224">More...</a><br /></td></tr>
 <tr class="separator:a8f93345e114f4a45c70e711d386d1224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf8a4681cd268134c41d420b1c777101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#abf8a4681cd268134c41d420b1c777101">clear</a> () noexcept</td></tr>
-<tr class="memdesc:abf8a4681cd268134c41d420b1c777101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops a scheduled event from happening.  <a href="classhal_1_1timer.html#abf8a4681cd268134c41d420b1c777101">More...</a><br /></td></tr>
-<tr class="separator:abf8a4681cd268134c41d420b1c777101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ef34e20e30547e377e6c061fad79f07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#a6ef34e20e30547e377e6c061fad79f07">schedule</a> (std::function&lt; void(void)&gt; p_callback, std::chrono::nanoseconds p_delay) noexcept</td></tr>
-<tr class="memdesc:a6ef34e20e30547e377e6c061fad79f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an callback to be called at a designated time/interval.  <a href="classhal_1_1timer.html#a6ef34e20e30547e377e6c061fad79f07">More...</a><br /></td></tr>
-<tr class="separator:a6ef34e20e30547e377e6c061fad79f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f5a2b63c3cef43ee2b40d621c6ca1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#a80f5a2b63c3cef43ee2b40d621c6ca1a">cancel</a> () noexcept</td></tr>
+<tr class="memdesc:a80f5a2b63c3cef43ee2b40d621c6ca1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops a scheduled event from happening.  <a href="classhal_1_1timer.html#a80f5a2b63c3cef43ee2b40d621c6ca1a">More...</a><br /></td></tr>
+<tr class="separator:a80f5a2b63c3cef43ee2b40d621c6ca1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9686e3308b95d3ad2d2f3110e2a1734c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#a9686e3308b95d3ad2d2f3110e2a1734c">schedule</a> (std::function&lt; void(void)&gt; p_callback, <a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a> p_delay) noexcept</td></tr>
+<tr class="memdesc:a9686e3308b95d3ad2d2f3110e2a1734c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an callback be be executed after the delay time.  <a href="classhal_1_1timer.html#a9686e3308b95d3ad2d2f3110e2a1734c">More...</a><br /></td></tr>
+<tr class="separator:a9686e3308b95d3ad2d2f3110e2a1734c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Timer hardware abstraction interface. </p>
-<p >Use this interface for devices and peripherals that have timer like capabilities, such that, when a timer's time has expired, an event/interrupt/signal is generated. </p>
+<p >Use this interface for devices and peripherals that have timer like capabilities, such that, when a timer's time has expired, an event, interrupt, or signal is generated.</p>
+<p >Timer drivers tick period must be an integer multiple of 1 nanosecond, meaning that the only tick period allowed are 1ns, 2ns, up to the maximum holdable in a std::chrono::nanosecond type. sub-nanosecond tick periods are not allowed. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="abf8a4681cd268134c41d420b1c777101" name="abf8a4681cd268134c41d420b1c777101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf8a4681cd268134c41d420b1c777101">&#9670;&nbsp;</a></span>clear()</h2>
+<a id="a80f5a2b63c3cef43ee2b40d621c6ca1a" name="a80f5a2b63c3cef43ee2b40d621c6ca1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f5a2b63c3cef43ee2b40d621c6ca1a">&#9670;&nbsp;</a></span>cancel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +144,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::timer::clear </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::timer::cancel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -193,8 +194,8 @@ result&lt;bool&gt; - driver specific error, if any. </dd></dl>
 
 </div>
 </div>
-<a id="a6ef34e20e30547e377e6c061fad79f07" name="a6ef34e20e30547e377e6c061fad79f07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ef34e20e30547e377e6c061fad79f07">&#9670;&nbsp;</a></span>schedule()</h2>
+<a id="a9686e3308b95d3ad2d2f3110e2a1734c" name="a9686e3308b95d3ad2d2f3110e2a1734c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9686e3308b95d3ad2d2f3110e2a1734c">&#9670;&nbsp;</a></span>schedule()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,7 +212,7 @@ result&lt;bool&gt; - driver specific error, if any. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::chrono::nanoseconds&#160;</td>
+          <td class="paramtype"><a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a>&#160;</td>
           <td class="paramname"><em>p_delay</em>&#160;</td>
         </tr>
         <tr>
@@ -227,19 +228,21 @@ result&lt;bool&gt; - driver specific error, if any. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Schedule an callback to be called at a designated time/interval. </p>
-<p >If this is called and the timer has already scheduled an event (in other words, <a class="el" href="classhal_1_1timer.html#a8f93345e114f4a45c70e711d386d1224" title="Determine if the timer is currently running.">is_running()</a> returns true), then the previous scheduled event will be cleared and the new scheduled event will be started.</p>
+<p>Schedule an callback be be executed after the delay time. </p>
+<p >If this is called and the timer has already scheduled an event (in other words, <code><a class="el" href="classhal_1_1timer.html#a8f93345e114f4a45c70e711d386d1224" title="Determine if the timer is currently running.">is_running()</a></code> returns true), then the previous scheduled event will be canceled and the new scheduled event will be started.</p>
+<p >If the delay time result in a tick period of 0, then the timer will execute after 1 tick period. For example, if the tick period is 1ms and the requested time delay is 500us, then the event will be scheduled for 1ms.</p>
+<p >If the tick period is 1ms and the requested time is 2.5ms then the event will be scheduled after 2 tick periods or in 2ms.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_callback</td><td>- callback function to be called when the timer expires </td></tr>
-    <tr><td class="paramname">p_delay</td><td>- the amount of time before the timer expires </td></tr>
+    <tr><td class="paramname">p_delay</td><td>- the amount of time until the timer expires </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status - success or failure </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="structhal_1_1timer_1_1out__of__bounds.html" title="Error type indicating that the desired time delay is not achievable with this timer.">out_of_bounds</a></td><td>- if p_interval cannot be achieved. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structhal_1_1timer_1_1out__of__bounds.html" title="Error type indicating that the desired time delay is not achievable with this timer.">out_of_bounds</a></td><td>- if p_interval is greater than what can be cannot be achieved </td></tr>
   </table>
   </dd>
 </dl>

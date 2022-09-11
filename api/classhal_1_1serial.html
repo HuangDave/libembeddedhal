@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: hal::serial Class Reference</title>
+  <title>libhal: hal::serial Class Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -107,10 +107,14 @@ $(document).ready(function(){initNavTree('classhal_1_1serial.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1serial_1_1bytes__available__t.html">bytes_available_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1serial_1_1read__t.html">read_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for serial read operations.  <a href="structhal_1_1serial_1_1read__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1serial_1_1settings.html">settings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic settings for a standard serial device.  <a href="structhal_1_1serial_1_1settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1serial_1_1write__t.html">write_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for serial write operations.  <a href="structhal_1_1serial_1_1write__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -118,15 +122,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3d247776562df9621fd002333677ca5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1serial.html#ad3d247776562df9621fd002333677ca5">configure</a> (const <a class="el" href="structhal_1_1serial_1_1settings.html">settings</a> &amp;p_settings) noexcept</td></tr>
 <tr class="memdesc:ad3d247776562df9621fd002333677ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure serial to match the settings supplied.  <a href="classhal_1_1serial.html#ad3d247776562df9621fd002333677ca5">More...</a><br /></td></tr>
 <tr class="separator:ad3d247776562df9621fd002333677ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba7623501b3dc5c467bb91cf4cb8c60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1serial.html#a6ba7623501b3dc5c467bb91cf4cb8c60">write</a> (std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data) noexcept</td></tr>
-<tr class="memdesc:a6ba7623501b3dc5c467bb91cf4cb8c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the transmitter line of the serial port.  <a href="classhal_1_1serial.html#a6ba7623501b3dc5c467bb91cf4cb8c60">More...</a><br /></td></tr>
-<tr class="separator:a6ba7623501b3dc5c467bb91cf4cb8c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05b027b5f5d575aa5d47f98a42010b78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhal_1_1serial_1_1bytes__available__t.html">bytes_available_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1serial.html#a05b027b5f5d575aa5d47f98a42010b78">bytes_available</a> () noexcept</td></tr>
-<tr class="memdesc:a05b027b5f5d575aa5d47f98a42010b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes that have been buffered.  <a href="classhal_1_1serial.html#a05b027b5f5d575aa5d47f98a42010b78">More...</a><br /></td></tr>
-<tr class="separator:a05b027b5f5d575aa5d47f98a42010b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a245de557152f925be91ff552535ed53a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1serial.html#a245de557152f925be91ff552535ed53a">read</a> (std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data) noexcept</td></tr>
-<tr class="memdesc:a245de557152f925be91ff552535ed53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy bytes from working buffer into passed buffer.  <a href="classhal_1_1serial.html#a245de557152f925be91ff552535ed53a">More...</a><br /></td></tr>
-<tr class="separator:a245de557152f925be91ff552535ed53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf08705c18e054e7788a551b3e7742e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1serial_1_1write__t.html">write_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1serial.html#a8bf08705c18e054e7788a551b3e7742e">write</a> (std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data) noexcept</td></tr>
+<tr class="memdesc:a8bf08705c18e054e7788a551b3e7742e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the transmitter line of the serial port.  <a href="classhal_1_1serial.html#a8bf08705c18e054e7788a551b3e7742e">More...</a><br /></td></tr>
+<tr class="separator:a8bf08705c18e054e7788a551b3e7742e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd7b08d681d44a13e2ef5d7254263e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1serial_1_1read__t.html">read_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1serial.html#a4fd7b08d681d44a13e2ef5d7254263e6">read</a> (std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data) noexcept</td></tr>
+<tr class="memdesc:a4fd7b08d681d44a13e2ef5d7254263e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy bytes from working buffer into passed buffer.  <a href="classhal_1_1serial.html#a4fd7b08d681d44a13e2ef5d7254263e6">More...</a><br /></td></tr>
+<tr class="separator:a4fd7b08d681d44a13e2ef5d7254263e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a808aec1ec3948baf8b55d115fc3a17da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1serial.html#a808aec1ec3948baf8b55d115fc3a17da">flush</a> () noexcept</td></tr>
 <tr class="memdesc:a808aec1ec3948baf8b55d115fc3a17da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush working buffer.  <a href="classhal_1_1serial.html#a808aec1ec3948baf8b55d115fc3a17da">More...</a><br /></td></tr>
 <tr class="separator:a808aec1ec3948baf8b55d115fc3a17da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,34 +144,6 @@ Public Member Functions</h2></td></tr>
 <li>Using interrupts when a serial peripheral's queue has filled to a point </li>
 </ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a05b027b5f5d575aa5d47f98a42010b78" name="a05b027b5f5d575aa5d47f98a42010b78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05b027b5f5d575aa5d47f98a42010b78">&#9670;&nbsp;</a></span>bytes_available()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structhal_1_1serial_1_1bytes__available__t.html">bytes_available_t</a> hal::serial::bytes_available </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The number of bytes that have been buffered. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structhal_1_1serial_1_1bytes__available__t.html">bytes_available_t</a> - number of bytes that can be read out of this serial port as well as the capacity of the serial port. </dd></dl>
-
-</div>
-</div>
 <a id="ad3d247776562df9621fd002333677ca5" name="ad3d247776562df9621fd002333677ca5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3d247776562df9621fd002333677ca5">&#9670;&nbsp;</a></span>configure()</h2>
 
@@ -239,17 +212,16 @@ Public Member Functions</h2></td></tr>
 <p>Flush working buffer. </p>
 <p >The behavior of flushing the internal working buffer is this:</p>
 <ul>
-<li>Set the internal circular buffer implementation to an "empty" state.</li>
-<li>After this call, so long as data is not received at the same time, <a class="el" href="classhal_1_1serial.html#a05b027b5f5d575aa5d47f98a42010b78" title="The number of bytes that have been buffered.">bytes_available()</a> will report to zero bytes</li>
-<li>Will clear any received data stored in hardware registers.</li>
-<li>Will ensure that this operation is as fast as possible, meaning it will not zero out the contents of the internal working buffer.</li>
+<li>Sets the serial port's internal working buffer to an "empty" state.</li>
+<li>Clear any received data stored in hardware registers.</li>
+<li>Use the fastest available option to perform these operations, meaning that the contents of the internal working buffer will not be zeroed out.</li>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>status - success or failure </dd></dl>
 
 </div>
 </div>
-<a id="a245de557152f925be91ff552535ed53a" name="a245de557152f925be91ff552535ed53a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a245de557152f925be91ff552535ed53a">&#9670;&nbsp;</a></span>read()</h2>
+<a id="a4fd7b08d681d44a13e2ef5d7254263e6" name="a4fd7b08d681d44a13e2ef5d7254263e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd7b08d681d44a13e2ef5d7254263e6">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +230,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; &gt; hal::serial::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1serial_1_1read__t.html">read_t</a> &gt; hal::serial::read </td>
           <td>(</td>
           <td class="paramtype">std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt;&#160;</td>
           <td class="paramname"><em>p_data</em></td><td>)</td>
@@ -273,16 +245,17 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Copy bytes from working buffer into passed buffer. </p>
-<p >This operation copies the bytes from the serial driver's internal working buffer to the buffer supplied. This call will subtract from the number returned from <a class="el" href="classhal_1_1serial.html#a05b027b5f5d575aa5d47f98a42010b78" title="The number of bytes that have been buffered.">bytes_available()</a> function.</p>
-<p >If the length of this buffer is greater than bytes available, then the buffer is filled up to the length returned by <a class="el" href="classhal_1_1serial.html#a05b027b5f5d575aa5d47f98a42010b78" title="The number of bytes that have been buffered.">bytes_available()</a>. The rest of the buffer is left untouched.</p>
-<p >If a frame error has occurred at any point during serial reception, this function will throw a <code>std::errc::io_error</code> value. The contents of the internal working buffer as well as the values for bytes_available will stay the same with no copy into the supplied buffered taking place. The frame error will be internally cleared after its occurrence. A subsequent call to <a class="el" href="classhal_1_1serial.html#a245de557152f925be91ff552535ed53a" title="Copy bytes from working buffer into passed buffer.">read()</a> will read out the contents of the buffer although the data inside may be corrupt. Options are to flush the buffer and attempt reception again or read out the potentially corrupted data and parse it as needed. The choice of operations here are very application and driver specific.</p>
+<p >This operation copies the bytes from the serial driver's internal working buffer to the buffer supplied.</p>
+<p >The buffer will be filled up either to the end of the buffer or until there are no more bytes left in the working buffer. The remaining portion of the input buffer is returned in <code><a class="el" href="structhal_1_1serial_1_1read__t.html#a220533b1f5a4adc955837fc93dfad503" title="The unfilled portion of the buffer.">read_t::remaining</a></code>.</p>
+<p >If a frame error has occurred at any point during serial reception, this function will throw a <code>std::errc::io_error</code> value. The contents of the internal working buffer will stay the same. No information from the internal working buffer will be copied into the supplied buffer and no data will be removed from the internal working buffer. The frame error status will be internally cleared after its occurrence. Subsequent calls of this function will read out the contents of the buffer although the data inside may be corrupt.</p>
+<p >When an error occurs the options available are to flush the buffer and attempt reception again or read out the potentially corrupted data and parse it as needed. The choice of operation is application/driver specific.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_data</td><td>- Buffer to read bytes back from </td></tr>
+    <tr><td class="paramname">p_data</td><td>- Buffer to read bytes in to </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::span&lt;hal::byte&gt;&gt;</a> - The address will ALWAYS be the same as p_data and the length will be equal to the number of bytes read from the buffer. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>result&lt;read_t&gt; - serial read response data </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::errc::io_error</td><td>- a frame error occurred at some point during reception. </td></tr>
@@ -292,8 +265,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6ba7623501b3dc5c467bb91cf4cb8c60" name="a6ba7623501b3dc5c467bb91cf4cb8c60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ba7623501b3dc5c467bb91cf4cb8c60">&#9670;&nbsp;</a></span>write()</h2>
+<a id="a8bf08705c18e054e7788a551b3e7742e" name="a8bf08705c18e054e7788a551b3e7742e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf08705c18e054e7788a551b3e7742e">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +275,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; size_t &gt; hal::serial::write </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1serial_1_1write__t.html">write_t</a> &gt; hal::serial::write </td>
           <td>(</td>
           <td class="paramtype">std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt;&#160;</td>
           <td class="paramname"><em>p_data</em></td><td>)</td>
@@ -323,7 +296,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>result&lt;size_t&gt; - the number of bytes transmitted </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>result&lt;write_t&gt; - serial write response </dd></dl>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var classhal_1_1motor =
 [
-    [ "power", "classhal_1_1motor.html#a1cfe3e5ddb46bafe86257afdab251f65", null ]
+    [ "power", "classhal_1_1motor.html#a6bb8b17da2f0b3f6b3cb4e4d4868ac50", null ]
 ];

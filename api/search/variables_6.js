@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['length_0',['length',['../structhal_1_1can_1_1message__t.html#a2c66f4827afe85cb1db5d9894666e70a',1,'hal::can::message_t']]]
+  ['maximum_0',['maximum',['../structhal_1_1timer_1_1out__of__bounds.html#a885746cf84b96da464891b89d46155cf',1,'hal::timer::out_of_bounds']]]
 ];

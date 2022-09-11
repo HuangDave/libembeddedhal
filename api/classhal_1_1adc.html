@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: hal::adc Class Reference</title>
+  <title>libhal: hal::adc Class Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -112,16 +112,16 @@ Inheritance diagram for hal::adc:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0e61fbb26119559e5afdd8b281940915"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1adc.html#a0e61fbb26119559e5afdd8b281940915">read</a> () noexcept</td></tr>
-<tr class="memdesc:a0e61fbb26119559e5afdd8b281940915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a sample from the analog to digital converter.  <a href="classhal_1_1adc.html#a0e61fbb26119559e5afdd8b281940915">More...</a><br /></td></tr>
-<tr class="separator:a0e61fbb26119559e5afdd8b281940915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72a224c67255eb883f80718643cbf3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1adc.html#ad72a224c67255eb883f80718643cbf3b">read</a> () noexcept</td></tr>
+<tr class="memdesc:ad72a224c67255eb883f80718643cbf3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a sample from the analog to digital converter.  <a href="classhal_1_1adc.html#ad72a224c67255eb883f80718643cbf3b">More...</a><br /></td></tr>
+<tr class="separator:ad72a224c67255eb883f80718643cbf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Analog to Digital Converter (ADC) hardware abstraction interface. </p>
 <p >Use this interface for devices and peripherals that can convert analog voltage signals into a digital number. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0e61fbb26119559e5afdd8b281940915" name="a0e61fbb26119559e5afdd8b281940915"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e61fbb26119559e5afdd8b281940915">&#9670;&nbsp;</a></span>read()</h2>
+<a id="ad72a224c67255eb883f80718643cbf3b" name="ad72a224c67255eb883f80718643cbf3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad72a224c67255eb883f80718643cbf3b">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a> &gt; hal::adc::read </td>
+          <td class="memname"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; float &gt; hal::adc::read </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read a sample from the analog to digital converter. </p>
-<dl class="section return"><dt>Returns</dt><dd>result&lt;percent&gt; - percentage of the voltage from Vss to Vcc, where Vss is the negative or ground reference for the ADC and Vcc is the positive or supply voltage for the ADC. For example with a Vss of 0V and Vcc of 4V, a reading of 0.5 would represent 2V. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>result&lt;float&gt; - float of the voltage from Vss to Vcc, where Vss is the negative or ground reference for the ADC and Vcc is the positive or supply voltage for the ADC. For example with a Vss of 0V and Vcc of 4V, a reading of 0.5 would represent 2V. </dd></dl>
 
 </div>
 </div>

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: /github/workspace/include/libhal/error.hpp Source File</title>
+  <title>libhal: /github/workspace/include/libhal/error.hpp Source File</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -97,10 +97,10 @@ $(document).ready(function(){initNavTree('error_8hpp_source.html',''); initResiz
 <div class="contents">
 <a href="error_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;system_error&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="config_8hpp.html">config.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;internal/third_party/leaf.hpp&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;boost/leaf.hpp&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;system_error&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="config_8hpp.html">config.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">    8</a></span><span class="preprocessor">#define HAL_CHECK BOOST_LEAF_CHECK</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
@@ -112,51 +112,60 @@ $(document).ready(function(){initNavTree('error_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">   15</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a> = boost::leaf::result&lt;T&gt;;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">   16</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> = <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;void&gt;</a>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TryBlock, <span class="keyword">class</span>... H&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacehal.html#a9a7de389180e282529be31044c0e57ae">   19</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacehal.html#a9a7de389180e282529be31044c0e57ae">attempt</a>(TryBlock&amp;&amp; p_try_block, H&amp;&amp;... p_handlers)</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordflow">return</span> boost::leaf::try_handle_some(p_try_block, p_handlers...);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TryBlock, <span class="keyword">class</span>... H&gt;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespacehal.html#a2ddc6d68616e60836f36a50b6a78e036">   25</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacehal.html#a2ddc6d68616e60836f36a50b6a78e036">attempt_all</a>(TryBlock&amp;&amp; p_try_block,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                                         H&amp;&amp;... p_handlers)</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">return</span> boost::leaf::try_handle_all(p_try_block, p_handlers...);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span>&lt;<span class="keyword">class</span>... Item&gt;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="namespacehal.html#a09499a696428213091b196699563099f">   32</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacehal.html#a09499a696428213091b196699563099f">new_error</a>(Item&amp;&amp;... p_item) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespacehal_1_1config_1_1defaults.html#a6bd6aeab8ce0f19b2d6ed4bc6d67354f">config::on_error_callback_enabled</a>) {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_variable" href="namespacehal_1_1config_1_1defaults.html#a815bbdd45f300456394468217f50439f">config::on_error_callback</a>();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacehal.html#a09499a696428213091b196699563099f">boost::leaf::new_error</a>(std::forward&lt;Item&gt;(p_item)...);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespacehal.html#a557593a710d85719fff67b743268293a">   33</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> <a class="code hl_function" href="namespacehal.html#a557593a710d85719fff67b743268293a">success</a>()</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="comment">// Default initialize the status object using the brace initialization, which</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="comment">// will set the status to the default &quot;success&quot; state.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> successful_status{};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">return</span> successful_status;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespacehal_1_1error.html">   41</a></span><span class="keyword">namespace </span>error {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span>&lt;<span class="keyword">auto</span>... options&gt;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structhal_1_1error_1_1invalid__option__t.html">   51</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structhal_1_1error_1_1invalid__option__t.html">invalid_option_t</a> : std::false_type</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">template</span>&lt;<span class="keyword">auto</span>... options&gt;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="namespacehal_1_1error.html#a151ae365408ad61b9f503cd1047ec39d">   61</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespacehal_1_1error.html#a151ae365408ad61b9f503cd1047ec39d">invalid_option</a> = <a class="code hl_struct" href="structhal_1_1error_1_1invalid__option__t.html">invalid_option_t</a>&lt;options...&gt;<a class="code hl_function" href="group__utility.html#gaa88cd03f91cf5b2ae267c13d6c86af18">::value</a>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}  <span class="comment">// namespace error</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}  <span class="comment">// namespace hal</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TryBlock, <span class="keyword">class</span>... H&gt;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespacehal.html#a9a7de389180e282529be31044c0e57ae">   42</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacehal.html#a9a7de389180e282529be31044c0e57ae">attempt</a>(TryBlock&amp;&amp; p_try_block, H&amp;&amp;... p_handlers)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">return</span> boost::leaf::try_handle_some(p_try_block, p_handlers...);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TryBlock, <span class="keyword">class</span>... H&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespacehal.html#a2ddc6d68616e60836f36a50b6a78e036">   48</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacehal.html#a2ddc6d68616e60836f36a50b6a78e036">attempt_all</a>(TryBlock&amp;&amp; p_try_block,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                                         H&amp;&amp;... p_handlers)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">return</span> boost::leaf::try_handle_all(p_try_block, p_handlers...);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">template</span>&lt;<span class="keyword">class</span>... Item&gt;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="namespacehal.html#a09499a696428213091b196699563099f">   55</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacehal.html#a09499a696428213091b196699563099f">new_error</a>(Item&amp;&amp;... p_item) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespacehal_1_1config_1_1defaults.html#a6bd6aeab8ce0f19b2d6ed4bc6d67354f">config::on_error_callback_enabled</a>) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_variable" href="namespacehal_1_1config_1_1defaults.html#a815bbdd45f300456394468217f50439f">config::on_error_callback</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacehal.html#a09499a696428213091b196699563099f">boost::leaf::new_error</a>(std::forward&lt;Item&gt;(p_item)...);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="namespacehal_1_1error.html">   64</a></span><span class="keyword">namespace </span>error {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">template</span>&lt;<span class="keyword">auto</span>... options&gt;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structhal_1_1error_1_1invalid__option__t.html">   74</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structhal_1_1error_1_1invalid__option__t.html">invalid_option_t</a> : std::false_type</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">template</span>&lt;<span class="keyword">auto</span>... options&gt;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="namespacehal_1_1error.html#a151ae365408ad61b9f503cd1047ec39d">   84</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespacehal_1_1error.html#a151ae365408ad61b9f503cd1047ec39d">invalid_option</a> = <a class="code hl_struct" href="structhal_1_1error_1_1invalid__option__t.html">invalid_option_t</a>&lt;options...&gt;<a class="code hl_function" href="group__utility.html#gaa88cd03f91cf5b2ae267c13d6c86af18">::value</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}  <span class="comment">// namespace error</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}  <span class="comment">// namespace hal</span></div>
 <div class="ttc" id="aconfig_8hpp_html"><div class="ttname"><a href="config_8hpp.html">config.hpp</a></div></div>
 <div class="ttc" id="agroup__utility_html_gaa88cd03f91cf5b2ae267c13d6c86af18"><div class="ttname"><a href="group__utility.html#gaa88cd03f91cf5b2ae267c13d6c86af18">hal::value</a></div><div class="ttdeci">constexpr auto value(enumeration auto p_enum_value) noexcept</div><div class="ttdoc">Helper function to convert an enum to its integral value.</div><div class="ttdef"><b>Definition:</b> enum.hpp:27</div></div>
 <div class="ttc" id="anamespacehal_1_1config_1_1defaults_html_a6bd6aeab8ce0f19b2d6ed4bc6d67354f"><div class="ttname"><a href="namespacehal_1_1config_1_1defaults.html#a6bd6aeab8ce0f19b2d6ed4bc6d67354f">hal::config::defaults::on_error_callback_enabled</a></div><div class="ttdeci">constexpr bool on_error_callback_enabled</div><div class="ttdef"><b>Definition:</b> config.hpp:8</div></div>
 <div class="ttc" id="anamespacehal_1_1config_1_1defaults_html_a815bbdd45f300456394468217f50439f"><div class="ttname"><a href="namespacehal_1_1config_1_1defaults.html#a815bbdd45f300456394468217f50439f">hal::config::defaults::on_error_callback</a></div><div class="ttdeci">constexpr auto on_error_callback</div><div class="ttdef"><b>Definition:</b> config.hpp:9</div></div>
-<div class="ttc" id="anamespacehal_1_1error_html_a151ae365408ad61b9f503cd1047ec39d"><div class="ttname"><a href="namespacehal_1_1error.html#a151ae365408ad61b9f503cd1047ec39d">hal::error::invalid_option</a></div><div class="ttdeci">constexpr bool invalid_option</div><div class="ttdoc">Helper definition to simplify the usage of invalid_option_t.</div><div class="ttdef"><b>Definition:</b> error.hpp:61</div></div>
-<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:9</div></div>
-<div class="ttc" id="anamespacehal_html_a09499a696428213091b196699563099f"><div class="ttname"><a href="namespacehal.html#a09499a696428213091b196699563099f">hal::new_error</a></div><div class="ttdeci">auto new_error(Item &amp;&amp;... p_item) noexcept</div><div class="ttdef"><b>Definition:</b> error.hpp:32</div></div>
+<div class="ttc" id="anamespacehal_1_1error_html_a151ae365408ad61b9f503cd1047ec39d"><div class="ttname"><a href="namespacehal_1_1error.html#a151ae365408ad61b9f503cd1047ec39d">hal::error::invalid_option</a></div><div class="ttdeci">constexpr bool invalid_option</div><div class="ttdoc">Helper definition to simplify the usage of invalid_option_t.</div><div class="ttdef"><b>Definition:</b> error.hpp:84</div></div>
+<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
+<div class="ttc" id="anamespacehal_html_a09499a696428213091b196699563099f"><div class="ttname"><a href="namespacehal.html#a09499a696428213091b196699563099f">hal::new_error</a></div><div class="ttdeci">auto new_error(Item &amp;&amp;... p_item) noexcept</div><div class="ttdef"><b>Definition:</b> error.hpp:55</div></div>
 <div class="ttc" id="anamespacehal_html_a1607e3547737e35235f946a9c67b61cf"><div class="ttname"><a href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">hal::status</a></div><div class="ttdeci">result&lt; void &gt; status</div><div class="ttdef"><b>Definition:</b> error.hpp:16</div></div>
 <div class="ttc" id="anamespacehal_html_a22b1708df761b2dc40dd4afa2ac0c401"><div class="ttname"><a href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">hal::result</a></div><div class="ttdeci">boost::leaf::result&lt; T &gt; result</div><div class="ttdef"><b>Definition:</b> error.hpp:15</div></div>
-<div class="ttc" id="anamespacehal_html_a2ddc6d68616e60836f36a50b6a78e036"><div class="ttname"><a href="namespacehal.html#a2ddc6d68616e60836f36a50b6a78e036">hal::attempt_all</a></div><div class="ttdeci">constexpr auto attempt_all(TryBlock &amp;&amp;p_try_block, H &amp;&amp;... p_handlers)</div><div class="ttdef"><b>Definition:</b> error.hpp:25</div></div>
-<div class="ttc" id="anamespacehal_html_a9a7de389180e282529be31044c0e57ae"><div class="ttname"><a href="namespacehal.html#a9a7de389180e282529be31044c0e57ae">hal::attempt</a></div><div class="ttdeci">constexpr auto attempt(TryBlock &amp;&amp;p_try_block, H &amp;&amp;... p_handlers)</div><div class="ttdef"><b>Definition:</b> error.hpp:19</div></div>
+<div class="ttc" id="anamespacehal_html_a2ddc6d68616e60836f36a50b6a78e036"><div class="ttname"><a href="namespacehal.html#a2ddc6d68616e60836f36a50b6a78e036">hal::attempt_all</a></div><div class="ttdeci">constexpr auto attempt_all(TryBlock &amp;&amp;p_try_block, H &amp;&amp;... p_handlers)</div><div class="ttdef"><b>Definition:</b> error.hpp:48</div></div>
+<div class="ttc" id="anamespacehal_html_a557593a710d85719fff67b743268293a"><div class="ttname"><a href="namespacehal.html#a557593a710d85719fff67b743268293a">hal::success</a></div><div class="ttdeci">status success()</div><div class="ttdoc">a readability function for returning successful results;</div><div class="ttdef"><b>Definition:</b> error.hpp:33</div></div>
+<div class="ttc" id="anamespacehal_html_a9a7de389180e282529be31044c0e57ae"><div class="ttname"><a href="namespacehal.html#a9a7de389180e282529be31044c0e57ae">hal::attempt</a></div><div class="ttdeci">constexpr auto attempt(TryBlock &amp;&amp;p_try_block, H &amp;&amp;... p_handlers)</div><div class="ttdef"><b>Definition:</b> error.hpp:42</div></div>
 <div class="ttc" id="anamespacehal_html_aaa16a4dc9af5b4b625da1b21a118c2a1"><div class="ttname"><a href="namespacehal.html#aaa16a4dc9af5b4b625da1b21a118c2a1">hal::match</a></div><div class="ttdeci">boost::leaf::match&lt; T, value &gt; match</div><div class="ttdef"><b>Definition:</b> error.hpp:13</div></div>
-<div class="ttc" id="astructhal_1_1error_1_1invalid__option__t_html"><div class="ttname"><a href="structhal_1_1error_1_1invalid__option__t.html">hal::error::invalid_option_t</a></div><div class="ttdoc">Used for defining static_asserts that should always fail, but only if the static_assert line is hit v...</div><div class="ttdef"><b>Definition:</b> error.hpp:52</div></div>
+<div class="ttc" id="astructhal_1_1error_1_1invalid__option__t_html"><div class="ttname"><a href="structhal_1_1error_1_1invalid__option__t.html">hal::error::invalid_option_t</a></div><div class="ttdoc">Used for defining static_asserts that should always fail, but only if the static_assert line is hit v...</div><div class="ttdef"><b>Definition:</b> error.hpp:75</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

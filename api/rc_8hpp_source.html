@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Project: /github/workspace/include/libhal/servo/rc.hpp Source File</title>
+  <title>libhal: /github/workspace/include/libhal/servo/rc.hpp Source File</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
           <tbody>
             <tr style="height: 56px;">
               <td id="projectalign" style="padding-left: 0.5em;">
-                <div id="projectname">My Project
+                <div id="projectname">libhal
                 </div>
               </td>
             </tr>
@@ -141,83 +141,77 @@ $(document).ready(function(){initNavTree('rc_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// Calculate the wavelength in microseconds.</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">auto</span> <a class="code hl_function" href="group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3">wavelength</a> = (1.0f / frequency) * std::micro::den;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// min_percent represents the minimum percentage to be used with the pwm</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// signal. The percentage is calculated by using the minimum width of the</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// min_percent represents the minimum float to be used with the pwm</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// signal. The float is calculated by using the minimum width of the</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// signal in microseconds divided by the wavelength to get the decimal</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// representation of the percentage.</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">auto</span> min_percent = <a class="code hl_typedef" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a>(MinMicroseconds / <a class="code hl_function" href="group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3">wavelength</a>);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// max_percent represents the maximum percentage to be used with the pwm</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// signal. The percentage is calculated by using the maximum width of the</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// representation of the float.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">auto</span> min_percent = float(MinMicroseconds / <a class="code hl_function" href="group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3">wavelength</a>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// max_percent represents the maximum float to be used with the pwm</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// signal. The float is calculated by using the maximum width of the</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// signal in microseconds divided by the wavelength to get the decimal</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// representation of the percentage.</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">auto</span> max_percent = <a class="code hl_typedef" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a>(MaxMicroseconds / <a class="code hl_function" href="group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3">wavelength</a>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// representation of the float.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">auto</span> max_percent = float(MaxMicroseconds / <a class="code hl_function" href="group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3">wavelength</a>);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// percent_range holds float value of min_percent and max_percent for use</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// with map function used in position().</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">auto</span> percent_range =</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      std::make_pair(min_percent.value(), max_percent.value());</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// If no errors happen, call the constructor with verified parameters</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classhal_1_1rc__servo.html">rc_servo</a>(p_pwm, percent_range);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">// Constructor is private to only be accessed from the factory function.</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="comment">// Use p_ prefix for function parameters.</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="comment">// Use an initializer list to initialize private members.</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keyword">constexpr</span> <a class="code hl_class" href="classhal_1_1rc__servo.html">rc_servo</a>(<a class="code hl_class" href="classhal_1_1pwm.html">hal::pwm</a>&amp; p_pwm, std::pair&lt;float, float&gt; p_percent_range)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    : m_pwm(&amp;p_pwm)</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    , m_percent_range(p_percent_range)</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="comment">// Drivers must implement functions that are listed in interface. Use override</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="comment">// keyword for virtual functions</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> driver_position(<a class="code hl_typedef" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a> p_position) <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">// The range of p_position is from -100% to 100%. The value of p_position is</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// mapped within the percentage range of the pwm signal to get the decimal</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// value of the scaled_percentage.</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">//</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">// Example:</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">// pwm min percentage: percentage(0.05)</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// pwm max percentage: percentage(0.25)</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="comment">//</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">// percentage(0.05) = position(percentage(-1.0))</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// percentage(0.10) = position(percentage(-0.5))</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// percentage(0.20) = position(percentage(0.5))</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">// percentage(0.25) = position(percentage(1.0))</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">auto</span> scaled_percent_raw =</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      <a class="code hl_function" href="group__utility.html#gada6a3aec0a1f3227cfc539f8c57e0f40">map</a>(p_position.value(),</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>          std::make_pair(<a class="code hl_variable" href="classhal_1_1percentage__t.html#ac71ac47e4c929554d8f92472e6fde16c">hal::percentage::min</a>, <a class="code hl_variable" href="classhal_1_1percentage__t.html#a152241366cd7881290121f595d383b67">hal::percentage::max</a>),</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>          m_percent_range);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">auto</span> scaled_percent = <a class="code hl_typedef" href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">percentage</a>(scaled_percent_raw);</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">// Set the duty cycle of the pwm with the scaled percent.</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">return</span> m_pwm-&gt;<a class="code hl_function" href="classhal_1_1pwm.html#a0a177f8c517382f93e309b43e5cf7cf6">duty_cycle</a>(scaled_percent);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="comment">// Use m_ prefix for private/protected class members.</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="comment">// Use a pointer here rather than a reference, because member references</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="comment">// implicitly delete move constructors</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <a class="code hl_class" href="classhal_1_1pwm.html">hal::pwm</a>* m_pwm;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  std::pair&lt;float, float&gt; m_percent_range;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>};</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// Comment the end of the namepace and end the file with an extra line.</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}  <span class="comment">// namespace hal</span></div>
-<div class="ttc" id="aclasshal_1_1percentage__t_html_a152241366cd7881290121f595d383b67"><div class="ttname"><a href="classhal_1_1percentage__t.html#a152241366cd7881290121f595d383b67">hal::percentage_t::max</a></div><div class="ttdeci">static constexpr float_t max</div><div class="ttdef"><b>Definition:</b> percentage.hpp:22</div></div>
-<div class="ttc" id="aclasshal_1_1percentage__t_html_ac71ac47e4c929554d8f92472e6fde16c"><div class="ttname"><a href="classhal_1_1percentage__t.html#ac71ac47e4c929554d8f92472e6fde16c">hal::percentage_t::min</a></div><div class="ttdeci">static constexpr float_t min</div><div class="ttdef"><b>Definition:</b> percentage.hpp:23</div></div>
-<div class="ttc" id="aclasshal_1_1pwm_html"><div class="ttname"><a href="classhal_1_1pwm.html">hal::pwm</a></div><div class="ttdoc">Pulse Width Modulation (PWM) channel hardware abstraction.</div><div class="ttdef"><b>Definition:</b> interface.hpp:47</div></div>
-<div class="ttc" id="aclasshal_1_1pwm_html_a0a177f8c517382f93e309b43e5cf7cf6"><div class="ttname"><a href="classhal_1_1pwm.html#a0a177f8c517382f93e309b43e5cf7cf6">hal::pwm::duty_cycle</a></div><div class="ttdeci">status duty_cycle(percentage p_duty_cycle) noexcept</div><div class="ttdoc">Set the pwm waveform duty cycle.</div><div class="ttdef"><b>Definition:</b> interface.hpp:68</div></div>
-<div class="ttc" id="aclasshal_1_1pwm_html_a64c8e392db6e0fd690f02d02566fbb55"><div class="ttname"><a href="classhal_1_1pwm.html#a64c8e392db6e0fd690f02d02566fbb55">hal::pwm::frequency</a></div><div class="ttdeci">status frequency(hertz p_frequency) noexcept</div><div class="ttdoc">Set the pwm waveform frequency.</div><div class="ttdef"><b>Definition:</b> interface.hpp:57</div></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">auto</span> percent_range = std::make_pair(min_percent, max_percent);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// If no errors happen, call the constructor with verified parameters</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classhal_1_1rc__servo.html">rc_servo</a>(p_pwm, percent_range);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="comment">// Constructor is private to only be accessed from the factory function.</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">// Use p_ prefix for function parameters.</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="comment">// Use an initializer list to initialize private members.</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">constexpr</span> <a class="code hl_class" href="classhal_1_1rc__servo.html">rc_servo</a>(<a class="code hl_class" href="classhal_1_1pwm.html">hal::pwm</a>&amp; p_pwm, std::pair&lt;float, float&gt; p_percent_range)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    : m_pwm(&amp;p_pwm)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    , m_percent_range(p_percent_range)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="comment">// Drivers must implement functions that are listed in interface. Use override</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="comment">// keyword for virtual functions</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> driver_position(<span class="keywordtype">float</span> p_position) <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">// The range of p_position is from -100% to 100%. The value of p_position is</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">// mapped within the float range of the pwm signal to get the decimal</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// value of the scaled_float.</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// Example:</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">// pwm min float: float(0.05)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">// pwm max float: float(0.25)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="comment">// float(0.05) = position(float(-1.0))</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">// float(0.10) = position(float(-0.5))</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// float(0.20) = position(float(0.5))</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// float(0.25) = position(float(1.0))</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">auto</span> scaled_percent_raw =</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      <a class="code hl_function" href="group__utility.html#gada6a3aec0a1f3227cfc539f8c57e0f40">map</a>(p_position, std::make_pair(<span class="keywordtype">float</span>(-1.0), <span class="keywordtype">float</span>(1.0)), m_percent_range);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">auto</span> scaled_percent = float(scaled_percent_raw);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="comment">// Set the duty cycle of the pwm with the scaled percent.</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">return</span> m_pwm-&gt;<a class="code hl_function" href="classhal_1_1pwm.html#a58c22bfb45a2602474ffd757f4144db4">duty_cycle</a>(scaled_percent);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="comment">// Use m_ prefix for private/protected class members.</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="comment">// Use a pointer here rather than a reference, because member references</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="comment">// implicitly delete move constructors</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <a class="code hl_class" href="classhal_1_1pwm.html">hal::pwm</a>* m_pwm;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  std::pair&lt;float, float&gt; m_percent_range;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>};</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// Comment the end of the namepace and end the file with an extra line.</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}  <span class="comment">// namespace hal</span></div>
+<div class="ttc" id="aclasshal_1_1pwm_html"><div class="ttname"><a href="classhal_1_1pwm.html">hal::pwm</a></div><div class="ttdoc">Pulse Width Modulation (PWM) channel hardware abstraction.</div><div class="ttdef"><b>Definition:</b> interface.hpp:46</div></div>
+<div class="ttc" id="aclasshal_1_1pwm_html_a58c22bfb45a2602474ffd757f4144db4"><div class="ttname"><a href="classhal_1_1pwm.html#a58c22bfb45a2602474ffd757f4144db4">hal::pwm::duty_cycle</a></div><div class="ttdeci">status duty_cycle(float p_duty_cycle) noexcept</div><div class="ttdoc">Set the pwm waveform duty cycle.</div><div class="ttdef"><b>Definition:</b> interface.hpp:67</div></div>
+<div class="ttc" id="aclasshal_1_1pwm_html_a64c8e392db6e0fd690f02d02566fbb55"><div class="ttname"><a href="classhal_1_1pwm.html#a64c8e392db6e0fd690f02d02566fbb55">hal::pwm::frequency</a></div><div class="ttdeci">status frequency(hertz p_frequency) noexcept</div><div class="ttdoc">Set the pwm waveform frequency.</div><div class="ttdef"><b>Definition:</b> interface.hpp:56</div></div>
 <div class="ttc" id="aclasshal_1_1rc__servo_html"><div class="ttname"><a href="classhal_1_1rc__servo.html">hal::rc_servo</a></div><div class="ttdoc">Generic RC servo driver.</div><div class="ttdef"><b>Definition:</b> rc.hpp:24</div></div>
 <div class="ttc" id="aclasshal_1_1rc__servo_html_a4b6b2863a7ea2f9e426f32c89a29c8c5"><div class="ttname"><a href="classhal_1_1rc__servo.html#a4b6b2863a7ea2f9e426f32c89a29c8c5">hal::rc_servo::create</a></div><div class="ttdeci">static result&lt; rc_servo &gt; create(hal::pwm &amp;p_pwm)</div><div class="ttdoc">Factory function to create a rc_servo object.</div><div class="ttdef"><b>Definition:</b> rc.hpp:48</div></div>
-<div class="ttc" id="aclasshal_1_1servo_html"><div class="ttname"><a href="classhal_1_1servo.html">hal::servo</a></div><div class="ttdoc">Hardware abstraction for closed loop positional rotary and linear actuators.</div><div class="ttdef"><b>Definition:</b> interface.hpp:39</div></div>
+<div class="ttc" id="aclasshal_1_1servo_html"><div class="ttname"><a href="classhal_1_1servo.html">hal::servo</a></div><div class="ttdoc">Hardware abstraction for closed loop positional rotary and linear actuators.</div><div class="ttdef"><b>Definition:</b> interface.hpp:38</div></div>
 <div class="ttc" id="aerror_8hpp_html_ad60839c87ca7f0ad471edf0a5f9f0199"><div class="ttname"><a href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a></div><div class="ttdeci">#define HAL_CHECK</div><div class="ttdef"><b>Definition:</b> error.hpp:8</div></div>
 <div class="ttc" id="agroup__utility_html_ga54dc271deb8f266e52926836c0582598"><div class="ttname"><a href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hal::hertz</a></div><div class="ttdeci">float hertz</div><div class="ttdoc">Type for frequency represented in hertz.</div><div class="ttdef"><b>Definition:</b> units.hpp:26</div></div>
 <div class="ttc" id="agroup__utility_html_ga80ad6db29189e74fcb1a49dc801897b3"><div class="ttname"><a href="group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3">hal::wavelength</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; int64_t, Period &gt; wavelength(hertz p_source)</div><div class="ttdoc">Calculates and returns the wavelength in seconds.</div><div class="ttdef"><b>Definition:</b> units.hpp:155</div></div>
 <div class="ttc" id="agroup__utility_html_gada6a3aec0a1f3227cfc539f8c57e0f40"><div class="ttname"><a href="group__utility.html#gada6a3aec0a1f3227cfc539f8c57e0f40">hal::map</a></div><div class="ttdeci">constexpr float map(float p_target, std::pair&lt; float, float &gt; p_input_range, std::pair&lt; float, float &gt; p_output_range) noexcept</div><div class="ttdoc">Map an target value [x] from an input range [a,b] to an output range [c,d].</div><div class="ttdef"><b>Definition:</b> map.hpp:37</div></div>
-<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:9</div></div>
+<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
 <div class="ttc" id="anamespacehal_html_a1607e3547737e35235f946a9c67b61cf"><div class="ttname"><a href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">hal::status</a></div><div class="ttdeci">result&lt; void &gt; status</div><div class="ttdef"><b>Definition:</b> error.hpp:16</div></div>
 <div class="ttc" id="anamespacehal_html_a22b1708df761b2dc40dd4afa2ac0c401"><div class="ttname"><a href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">hal::result</a></div><div class="ttdeci">boost::leaf::result&lt; T &gt; result</div><div class="ttdef"><b>Definition:</b> error.hpp:15</div></div>
-<div class="ttc" id="anamespacehal_html_a3655ebdcae8b4ebd8e68eb6fda1b898f"><div class="ttname"><a href="namespacehal.html#a3655ebdcae8b4ebd8e68eb6fda1b898f">hal::percentage</a></div><div class="ttdeci">percentage_t&lt; float &gt; percentage</div><div class="ttdef"><b>Definition:</b> percentage.hpp:90</div></div>
 <div class="ttc" id="atimer_2interface_8hpp_html"><div class="ttname"><a href="timer_2interface_8hpp.html">interface.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
