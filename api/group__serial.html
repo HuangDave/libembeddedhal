@@ -110,6 +110,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1serial_1_1write__t.html">serial::write_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">hal::write_partial</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out) noexcept</td></tr>
 <tr class="memdesc:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">More...</a><br /></td></tr>
 <tr class="separator:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9686cb634f86ed068a43ea5bb5224073"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga9686cb634f86ed068a43ea5bb5224073">hal::write</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out) noexcept</td></tr>
+<tr class="memdesc:ga9686cb634f86ed068a43ea5bb5224073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#ga9686cb634f86ed068a43ea5bb5224073">More...</a><br /></td></tr>
+<tr class="separator:ga9686cb634f86ed068a43ea5bb5224073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2952837cd8d503a962e7edf748737925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga2952837cd8d503a962e7edf748737925">hal::write</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::string_view p_data_out) noexcept</td></tr>
+<tr class="memdesc:ga2952837cd8d503a962e7edf748737925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write std::span of const char to a serial port.  <a href="group__serial.html#ga2952837cd8d503a962e7edf748737925">More...</a><br /></td></tr>
+<tr class="separator:ga2952837cd8d503a962e7edf748737925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga58f116057547375e7bcdc6f29ef3786c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">hal::read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_in, timeout auto p_timeout) noexcept</td></tr>
 <tr class="memdesc:ga58f116057547375e7bcdc6f29ef3786c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from a serial port.  <a href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">More...</a><br /></td></tr>
 <tr class="separator:ga58f116057547375e7bcdc6f29ef3786c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,6 +248,110 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="ga9686cb634f86ed068a43ea5bb5224073" name="ga9686cb634f86ed068a43ea5bb5224073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9686cb634f86ed068a43ea5bb5224073">&#9670;&nbsp;</a></span>write() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classhal_1_1serial.html">serial</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_serial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt;&#160;</td>
+          <td class="paramname"><em>p_data_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write bytes to a serial port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_serial</td><td>- the serial port that will be written to </td></tr>
+    <tr><td class="paramname">p_data_out</td><td>- the data to be written out the port </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>status - success or failure </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_ga9686cb634f86ed068a43ea5bb5224073_cgraph.svg" width="227" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ga2952837cd8d503a962e7edf748737925" name="ga2952837cd8d503a962e7edf748737925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2952837cd8d503a962e7edf748737925">&#9670;&nbsp;</a></span>write() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> hal::write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classhal_1_1serial.html">serial</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_serial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>p_data_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write std::span of const char to a serial port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_serial</td><td>- the serial port that will be written to </td></tr>
+    <tr><td class="paramname">p_data_out</td><td>- chars to be written out the port </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>status - success or failure </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__serial_ga2952837cd8d503a962e7edf748737925_cgraph.svg" width="410" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="ga9fcfdc8a8fa26b039d5a8a6f9b6b6962" name="ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">&#9670;&nbsp;</a></span>write_partial()</h2>
 
@@ -284,7 +394,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>result&lt;size_t&gt; - success or failure <a class="el" href="classhal_1_1serial.html#a8bf08705c18e054e7788a551b3e7742e" title="Write data to the transmitter line of the serial port.">serial::write</a> returns an error from the serial port. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;serial::write_t&gt;</a> - get the results of the uart port write operation. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

@@ -1,0 +1,4 @@
+<map id="hal::can::settings::bit_width" name="hal::can::settings::bit_width">
+<area shape="rect" id="node1" title=" " alt="" coords="172,5,291,47"/>
+<area shape="rect" id="node2" href="$structhal_1_1can_1_1settings.html#ae8632ec08de5586da2924f25cc8388bb" title="Validate configuration settings against an operating frequency." alt="" coords="5,5,124,47"/>
+</map>

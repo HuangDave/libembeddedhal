@@ -3,9 +3,10 @@
 <area shape="rect" id="node2" href="$group__i2c.html#gad1ce95a0f68875e29428e13cc53c3387" title="probe the i2c bus to see if a device exists" alt="" coords="221,5,298,32"/>
 <area shape="rect" id="node3" href="$group__i2c.html#ga00694e558039dbf0a2e4f2a438754e10" title="read bytes from target device on i2c bus" alt="" coords="224,56,295,83"/>
 <area shape="rect" id="node6" href="$group__i2c.html#ga602272331e4e2f84843e2fe34e83cca6" title="write data to a target device on the i2c bus" alt="" coords="223,107,296,133"/>
-<area shape="rect" id="node8" href="$group__i2c.html#gadccf0a18afda016d4d6a05165bc0b0ab" title="write and then read bytes from target device on i2c bus" alt="" coords="191,157,328,184"/>
+<area shape="rect" id="node9" href="$group__i2c.html#gadccf0a18afda016d4d6a05165bc0b0ab" title="write and then read bytes from target device on i2c bus" alt="" coords="191,183,328,209"/>
 <area shape="rect" id="node4" href="$group__i2c.html#gafaee8290b9ba7d512d6f8a724e99d06c" title="return array of read bytes from target device on i2c bus" alt="" coords="39,5,109,32"/>
 <area shape="rect" id="node5" href="$group__serial.html#ga2d9abf5cca98ceab03b2bcae88c8231a" title="Perform a write then read transaction over serial." alt="" coords="5,56,143,83"/>
-<area shape="rect" id="node7" href="$group__spi.html#ga0304f6c421db748182386f3dc4547916" title="Write data to the SPI bus and ignore data sent from peripherals on the bus then read data from the SP..." alt="" coords="5,107,143,133"/>
-<area shape="rect" id="node9" href="$group__i2c.html#ga3dd61760afda4a75284d67f433a2fa50" title="write and then return an array of read bytes from target device on i2c bus" alt="" coords="5,157,143,184"/>
+<area shape="rect" id="node7" href="$group__serial.html#ga2952837cd8d503a962e7edf748737925" title="Write std::span of const char to a serial port." alt="" coords="37,107,111,133"/>
+<area shape="rect" id="node8" href="$group__spi.html#ga0304f6c421db748182386f3dc4547916" title="Write data to the SPI bus and ignore data sent from peripherals on the bus then read data from the SP..." alt="" coords="5,157,143,184"/>
+<area shape="rect" id="node10" href="$group__i2c.html#ga3dd61760afda4a75284d67f433a2fa50" title="write and then return an array of read bytes from target device on i2c bus" alt="" coords="5,208,143,235"/>
 </map>

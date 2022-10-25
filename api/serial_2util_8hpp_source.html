@@ -101,73 +101,97 @@ $(document).ready(function(){initNavTree('serial_2util_8hpp_source.html',''); in
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;span&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../error.hpp&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;../timeout.hpp&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../units.hpp&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="timer_2interface_8hpp.html">interface.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehal.html">hal</a> {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">   25</a></span>[[nodiscard]] <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;serial::write_t&gt;</a> <a class="code hl_function" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">write_partial</a>(</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  std::span&lt;const hal::byte&gt; p_data_out) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordflow">return</span> p_serial.write(p_data_out);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">   44</a></span>[[nodiscard]] <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::span&lt;hal::byte&gt;</a>&gt; <a class="code hl_function" href="group__i2c.html#ga00694e558039dbf0a2e4f2a438754e10">read</a>(</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  std::span&lt;hal::byte&gt; p_data_in,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_concept" href="concepthal_1_1timeout.html">timeout</a> <span class="keyword">auto</span> p_timeout) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">auto</span> read_result = <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(p_serial.read(p_data_in));</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">while</span> (read_result.remaining.size() != 0) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    read_result = <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(p_serial.read(read_result.remaining));</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(p_timeout());</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordflow">return</span> p_data_in;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> BytesToRead&gt;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="group__serial.html#ga1a286f05a92dbc946d4e0a79db6683da">   75</a></span>[[nodiscard]] <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;hal::byte, BytesToRead&gt;</a>&gt; <a class="code hl_function" href="group__i2c.html#ga00694e558039dbf0a2e4f2a438754e10">read</a>(</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_concept" href="concepthal_1_1timeout.html">timeout</a> <span class="keyword">auto</span> p_timeout) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  std::array&lt;hal::byte, BytesToRead&gt; buffer;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(<a class="code hl_function" href="group__i2c.html#ga00694e558039dbf0a2e4f2a438754e10">read</a>(p_serial, buffer, p_timeout));</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordflow">return</span> buffer;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="group__serial.html#ga2d9abf5cca98ceab03b2bcae88c8231a">   98</a></span>[[nodiscard]] <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::span&lt;hal::byte&gt;</a>&gt; <a class="code hl_function" href="group__i2c.html#gadccf0a18afda016d4d6a05165bc0b0ab">write_then_read</a>(</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  std::span&lt;const hal::byte&gt; p_data_out,</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  std::span&lt;hal::byte&gt; p_data_in,</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <a class="code hl_concept" href="concepthal_1_1timeout.html">timeout</a> <span class="keyword">auto</span> p_timeout) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(<a class="code hl_function" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">write_partial</a>(p_serial, p_data_out));</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group__i2c.html#ga00694e558039dbf0a2e4f2a438754e10">read</a>(p_serial, p_data_in, p_timeout);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> BytesToRead&gt;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="group__serial.html#gaa56cced130d5fe0233e0035616209b52">  124</a></span>[[nodiscard]] <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;hal::byte, BytesToRead&gt;</a>&gt; <a class="code hl_function" href="group__i2c.html#gadccf0a18afda016d4d6a05165bc0b0ab">write_then_read</a>(</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  std::span&lt;const hal::byte&gt; p_data_out,</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <a class="code hl_concept" href="concepthal_1_1timeout.html">timeout</a> <span class="keyword">auto</span> p_timeout) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  std::array&lt;hal::byte, BytesToRead&gt; buffer;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(<a class="code hl_function" href="group__i2c.html#gadccf0a18afda016d4d6a05165bc0b0ab">write_then_read</a>(p_serial, p_data_out, buffer, p_timeout));</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keywordflow">return</span> buffer;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}  <span class="comment">// namespace hal</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../as_bytes.hpp&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;../error.hpp&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../timeout.hpp&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;../units.hpp&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="timer_2interface_8hpp.html">interface.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehal.html">hal</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">   26</a></span>[[nodiscard]] <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;serial::write_t&gt;</a> <a class="code hl_function" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">write_partial</a>(</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  std::span&lt;const hal::byte&gt; p_data_out) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordflow">return</span> p_serial.write(p_data_out);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="group__serial.html#ga9686cb634f86ed068a43ea5bb5224073">   40</a></span>[[nodiscard]] <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> <a class="code hl_function" href="group__i2c.html#ga602272331e4e2f84843e2fe34e83cca6">write</a>(</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  std::span&lt;const hal::byte&gt; p_data_out) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">auto</span> write_info = <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(p_serial.write(p_data_out));</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordflow">while</span> (write_info.remaining.size() != 0) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    write_info = <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(p_serial.write(write_info.remaining));</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacehal.html#a557593a710d85719fff67b743268293a">success</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="group__serial.html#ga2952837cd8d503a962e7edf748737925">   60</a></span>[[nodiscard]] <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> <a class="code hl_function" href="group__i2c.html#ga602272331e4e2f84843e2fe34e83cca6">write</a>(<a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                  std::string_view p_data_out) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group__i2c.html#ga602272331e4e2f84843e2fe34e83cca6">write</a>(p_serial, <a class="code hl_function" href="namespacehal.html#a7facad0d80497e875c8fcb9a764ae278">hal::as_bytes</a>(p_data_out));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">   78</a></span>[[nodiscard]] <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::span&lt;hal::byte&gt;</a>&gt; <a class="code hl_function" href="group__i2c.html#ga00694e558039dbf0a2e4f2a438754e10">read</a>(</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  std::span&lt;hal::byte&gt; p_data_in,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <a class="code hl_concept" href="concepthal_1_1timeout.html">timeout</a> <span class="keyword">auto</span> p_timeout) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keyword">auto</span> read_result = <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(p_serial.read(p_data_in));</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordflow">while</span> (read_result.remaining.size() != 0) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    read_result = <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(p_serial.read(read_result.remaining));</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(p_timeout());</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordflow">return</span> p_data_in;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> BytesToRead&gt;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="group__serial.html#ga1a286f05a92dbc946d4e0a79db6683da">  109</a></span>[[nodiscard]] <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;hal::byte, BytesToRead&gt;</a>&gt; <a class="code hl_function" href="group__i2c.html#ga00694e558039dbf0a2e4f2a438754e10">read</a>(</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <a class="code hl_concept" href="concepthal_1_1timeout.html">timeout</a> <span class="keyword">auto</span> p_timeout) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  std::array&lt;hal::byte, BytesToRead&gt; buffer;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(<a class="code hl_function" href="group__i2c.html#ga00694e558039dbf0a2e4f2a438754e10">read</a>(p_serial, buffer, p_timeout));</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">return</span> buffer;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="group__serial.html#ga2d9abf5cca98ceab03b2bcae88c8231a">  132</a></span>[[nodiscard]] <span class="keyword">inline</span> <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::span&lt;hal::byte&gt;</a>&gt; <a class="code hl_function" href="group__i2c.html#gadccf0a18afda016d4d6a05165bc0b0ab">write_then_read</a>(</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  std::span&lt;const hal::byte&gt; p_data_out,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  std::span&lt;hal::byte&gt; p_data_in,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <a class="code hl_concept" href="concepthal_1_1timeout.html">timeout</a> <span class="keyword">auto</span> p_timeout) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>{</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(<a class="code hl_function" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">write_partial</a>(p_serial, p_data_out));</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group__i2c.html#ga00694e558039dbf0a2e4f2a438754e10">read</a>(p_serial, p_data_in, p_timeout);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>}</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> BytesToRead&gt;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="group__serial.html#gaa56cced130d5fe0233e0035616209b52">  158</a></span>[[nodiscard]] <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;std::array&lt;hal::byte, BytesToRead&gt;</a>&gt; <a class="code hl_function" href="group__i2c.html#gadccf0a18afda016d4d6a05165bc0b0ab">write_then_read</a>(</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <a class="code hl_class" href="classhal_1_1serial.html">serial</a>&amp; p_serial,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  std::span&lt;const hal::byte&gt; p_data_out,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <a class="code hl_concept" href="concepthal_1_1timeout.html">timeout</a> <span class="keyword">auto</span> p_timeout) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>{</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  std::array&lt;hal::byte, BytesToRead&gt; buffer;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  <a class="code hl_define" href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a>(<a class="code hl_function" href="group__i2c.html#gadccf0a18afda016d4d6a05165bc0b0ab">write_then_read</a>(p_serial, p_data_out, buffer, p_timeout));</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keywordflow">return</span> buffer;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>}  <span class="comment">// namespace hal</span></div>
 <div class="ttc" id="aclasshal_1_1serial_html"><div class="ttname"><a href="classhal_1_1serial.html">hal::serial</a></div><div class="ttdoc">Hardware abstract interface for the serial communication protocol.</div><div class="ttdef"><b>Definition:</b> interface.hpp:43</div></div>
 <div class="ttc" id="aconcepthal_1_1timeout_html"><div class="ttname"><a href="concepthal_1_1timeout.html">hal::timeout</a></div><div class="ttdef"><b>Definition:</b> timeout.hpp:31</div></div>
 <div class="ttc" id="aerror_8hpp_html_ad60839c87ca7f0ad471edf0a5f9f0199"><div class="ttname"><a href="error_8hpp.html#ad60839c87ca7f0ad471edf0a5f9f0199">HAL_CHECK</a></div><div class="ttdeci">#define HAL_CHECK</div><div class="ttdef"><b>Definition:</b> error.hpp:8</div></div>
 <div class="ttc" id="agroup__i2c_html_ga00694e558039dbf0a2e4f2a438754e10"><div class="ttname"><a href="group__i2c.html#ga00694e558039dbf0a2e4f2a438754e10">hal::read</a></div><div class="ttdeci">status read(i2c &amp;p_i2c, hal::byte p_address, std::span&lt; hal::byte &gt; p_data_in, timeout auto p_timeout=hal::never_timeout()) noexcept</div><div class="ttdoc">read bytes from target device on i2c bus</div><div class="ttdef"><b>Definition:</b> util.hpp:48</div></div>
+<div class="ttc" id="agroup__i2c_html_ga602272331e4e2f84843e2fe34e83cca6"><div class="ttname"><a href="group__i2c.html#ga602272331e4e2f84843e2fe34e83cca6">hal::write</a></div><div class="ttdeci">status write(i2c &amp;p_i2c, hal::byte p_address, std::span&lt; const hal::byte &gt; p_data_out, timeout auto p_timeout=hal::never_timeout()) noexcept</div><div class="ttdoc">write data to a target device on the i2c bus</div><div class="ttdef"><b>Definition:</b> util.hpp:28</div></div>
 <div class="ttc" id="agroup__i2c_html_gadccf0a18afda016d4d6a05165bc0b0ab"><div class="ttname"><a href="group__i2c.html#gadccf0a18afda016d4d6a05165bc0b0ab">hal::write_then_read</a></div><div class="ttdeci">status write_then_read(i2c &amp;p_i2c, hal::byte p_address, std::span&lt; const hal::byte &gt; p_data_out, std::span&lt; hal::byte &gt; p_data_in, timeout auto p_timeout=hal::never_timeout()) noexcept</div><div class="ttdoc">write and then read bytes from target device on i2c bus</div><div class="ttdef"><b>Definition:</b> util.hpp:93</div></div>
-<div class="ttc" id="agroup__serial_html_ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><div class="ttname"><a href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">hal::write_partial</a></div><div class="ttdeci">result&lt; serial::write_t &gt; write_partial(serial &amp;p_serial, std::span&lt; const hal::byte &gt; p_data_out) noexcept</div><div class="ttdoc">Write bytes to a serial port.</div><div class="ttdef"><b>Definition:</b> util.hpp:25</div></div>
+<div class="ttc" id="agroup__serial_html_ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><div class="ttname"><a href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">hal::write_partial</a></div><div class="ttdeci">result&lt; serial::write_t &gt; write_partial(serial &amp;p_serial, std::span&lt; const hal::byte &gt; p_data_out) noexcept</div><div class="ttdoc">Write bytes to a serial port.</div><div class="ttdef"><b>Definition:</b> util.hpp:26</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
+<div class="ttc" id="anamespacehal_html_a1607e3547737e35235f946a9c67b61cf"><div class="ttname"><a href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">hal::status</a></div><div class="ttdeci">result&lt; void &gt; status</div><div class="ttdef"><b>Definition:</b> error.hpp:16</div></div>
 <div class="ttc" id="anamespacehal_html_a22b1708df761b2dc40dd4afa2ac0c401"><div class="ttname"><a href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">hal::result</a></div><div class="ttdeci">boost::leaf::result&lt; T &gt; result</div><div class="ttdef"><b>Definition:</b> error.hpp:15</div></div>
+<div class="ttc" id="anamespacehal_html_a557593a710d85719fff67b743268293a"><div class="ttname"><a href="namespacehal.html#a557593a710d85719fff67b743268293a">hal::success</a></div><div class="ttdeci">status success()</div><div class="ttdoc">a readability function for returning successful results;</div><div class="ttdef"><b>Definition:</b> error.hpp:33</div></div>
+<div class="ttc" id="anamespacehal_html_a7facad0d80497e875c8fcb9a764ae278"><div class="ttname"><a href="namespacehal.html#a7facad0d80497e875c8fcb9a764ae278">hal::as_bytes</a></div><div class="ttdeci">constexpr std::span&lt; const hal::byte &gt; as_bytes(const T *p_address, size_t p_number_of_elements)</div><div class="ttdef"><b>Definition:</b> as_bytes.hpp:18</div></div>
 <div class="ttc" id="atimer_2interface_8hpp_html"><div class="ttname"><a href="timer_2interface_8hpp.html">interface.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

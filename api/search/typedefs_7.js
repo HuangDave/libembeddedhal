@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['time_5fduration_0',['time_duration',['../group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00',1,'hal']]],
-  ['timeout_5ffunction_1',['timeout_function',['../group__utility.html#ga8ca200d14bc94cb64c41994e2abb2401',1,'hal']]]
+  ['match_0',['match',['../namespacehal.html#aaa16a4dc9af5b4b625da1b21a118c2a1',1,'hal']]],
+  ['message_5fhandler_1',['message_handler',['../classhal_1_1can__router.html#a5a2faf447c27b81887836b93984e7e19',1,'hal::can_router']]],
+  ['meters_2',['meters',['../group__utility.html#ga309a799c0b8da9cd99fb5fad7c29208c',1,'hal']]]
 ];

@@ -1,0 +1,4 @@
+<map id="hal::write" name="hal::write">
+<area shape="rect" id="node1" title="Write bytes to a serial port." alt="" coords="5,5,79,32"/>
+<area shape="rect" id="node2" href="$namespacehal.html#a557593a710d85719fff67b743268293a" title="a readability function for returning successful results;" alt="" coords="127,5,221,32"/>
+</map>

@@ -7,6 +7,9 @@ var group__utility =
       [ "max", "structhal_1_1bit__limits.html#acbcfdcedcfd6f38e19cee2cb9fe971a9", null ],
       [ "min", "structhal_1_1bit__limits.html#a5718b2fab69b767de540d0b9a4171879", null ]
     ] ],
+    [ "hal::move_interceptor< T >", "classhal_1_1move__interceptor.html", [
+      [ "T", "classhal_1_1move__interceptor.html#a5cee6333ac1cb53a12600f56aa97c235", null ]
+    ] ],
     [ "hal::overflow_counter< CountBitWidth >", "classhal_1_1overflow__counter.html", [
       [ "reset", "classhal_1_1overflow__counter.html#a5ac34f7f5fdfb9716c251aec402aab2b", null ],
       [ "update", "classhal_1_1overflow__counter.html#aa22cd8f00c0e073469412b82d3f0ba3f", null ]
@@ -25,12 +28,17 @@ var group__utility =
       [ "memory_available", "classhal_1_1static__memory__resource.html#a3779c08f77a57a00006817c00be5721d", null ],
       [ "memory_used", "classhal_1_1static__memory__resource.html#ad15b310d86e3c3c0ac7ed73cf785ec26", null ]
     ] ],
+    [ "hal::ampere", "group__utility.html#gaa830f99bf69a06fcc452d82f0deb3fa3", null ],
+    [ "hal::angle", "group__utility.html#ga97cc43689e3c450b34cd4b5c3253fe02", null ],
     [ "hal::byte", "group__utility.html#gaa21f8ca97410869aabb284a575b2021d", null ],
+    [ "hal::celsius", "group__utility.html#ga8ee6f825b6e7475277274772d858c816", null ],
     [ "hal::g_force", "group__utility.html#gabc3d1451352ebbab2ab26f3dcbc51ed9", null ],
     [ "hal::hertz", "group__utility.html#ga54dc271deb8f266e52926836c0582598", null ],
     [ "hal::meters", "group__utility.html#ga309a799c0b8da9cd99fb5fad7c29208c", null ],
+    [ "hal::rpm", "group__utility.html#ga115c0adadc69503586eff94ce028cd87", null ],
     [ "hal::time_duration", "group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00", null ],
     [ "hal::timeout_function", "group__utility.html#ga8ca200d14bc94cb64c41994e2abb2401", null ],
+    [ "hal::volts", "group__utility.html#ga3c19435046e74281a514965c8ff93b0d", null ],
     [ "hal::absolute_value", "group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9", null ],
     [ "hal::cycles_per", "group__utility.html#ga4f7dbaa1167fbee1c7a3387de676a749", null ],
     [ "hal::delay", "group__utility.html#ga8077eaec8d8c94b949159f04582abc38", null ],

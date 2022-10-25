@@ -125,8 +125,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1can.html">can</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controller Area Network (CAN bus) hardware abstraction interface.  <a href="classhal_1_1can.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1can__network.html">can_network</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage, store, and organize messages received on the can bus.  <a href="classhal_1_1can__network.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1can__router.html">can_router</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Route CAN messages received on the can bus to callbacks based on ID.  <a href="classhal_1_1can__router.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1dac.html">dac</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital to Analog Converter (DAC) hardware abstraction interface.  <a href="classhal_1_1dac.html#details">More...</a><br /></td></tr>
@@ -145,6 +145,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1motor.html">motor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open loop motorized actuator hardware abstraction.  <a href="classhal_1_1motor.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1move__interceptor.html">move_interceptor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this to perform changes on an object its move constructor is executed.  <a href="classhal_1_1move__interceptor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1output__pin.html">output_pin</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital output pin hardware abstraction.  <a href="classhal_1_1output__pin.html#details">More...</a><br /></td></tr>
@@ -176,8 +179,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html">static_callable&lt; owner_class, reference_designator, return_t(args_t... p_args)&gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="classhal_1_1static__callable.html" title="General class which will be used to allow for signature to be used and then split by the below class.">static_callable</a> with the return type and arguments split up.  <a href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1static__list.html">static_list</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classhal_1_1static__list.html" title="static_list is a non-owning non-allocating doubly linked list container with O(1) memory utilization.">static_list</a> is a non-owning non-allocating doubly linked list container with O(1) memory utilization.  <a href="classhal_1_1static__list.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1static__memory__resource.html">static_memory_resource</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classhal_1_1static__memory__resource.html" title="The static_memory_resource is the polymorphic memory resource allocator that allows libhal&#39;s librarie...">static_memory_resource</a> is the polymorphic memory resource allocator that allows libhal's libraries to use a C++ standard container such as std::pmr::vector, std::pmr::string, std::pmr::unordered_map, and more without requiring dynamic memory allocation from the heap. It provides a simple way to create an allocator with built in storage, with its size indicated by a single template parameter. It also provides statistics regarding the amount of memory allocated such that developers can determine if they need to reduce or increase the size of the buffer. Memory statistics can also give programs the insight into how much memory space is available and make decisions based on that. In the event that the memory of the static allocator is exceeded, a std::bad_alloc exception is thrown.  <a href="classhal_1_1static__memory__resource.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classhal_1_1static__memory__resource.html" title="The static_memory_resource is the polymorphic memory resource allocator that allows libhal&#39;s librarie...">static_memory_resource</a> is the polymorphic memory resource allocator that allows libhal's libraries to use a C++ standard container such as std::pmr::vector, std::pmr::string, std::pmr::unordered_map, and more without requiring dynamic memory allocation from the heap. It provides a simple way to create an allocator with built in storage, with its size indicated by a single template parameter. It also provides statistics regarding the amount of memory allocated such that developers can determine if they need to reduce or increase the size of the buffer. Memory statistics can also give programs the insight into how much memory space is available and make decisions based on that. In the event that the memory of the static allocator is exceeded, a std::bad_alloc exception is thrown. Without exceptions being enabled this will terminate the program so great care must be taken when using this allocator.  <a href="classhal_1_1static__memory__resource.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1steady__clock.html">steady_clock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware abstraction interface for a steady clock mechanism.  <a href="classhal_1_1steady__clock.html#details">More...</a><br /></td></tr>
@@ -222,9 +228,24 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga54dc271deb8f266e52926836c0582598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc3d1451352ebbab2ab26f3dcbc51ed9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gabc3d1451352ebbab2ab26f3dcbc51ed9">g_force</a> = float</td></tr>
 <tr class="separator:gabc3d1451352ebbab2ab26f3dcbc51ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa830f99bf69a06fcc452d82f0deb3fa3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#gaa830f99bf69a06fcc452d82f0deb3fa3">ampere</a> = float</td></tr>
+<tr class="memdesc:gaa830f99bf69a06fcc452d82f0deb3fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for current represented in amps.  <a href="group__utility.html#gaa830f99bf69a06fcc452d82f0deb3fa3">More...</a><br /></td></tr>
+<tr class="separator:gaa830f99bf69a06fcc452d82f0deb3fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c19435046e74281a514965c8ff93b0d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga3c19435046e74281a514965c8ff93b0d">volts</a> = float</td></tr>
+<tr class="memdesc:ga3c19435046e74281a514965c8ff93b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for voltage represented in volts.  <a href="group__utility.html#ga3c19435046e74281a514965c8ff93b0d">More...</a><br /></td></tr>
+<tr class="separator:ga3c19435046e74281a514965c8ff93b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ee6f825b6e7475277274772d858c816"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga8ee6f825b6e7475277274772d858c816">celsius</a> = float</td></tr>
+<tr class="memdesc:ga8ee6f825b6e7475277274772d858c816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for temperature represented in celsius.  <a href="group__utility.html#ga8ee6f825b6e7475277274772d858c816">More...</a><br /></td></tr>
+<tr class="separator:ga8ee6f825b6e7475277274772d858c816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga115c0adadc69503586eff94ce028cd87"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga115c0adadc69503586eff94ce028cd87">rpm</a> = float</td></tr>
+<tr class="memdesc:ga115c0adadc69503586eff94ce028cd87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for rotational velocity represented in RPMs.  <a href="group__utility.html#ga115c0adadc69503586eff94ce028cd87">More...</a><br /></td></tr>
+<tr class="separator:ga115c0adadc69503586eff94ce028cd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga309a799c0b8da9cd99fb5fad7c29208c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga309a799c0b8da9cd99fb5fad7c29208c">meters</a> = float</td></tr>
 <tr class="memdesc:ga309a799c0b8da9cd99fb5fad7c29208c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for length represented in meters.  <a href="group__utility.html#ga309a799c0b8da9cd99fb5fad7c29208c">More...</a><br /></td></tr>
 <tr class="separator:ga309a799c0b8da9cd99fb5fad7c29208c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97cc43689e3c450b34cd4b5c3253fe02"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utility.html#ga97cc43689e3c450b34cd4b5c3253fe02">angle</a> = float</td></tr>
+<tr class="memdesc:ga97cc43689e3c450b34cd4b5c3253fe02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for rotational velocity represented in degrees.  <a href="group__utility.html#ga97cc43689e3c450b34cd4b5c3253fe02">More...</a><br /></td></tr>
+<tr class="separator:ga97cc43689e3c450b34cd4b5c3253fe02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -275,6 +296,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a09499a696428213091b196699563099f"><td class="memTemplParams" colspan="2">template&lt;class... Item&gt; </td></tr>
 <tr class="memitem:a09499a696428213091b196699563099f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacehal.html#a09499a696428213091b196699563099f">new_error</a> (Item &amp;&amp;... p_item) noexcept</td></tr>
 <tr class="separator:a09499a696428213091b196699563099f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f5475b2ae1adbfc5f23e97bf5dd47c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a92f5475b2ae1adbfc5f23e97bf5dd47c">halt</a> ()</td></tr>
+<tr class="separator:a92f5475b2ae1adbfc5f23e97bf5dd47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga602272331e4e2f84843e2fe34e83cca6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#ga602272331e4e2f84843e2fe34e83cca6">write</a> (<a class="el" href="classhal_1_1i2c.html">i2c</a> &amp;p_i2c, <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> p_address, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out, timeout auto p_timeout=<a class="el" href="group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1">hal::never_timeout</a>()) noexcept</td></tr>
 <tr class="memdesc:ga602272331e4e2f84843e2fe34e83cca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">write data to a target device on the <a class="el" href="classhal_1_1i2c.html" title="Inter-integrated Circuit (I2C) hardware abstract interface.">i2c</a> bus  <a href="group__i2c.html#ga602272331e4e2f84843e2fe34e83cca6">More...</a><br /></td></tr>
 <tr class="separator:ga602272331e4e2f84843e2fe34e83cca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,6 +347,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; <a class="el" href="structhal_1_1serial_1_1write__t.html">serial::write_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">write_partial</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out) noexcept</td></tr>
 <tr class="memdesc:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">More...</a><br /></td></tr>
 <tr class="separator:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9686cb634f86ed068a43ea5bb5224073"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga9686cb634f86ed068a43ea5bb5224073">write</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out) noexcept</td></tr>
+<tr class="memdesc:ga9686cb634f86ed068a43ea5bb5224073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#ga9686cb634f86ed068a43ea5bb5224073">More...</a><br /></td></tr>
+<tr class="separator:ga9686cb634f86ed068a43ea5bb5224073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2952837cd8d503a962e7edf748737925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga2952837cd8d503a962e7edf748737925">write</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::string_view p_data_out) noexcept</td></tr>
+<tr class="memdesc:ga2952837cd8d503a962e7edf748737925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write std::span of const char to a serial port.  <a href="group__serial.html#ga2952837cd8d503a962e7edf748737925">More...</a><br /></td></tr>
+<tr class="separator:ga2952837cd8d503a962e7edf748737925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga58f116057547375e7bcdc6f29ef3786c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>&lt; std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">read</a> (<a class="el" href="classhal_1_1serial.html">serial</a> &amp;p_serial, std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_in, timeout auto p_timeout) noexcept</td></tr>
 <tr class="memdesc:ga58f116057547375e7bcdc6f29ef3786c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from a serial port.  <a href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">More...</a><br /></td></tr>
 <tr class="separator:ga58f116057547375e7bcdc6f29ef3786c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -503,7 +532,7 @@ template&lt;typename T &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a7facad0d80497e875c8fcb9a764ae278_icgraph.svg" width="254" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a7facad0d80497e875c8fcb9a764ae278_icgraph.svg" width="254" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -756,6 +785,31 @@ template&lt;std::integral T&gt; </div>
 
 </div>
 </div>
+<a id="a92f5475b2ae1adbfc5f23e97bf5dd47c" name="a92f5475b2ae1adbfc5f23e97bf5dd47c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92f5475b2ae1adbfc5f23e97bf5dd47c">&#9670;&nbsp;</a></span>halt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal::halt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a455862d0a10293e15661ca3cd780673d" name="a455862d0a10293e15661ca3cd780673d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a455862d0a10293e15661ca3cd780673d">&#9670;&nbsp;</a></span>is_a_test()</h2>
 
@@ -860,7 +914,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a09499a696428213091b196699563099f_icgraph.svg" width="332" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a09499a696428213091b196699563099f_icgraph.svg" width="332" height="222"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -898,7 +952,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a557593a710d85719fff67b743268293a_icgraph.svg" width="324" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacehal_a557593a710d85719fff67b743268293a_icgraph.svg" width="324" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

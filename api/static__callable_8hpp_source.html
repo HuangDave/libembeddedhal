@@ -112,27 +112,28 @@ $(document).ready(function(){initNavTree('static__callable_8hpp_source.html','')
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                      return_t(args_t... p_args)&gt;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a903d222c36d102eb14ff3a828e85d2a2">   48</a></span>  <a class="code hl_function" href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a903d222c36d102eb14ff3a828e85d2a2">static_callable</a>(std::function&lt;return_t(args_t... p_args)&gt; p_callback) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    callback = p_callback;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#ac59b41363c6c25ae8a906cd2307088c0">   58</a></span>  [[nodiscard]] <span class="keyword">auto</span>* <a class="code hl_function" href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#ac59b41363c6c25ae8a906cd2307088c0">get_handler</a>() noexcept</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> &amp;handler;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keyword">static</span> return_t handler(args_t... p_args) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> callback(p_args...);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keyword">inline</span> <span class="keyword">static</span> std::function&lt;return_t(args_t... p_args)&gt; callback;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}  <span class="comment">// namespace hal</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a903d222c36d102eb14ff3a828e85d2a2">   48</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a903d222c36d102eb14ff3a828e85d2a2">static_callable</a>(</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    std::function&lt;return_t(args_t... p_args)&gt; p_callback) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    callback = p_callback;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#ac59b41363c6c25ae8a906cd2307088c0">   59</a></span>  [[nodiscard]] <span class="keyword">auto</span>* <a class="code hl_function" href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#ac59b41363c6c25ae8a906cd2307088c0">get_handler</a>() noexcept</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> &amp;handler;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keyword">static</span> return_t handler(args_t... p_args) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">return</span> callback(p_args...);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">inline</span> <span class="keyword">static</span> std::function&lt;return_t(args_t... p_args)&gt; callback;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}  <span class="comment">// namespace hal</span></div>
 <div class="ttc" id="aclasshal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4_html_a903d222c36d102eb14ff3a828e85d2a2"><div class="ttname"><a href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#a903d222c36d102eb14ff3a828e85d2a2">hal::static_callable&lt; owner_class, reference_designator, return_t(args_t... p_args)&gt;::static_callable</a></div><div class="ttdeci">static_callable(std::function&lt; return_t(args_t... p_args)&gt; p_callback) noexcept</div><div class="ttdoc">Construct a new static callable object.</div><div class="ttdef"><b>Definition:</b> static_callable.hpp:48</div></div>
-<div class="ttc" id="aclasshal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4_html_ac59b41363c6c25ae8a906cd2307088c0"><div class="ttname"><a href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#ac59b41363c6c25ae8a906cd2307088c0">hal::static_callable&lt; owner_class, reference_designator, return_t(args_t... p_args)&gt;::get_handler</a></div><div class="ttdeci">auto * get_handler() noexcept</div><div class="ttdoc">Get the static function's address.</div><div class="ttdef"><b>Definition:</b> static_callable.hpp:58</div></div>
+<div class="ttc" id="aclasshal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4_html_ac59b41363c6c25ae8a906cd2307088c0"><div class="ttname"><a href="classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html#ac59b41363c6c25ae8a906cd2307088c0">hal::static_callable&lt; owner_class, reference_designator, return_t(args_t... p_args)&gt;::get_handler</a></div><div class="ttdeci">auto * get_handler() noexcept</div><div class="ttdoc">Get the static function's address.</div><div class="ttdef"><b>Definition:</b> static_callable.hpp:59</div></div>
 <div class="ttc" id="aclasshal_1_1static__callable_html"><div class="ttname"><a href="classhal_1_1static__callable.html">hal::static_callable</a></div><div class="ttdoc">General class which will be used to allow for signature to be used and then split by the below class.</div><div class="ttdef"><b>Definition:</b> static_callable.hpp:22</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
 </div><!-- fragment --></div><!-- contents -->

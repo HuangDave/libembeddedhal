@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['never_5ftimeout_0',['never_timeout',['../group__utility.html#gaa9e5fce5746218cedfd72c642a417ef1',1,'hal']]],
-  ['new_5ferror_1',['new_error',['../namespacehal.html#a09499a696428213091b196699563099f',1,'hal']]],
-  ['node_5ft_2',['node_t',['../classhal_1_1can__network_1_1node__t.html#abd30bd6d722b5aa5a2043f964896caf2',1,'hal::can_network::node_t::node_t() noexcept=default'],['../classhal_1_1can__network_1_1node__t.html#a3d6c2ca95a5c43dd2d4651e6db9c9e3a',1,'hal::can_network::node_t::node_t(const node_t &amp;p_node) noexcept']]]
+  ['map_0',['map',['../group__utility.html#gada6a3aec0a1f3227cfc539f8c57e0f40',1,'hal']]],
+  ['max_1',['max',['../structhal_1_1bit__limits.html#acbcfdcedcfd6f38e19cee2cb9fe971a9',1,'hal::bit_limits']]],
+  ['memory_5favailable_2',['memory_available',['../classhal_1_1static__memory__resource.html#a3779c08f77a57a00006817c00be5721d',1,'hal::static_memory_resource']]],
+  ['memory_5fused_3',['memory_used',['../classhal_1_1static__memory__resource.html#ad15b310d86e3c3c0ac7ed73cf785ec26',1,'hal::static_memory_resource']]],
+  ['min_4',['min',['../structhal_1_1bit__limits.html#a5718b2fab69b767de540d0b9a4171879',1,'hal::bit_limits']]],
+  ['multiply_5',['multiply',['../group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90',1,'hal']]]
 ];

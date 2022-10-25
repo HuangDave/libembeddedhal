@@ -95,13 +95,11 @@ $(document).ready(function(){initNavTree('structhal_1_1can_1_1settings.html','')
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structhal_1_1can_1_1settings-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">hal::can::settings Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Generic settings for a can peripheral.  
- <a href="structhal_1_1can_1_1settings.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="can_2interface_8hpp_source.html">interface.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -113,16 +111,119 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a469ea305bf23ad2bf66931880e118d6f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1can_1_1settings.html#a469ea305bf23ad2bf66931880e118d6f">operator==</a> (const <a class="el" href="structhal_1_1can_1_1settings.html">settings</a> &amp;p_settings) const noexcept</td></tr>
 <tr class="memdesc:a469ea305bf23ad2bf66931880e118d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operators ==.  <a href="structhal_1_1can_1_1settings.html#a469ea305bf23ad2bf66931880e118d6f">More...</a><br /></td></tr>
 <tr class="separator:a469ea305bf23ad2bf66931880e118d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614a72a66a7d120fc46ecc3101718083"><td class="memItemLeft" align="right" valign="top">constexpr std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1can_1_1settings.html#a614a72a66a7d120fc46ecc3101718083">bit_width</a> () const noexcept</td></tr>
+<tr class="separator:a614a72a66a7d120fc46ecc3101718083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8632ec08de5586da2924f25cc8388bb"><td class="memItemLeft" align="right" valign="top">constexpr std::optional&lt; std::uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1can_1_1settings.html#ae8632ec08de5586da2924f25cc8388bb">is_valid</a> (<a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a> p_operating_frequency) const noexcept</td></tr>
+<tr class="memdesc:ae8632ec08de5586da2924f25cc8388bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate configuration settings against an operating frequency.  <a href="structhal_1_1can_1_1settings.html#ae8632ec08de5586da2924f25cc8388bb">More...</a><br /></td></tr>
+<tr class="separator:ae8632ec08de5586da2924f25cc8388bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9c22ccf932c6759b50e81f9f18f773b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1can_1_1settings.html#a9c22ccf932c6759b50e81f9f18f773b8">clock_rate</a> = 100.0_kHz</td></tr>
-<tr class="memdesc:a9c22ccf932c6759b50e81f9f18f773b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus clock rate in hertz.  <a href="structhal_1_1can_1_1settings.html#a9c22ccf932c6759b50e81f9f18f773b8">More...</a><br /></td></tr>
-<tr class="separator:a9c22ccf932c6759b50e81f9f18f773b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1f0328aa8c987b80bec57c5aa4f19d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1can_1_1settings.html#aae1f0328aa8c987b80bec57c5aa4f19d">baud_rate</a> = 100.0_kHz</td></tr>
+<tr class="memdesc:aae1f0328aa8c987b80bec57c5aa4f19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus clock rate in hertz.  <a href="structhal_1_1can_1_1settings.html#aae1f0328aa8c987b80bec57c5aa4f19d">More...</a><br /></td></tr>
+<tr class="separator:aae1f0328aa8c987b80bec57c5aa4f19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca58dadf53e8040545250ce375732f06"><td class="memItemLeft" align="right" valign="top">std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1can_1_1settings.html#aca58dadf53e8040545250ce375732f06">propagation_delay</a> = 3</td></tr>
+<tr class="separator:aca58dadf53e8040545250ce375732f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914dfee9420d24dfb60647af10fae7bc"><td class="memItemLeft" align="right" valign="top">std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1can_1_1settings.html#a914dfee9420d24dfb60647af10fae7bc">phase_segment1</a> = 3</td></tr>
+<tr class="separator:a914dfee9420d24dfb60647af10fae7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb91231e2f00827b09fccb7a6cdd8221"><td class="memItemLeft" align="right" valign="top">std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1can_1_1settings.html#adb91231e2f00827b09fccb7a6cdd8221">phase_segment2</a> = 3</td></tr>
+<tr class="separator:adb91231e2f00827b09fccb7a6cdd8221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ab5b9b9e6ff8686cf69d635310a78c"><td class="memItemLeft" align="right" valign="top">std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1can_1_1settings.html#a87ab5b9b9e6ff8686cf69d635310a78c">synchronization_jump_width</a> = 1</td></tr>
+<tr class="separator:a87ab5b9b9e6ff8686cf69d635310a78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a149c7723f6ca0ba7f0c6851c76d1f41f"><td class="memItemLeft" align="right" valign="top">static constexpr std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1can_1_1settings.html#a149c7723f6ca0ba7f0c6851c76d1f41f">sync_segment</a> = 1</td></tr>
+<tr class="separator:a149c7723f6ca0ba7f0c6851c76d1f41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Generic settings for a can peripheral. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p >Generic settings for a can peripheral</p>
+<p >CAN Bit Quanta Timing Diagram of: </p><pre class="fragment">                         | &lt;--- sjw ---&gt; |
+   ____    ______    __________    __________
+_/ SYNC \/  PROP  \/   PHASE1   \/   PHASE2   \_
+ \______/\________/\____________/\____________/
+                                 ^ Sample point
+</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a614a72a66a7d120fc46ecc3101718083" name="a614a72a66a7d120fc46ecc3101718083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a614a72a66a7d120fc46ecc3101718083">&#9670;&nbsp;</a></span>bit_width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::uint16_t hal::can::settings::bit_width </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structhal_1_1can_1_1settings_a614a72a66a7d120fc46ecc3101718083_icgraph.svg" width="296" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ae8632ec08de5586da2924f25cc8388bb" name="ae8632ec08de5586da2924f25cc8388bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8632ec08de5586da2924f25cc8388bb">&#9670;&nbsp;</a></span>is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::optional&lt; std::uint32_t &gt; hal::can::settings::is_valid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a>&#160;</td>
+          <td class="paramname"><em>p_operating_frequency</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validate configuration settings against an operating frequency. </p>
+<p >The settings and frequency must follow the following rules:</p>
+<ol type="1">
+<li>propagation_delay, phase_segment1, phase_segment2 and synchronization_jump_width must be nonzero.</li>
+<li>synchronization_jump_width must be the lesser between phase_segment1 and phase_segment2.</li>
+<li>The total bit width must be equal to or greater than 8 Tq/bit; the sum of sync_segment, propagation_delay, phase_segment1 and phase_segment2.</li>
+<li>The CAN device's operating frequency must be at least 8 times the baud rate to give the minimum.</li>
+<li>The ratio between the CAN device's operating frequency and the bit width must be close enough to an integer to produce a usable baud rate prescaler.</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_operating_frequency</td><td>- CAN device operating frequency </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::optional&lt;std::uint32_t&gt; - baud rate prescaler </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structhal_1_1can_1_1settings_ae8632ec08de5586da2924f25cc8388bb_cgraph.svg" width="296" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a8cb57b303afd1530491e67e72a15ffaa" name="a8cb57b303afd1530491e67e72a15ffaa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cb57b303afd1530491e67e72a15ffaa">&#9670;&nbsp;</a></span>operator&lt;=&gt;()</h2>
 
@@ -188,19 +289,108 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9c22ccf932c6759b50e81f9f18f773b8" name="a9c22ccf932c6759b50e81f9f18f773b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c22ccf932c6759b50e81f9f18f773b8">&#9670;&nbsp;</a></span>clock_rate</h2>
+<a id="aae1f0328aa8c987b80bec57c5aa4f19d" name="aae1f0328aa8c987b80bec57c5aa4f19d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1f0328aa8c987b80bec57c5aa4f19d">&#9670;&nbsp;</a></span>baud_rate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a> hal::can::settings::clock_rate = 100.0_kHz</td>
+          <td class="memname"><a class="el" href="group__utility.html#ga54dc271deb8f266e52926836c0582598">hertz</a> hal::can::settings::baud_rate = 100.0_kHz</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Bus clock rate in hertz. </p>
+
+</div>
+</div>
+<a id="a914dfee9420d24dfb60647af10fae7bc" name="a914dfee9420d24dfb60647af10fae7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914dfee9420d24dfb60647af10fae7bc">&#9670;&nbsp;</a></span>phase_segment1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint8_t hal::can::settings::phase_segment1 = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Length of Phase Segment 1 (1qt ... 8qt)</p>
+<p >Determines the bit rate, phase segment 1 acts as a buffer that can be lengthened to resynchronize with the bit stream via the synchronization_jump_width. Includes propagation delay </p>
+
+</div>
+</div>
+<a id="adb91231e2f00827b09fccb7a6cdd8221" name="adb91231e2f00827b09fccb7a6cdd8221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb91231e2f00827b09fccb7a6cdd8221">&#9670;&nbsp;</a></span>phase_segment2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint8_t hal::can::settings::phase_segment2 = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Length of Phase Segment 2 (1qt ... 8qt)</p>
+<p >Determines the bit rate and is like phase segment 1 and occurs after the sampling point. Phase segment 2 can be shortened to resynchronize with the bit stream via the synchronization_jump_width. </p>
+
+</div>
+</div>
+<a id="aca58dadf53e8040545250ce375732f06" name="aca58dadf53e8040545250ce375732f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca58dadf53e8040545250ce375732f06">&#9670;&nbsp;</a></span>propagation_delay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint8_t hal::can::settings::propagation_delay = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Propagation Delay (1qt ... 8qt)</p>
+<p >Propagation time It is used to compensate for signal delays across the network. </p>
+
+</div>
+</div>
+<a id="a149c7723f6ca0ba7f0c6851c76d1f41f" name="a149c7723f6ca0ba7f0c6851c76d1f41f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149c7723f6ca0ba7f0c6851c76d1f41f">&#9670;&nbsp;</a></span>sync_segment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::uint8_t hal::can::settings::sync_segment = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Sync Segment (always 1qt)</p>
+<p >Initial sync transition, the start of a CAN bit </p>
+
+</div>
+</div>
+<a id="a87ab5b9b9e6ff8686cf69d635310a78c" name="a87ab5b9b9e6ff8686cf69d635310a78c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ab5b9b9e6ff8686cf69d635310a78c">&#9670;&nbsp;</a></span>synchronization_jump_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint8_t hal::can::settings::synchronization_jump_width = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Synchronization jump width (1qt ... 4qt)</p>
+<p >This is the maximum time by which the bit sampling period may be lengthened or shortened during each cycle to adjust for oscillator mismatch between nodes.</p>
+<p >This value must be smaller than phase_segment1 and phase_segment2 </p>
 
 </div>
 </div>

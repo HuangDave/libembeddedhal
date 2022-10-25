@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('serial_2util_8hpp.html',''); initResiz
 <div class="textblock"><code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;span&gt;</code><br />
 <code>#include &lt;string_view&gt;</code><br />
+<code>#include &quot;<a class="el" href="as__bytes_8hpp_source.html">../as_bytes.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="error_8hpp_source.html">../error.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="timeout_8hpp_source.html">../timeout.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="units_8hpp_source.html">../units.hpp</a>&quot;</code><br />
@@ -118,6 +119,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="memItemLeft" align="right" valign="top">result&lt; serial::write_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">hal::write_partial</a> (serial &amp;p_serial, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out) noexcept</td></tr>
 <tr class="memdesc:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#ga9fcfdc8a8fa26b039d5a8a6f9b6b6962">More...</a><br /></td></tr>
 <tr class="separator:ga9fcfdc8a8fa26b039d5a8a6f9b6b6962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9686cb634f86ed068a43ea5bb5224073"><td class="memItemLeft" align="right" valign="top">status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga9686cb634f86ed068a43ea5bb5224073">hal::write</a> (serial &amp;p_serial, std::span&lt; const <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_out) noexcept</td></tr>
+<tr class="memdesc:ga9686cb634f86ed068a43ea5bb5224073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write bytes to a serial port.  <a href="group__serial.html#ga9686cb634f86ed068a43ea5bb5224073">More...</a><br /></td></tr>
+<tr class="separator:ga9686cb634f86ed068a43ea5bb5224073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2952837cd8d503a962e7edf748737925"><td class="memItemLeft" align="right" valign="top">status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga2952837cd8d503a962e7edf748737925">hal::write</a> (serial &amp;p_serial, std::string_view p_data_out) noexcept</td></tr>
+<tr class="memdesc:ga2952837cd8d503a962e7edf748737925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write std::span of const char to a serial port.  <a href="group__serial.html#ga2952837cd8d503a962e7edf748737925">More...</a><br /></td></tr>
+<tr class="separator:ga2952837cd8d503a962e7edf748737925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga58f116057547375e7bcdc6f29ef3786c"><td class="memItemLeft" align="right" valign="top">result&lt; std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">hal::read</a> (serial &amp;p_serial, std::span&lt; <a class="el" href="group__utility.html#gaa21f8ca97410869aabb284a575b2021d">hal::byte</a> &gt; p_data_in, timeout auto p_timeout) noexcept</td></tr>
 <tr class="memdesc:ga58f116057547375e7bcdc6f29ef3786c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from a serial port.  <a href="group__serial.html#ga58f116057547375e7bcdc6f29ef3786c">More...</a><br /></td></tr>
 <tr class="separator:ga58f116057547375e7bcdc6f29ef3786c"><td class="memSeparator" colspan="2">&#160;</td></tr>

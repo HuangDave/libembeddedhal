@@ -1,0 +1,4 @@
+<map id="hal::can_router::create" name="hal::can_router::create">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node2" href="$classhal_1_1can.html#a69e47fbc9ff73a80465618b72623e7f9" title="Set the message reception handler." alt="" coords="201,5,336,32"/>
+</map>
