@@ -5,6 +5,7 @@ var group__input__pin =
         [ "operator<=>", "structhal_1_1input__pin_1_1settings.html#a8ee8534fdb41e5311a4445d276e8d71d", null ],
         [ "resistor", "structhal_1_1input__pin_1_1settings.html#a9cd830f01b3a98a267f766f7ff82c947", null ]
       ] ],
+      [ "~input_pin", "classhal_1_1input__pin.html#a3880caa73ba24653823e2d8930173103", null ],
       [ "configure", "classhal_1_1input__pin.html#a5d37be1ca1f9dcac778ca7ff6e5306d0", null ],
       [ "level", "classhal_1_1input__pin.html#a55fab94b912a03bfc58ce953c46847a2", null ]
     ] ],

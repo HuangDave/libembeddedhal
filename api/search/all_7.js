@@ -11,7 +11,8 @@ var searchData=
   ['handler_8',['handler',['../classhal_1_1can.html#aad5d17f59a3a8f3bddded97760737163',1,'hal::can::handler()'],['../classhal_1_1interrupt__pin.html#ad49df850168e2a62551d6d3d1e81d86c',1,'hal::interrupt_pin::handler()'],['../structhal_1_1can__router_1_1route.html#afdd54b217b7924b0841099885111cc1d',1,'hal::can_router::route::handler()']]],
   ['handlers_9',['handlers',['../classhal_1_1can__router.html#a995d134edf2c141152f4f43652a2884f',1,'hal::can_router']]],
   ['hertz_10',['hertz',['../group__utility.html#ga54dc271deb8f266e52926836c0582598',1,'hal']]],
-  ['literals_11',['literals',['../namespacehal_1_1literals.html',1,'hal']]],
-  ['mock_12',['mock',['../namespacehal_1_1mock.html',1,'hal']]],
-  ['timeout_13',['timeout',['../concepthal_1_1timeout.html',1,'hal']]]
+  ['history_11',['history',['../classhal_1_1spy__handler.html#a871007ad41c2216f90c1bff9c99f7110',1,'hal::spy_handler']]],
+  ['literals_12',['literals',['../namespacehal_1_1literals.html',1,'hal']]],
+  ['mock_13',['mock',['../namespacehal_1_1mock.html',1,'hal']]],
+  ['timeout_14',['timeout',['../concepthal_1_1timeout.html',1,'hal']]]
 ];

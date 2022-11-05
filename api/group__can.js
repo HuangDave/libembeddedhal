@@ -2,7 +2,8 @@ var group__can =
 [
     [ "hal::can", "classhal_1_1can.html", [
       [ "message_t", "structhal_1_1can_1_1message__t.html", [
-        [ "operator<=>", "structhal_1_1can_1_1message__t.html#a11fb0ce9001f720842acdfb7bedbf086", null ],
+        [ "operator==", "structhal_1_1can_1_1message__t.html#afcac119f08219f7f2d5bf884bb5eb80c", null ],
+        [ "operator<<", "structhal_1_1can_1_1message__t.html#ac90fbacbb21fca3829f029a3efb4a9f4", null ],
         [ "id", "structhal_1_1can_1_1message__t.html#a7d33139d3c5f9b10d31ee7c809b0d6cf", null ],
         [ "is_remote_request", "structhal_1_1can_1_1message__t.html#acb62ec09361d220eb9de285498298baf", null ],
         [ "length", "structhal_1_1can_1_1message__t.html#a2c66f4827afe85cb1db5d9894666e70a", null ],
@@ -22,9 +23,16 @@ var group__can =
       ] ],
       [ "handler", "classhal_1_1can.html#aad5d17f59a3a8f3bddded97760737163", null ],
       [ "id_t", "classhal_1_1can.html#ae85571b4f7aac93fca8503aafcb32a47", null ],
+      [ "~can", "classhal_1_1can.html#a88c989bfc09af537f1177089eb8adbd8", null ],
       [ "configure", "classhal_1_1can.html#a32a3428c7d56ee273d71690bba05bf27", null ],
       [ "on_receive", "classhal_1_1can.html#a69e47fbc9ff73a80465618b72623e7f9", null ],
       [ "send", "classhal_1_1can.html#a5b338c02faabbdd1ee6ae580e32fa206", null ]
+    ] ],
+    [ "hal::mock::can", "structhal_1_1mock_1_1can.html", [
+      [ "reset", "structhal_1_1mock_1_1can.html#a234578234b8deacd0e3f3d1b563bbedf", null ],
+      [ "spy_configure", "structhal_1_1mock_1_1can.html#abef117a5a5ff0bfc7ee313814b015eb1", null ],
+      [ "spy_on_receive", "structhal_1_1mock_1_1can.html#aef19e997f25ac0f4b3124ab6cf5af09e", null ],
+      [ "spy_send", "structhal_1_1mock_1_1can.html#a4c2d5472b8ed609ee459e062c43945e1", null ]
     ] ],
     [ "hal::can_router", "classhal_1_1can__router.html", [
       [ "route", "structhal_1_1can__router_1_1route.html", [

@@ -16,6 +16,7 @@ var dir_6f6138918d4430761755642443839fe1 =
     [ "timer", "dir_81e5849e9c890799da201f6a87e8f4ff.html", "dir_81e5849e9c890799da201f6a87e8f4ff" ],
     [ "as_bytes.hpp", "as__bytes_8hpp.html", "as__bytes_8hpp" ],
     [ "bit_limits.hpp", "bit__limits_8hpp.html", "bit__limits_8hpp" ],
+    [ "comparison.hpp", "comparison_8hpp.html", "comparison_8hpp" ],
     [ "config.hpp", "config_8hpp.html", "config_8hpp" ],
     [ "enum.hpp", "enum_8hpp.html", "enum_8hpp" ],
     [ "error.hpp", "error_8hpp.html", "error_8hpp" ],
@@ -25,8 +26,7 @@ var dir_6f6138918d4430761755642443839fe1 =
     [ "overflow_counter.hpp", "overflow__counter_8hpp.html", null ],
     [ "static_callable.hpp", "static__callable_8hpp.html", null ],
     [ "static_list.hpp", "static__list_8hpp.html", "static__list_8hpp" ],
-    [ "static_memory_resource.hpp", "static__memory__resource_8hpp.html", null ],
-    [ "testing.hpp", "testing_8hpp.html", null ],
+    [ "testing.hpp", "testing_8hpp.html", "testing_8hpp" ],
     [ "timeout.hpp", "timeout_8hpp.html", "timeout_8hpp" ],
     [ "to_array.hpp", "to__array_8hpp.html", "to__array_8hpp" ],
     [ "units.hpp", "units_8hpp.html", "units_8hpp" ]

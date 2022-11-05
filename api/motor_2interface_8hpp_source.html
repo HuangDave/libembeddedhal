@@ -109,11 +109,14 @@ $(document).ready(function(){initNavTree('motor_2interface_8hpp_source.html','')
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> driver_power(p_power);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> driver_power(<span class="keywordtype">float</span> p_power) <span class="keyword">noexcept</span> = 0;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}  <span class="comment">// namespace hal</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classhal_1_1motor.html#a24ade44337702b296037579bb40ead3a">   60</a></span>  <span class="keyword">virtual</span> <a class="code hl_function" href="classhal_1_1motor.html#a24ade44337702b296037579bb40ead3a">~motor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> driver_power(<span class="keywordtype">float</span> p_power) <span class="keyword">noexcept</span> = 0;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}  <span class="comment">// namespace hal</span></div>
 <div class="ttc" id="aclasshal_1_1motor_html"><div class="ttname"><a href="classhal_1_1motor.html">hal::motor</a></div><div class="ttdoc">Open loop motorized actuator hardware abstraction.</div><div class="ttdef"><b>Definition:</b> interface.hpp:24</div></div>
+<div class="ttc" id="aclasshal_1_1motor_html_a24ade44337702b296037579bb40ead3a"><div class="ttname"><a href="classhal_1_1motor.html#a24ade44337702b296037579bb40ead3a">hal::motor::~motor</a></div><div class="ttdeci">virtual ~motor()=default</div></div>
 <div class="ttc" id="aclasshal_1_1motor_html_a6bb8b17da2f0b3f6b3cb4e4d4868ac50"><div class="ttname"><a href="classhal_1_1motor.html#a6bb8b17da2f0b3f6b3cb4e4d4868ac50">hal::motor::power</a></div><div class="ttdeci">status power(float p_power) noexcept</div><div class="ttdoc">Apply power to the motor.</div><div class="ttdef"><b>Definition:</b> interface.hpp:55</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
 <div class="ttc" id="anamespacehal_html_a1607e3547737e35235f946a9c67b61cf"><div class="ttname"><a href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">hal::status</a></div><div class="ttdeci">result&lt; void &gt; status</div><div class="ttdef"><b>Definition:</b> error.hpp:16</div></div>

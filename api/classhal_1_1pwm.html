@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58c22bfb45a2602474ffd757f4144db4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1pwm.html#a58c22bfb45a2602474ffd757f4144db4">duty_cycle</a> (float p_duty_cycle) noexcept</td></tr>
 <tr class="memdesc:a58c22bfb45a2602474ffd757f4144db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pwm waveform duty cycle.  <a href="classhal_1_1pwm.html#a58c22bfb45a2602474ffd757f4144db4">More...</a><br /></td></tr>
 <tr class="separator:a58c22bfb45a2602474ffd757f4144db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1b39503fa5cbcc778dad9172849251"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1pwm.html#a1c1b39503fa5cbcc778dad9172849251">~pwm</a> ()=default</td></tr>
+<tr class="separator:a1c1b39503fa5cbcc778dad9172849251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Pulse Width Modulation (PWM) channel hardware abstraction. </p>
@@ -139,7 +141,33 @@ Public Member Functions</h2></td></tr>
 <div class="ttc" id="aclasshal_1_1pwm_html_a64c8e392db6e0fd690f02d02566fbb55"><div class="ttname"><a href="classhal_1_1pwm.html#a64c8e392db6e0fd690f02d02566fbb55">hal::pwm::frequency</a></div><div class="ttdeci">status frequency(hertz p_frequency) noexcept</div><div class="ttdoc">Set the pwm waveform frequency.</div><div class="ttdef"><b>Definition:</b> interface.hpp:56</div></div>
 <div class="ttc" id="agroup__utility_html_ga80ad6db29189e74fcb1a49dc801897b3"><div class="ttname"><a href="group__utility.html#ga80ad6db29189e74fcb1a49dc801897b3">hal::wavelength</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; int64_t, Period &gt; wavelength(hertz p_source)</div><div class="ttdoc">Calculates and returns the wavelength in seconds.</div><div class="ttdef"><b>Definition:</b> units.hpp:261</div></div>
 </div><!-- fragment --><p >PWM is used for power control like motor control, lighting, transmitting signals to servos, sending telemetry and much more. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1c1b39503fa5cbcc778dad9172849251" name="a1c1b39503fa5cbcc778dad9172849251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c1b39503fa5cbcc778dad9172849251">&#9670;&nbsp;</a></span>~pwm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual hal::pwm::~pwm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a58c22bfb45a2602474ffd757f4144db4" name="a58c22bfb45a2602474ffd757f4144db4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58c22bfb45a2602474ffd757f4144db4">&#9670;&nbsp;</a></span>duty_cycle()</h2>
 

@@ -53,7 +53,6 @@ var namespacehal =
     [ "static_callable", "classhal_1_1static__callable.html", null ],
     [ "static_callable< owner_class, reference_designator, return_t(args_t... p_args)>", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4" ],
     [ "static_list", "classhal_1_1static__list.html", "classhal_1_1static__list" ],
-    [ "static_memory_resource", "classhal_1_1static__memory__resource.html", "classhal_1_1static__memory__resource" ],
     [ "steady_clock", "classhal_1_1steady__clock.html", "classhal_1_1steady__clock" ],
     [ "steady_clock_timeout", "classhal_1_1steady__clock__timeout.html", "classhal_1_1steady__clock__timeout" ],
     [ "timer", "classhal_1_1timer.html", "classhal_1_1timer" ],

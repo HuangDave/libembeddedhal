@@ -8,6 +8,7 @@ var group__spi =
         [ "clock_rate", "structhal_1_1spi_1_1settings.html#ad1c82aa22885f93e7862597669a0707c", null ],
         [ "data_valid_on_trailing_edge", "structhal_1_1spi_1_1settings.html#a6e3608114ad53b46d2ab1da82a6caf42", null ]
       ] ],
+      [ "~spi", "classhal_1_1spi.html#ac14f846d303d9c5b80f60890e9db794d", null ],
       [ "configure", "classhal_1_1spi.html#ad760b829c1b680db63db635a2d0892ea", null ],
       [ "transfer", "classhal_1_1spi.html#a775c974483444ab56dcdccd293d19b82", null ],
       [ "default_filler", "classhal_1_1spi.html#a33e2442ae4061231938416efcf54b124", null ]

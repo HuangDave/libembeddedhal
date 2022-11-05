@@ -1,6 +1,7 @@
 var namespacehal_1_1mock =
 [
     [ "adc", "structhal_1_1mock_1_1adc.html", "structhal_1_1mock_1_1adc" ],
+    [ "can", "structhal_1_1mock_1_1can.html", "structhal_1_1mock_1_1can" ],
     [ "dac", "structhal_1_1mock_1_1dac.html", "structhal_1_1mock_1_1dac" ],
     [ "input_pin", "structhal_1_1mock_1_1input__pin.html", "structhal_1_1mock_1_1input__pin" ],
     [ "interrupt_pin", "structhal_1_1mock_1_1interrupt__pin.html", "structhal_1_1mock_1_1interrupt__pin" ],

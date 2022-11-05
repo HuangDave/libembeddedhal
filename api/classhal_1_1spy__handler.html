@@ -115,6 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b464b771143e4910919bf2bbed93344"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spy__handler.html#a0b464b771143e4910919bf2bbed93344">call_history</a> () const noexcept</td></tr>
 <tr class="memdesc:a0b464b771143e4910919bf2bbed93344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the call history of the save function.  <a href="classhal_1_1spy__handler.html#a0b464b771143e4910919bf2bbed93344">More...</a><br /></td></tr>
 <tr class="separator:a0b464b771143e4910919bf2bbed93344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871007ad41c2216f90c1bff9c99f7110"><td class="memTemplParams" colspan="2">template&lt;size_t ArgumentIndex&gt; </td></tr>
+<tr class="memitem:a871007ad41c2216f90c1bff9c99f7110"><td class="memTemplItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classhal_1_1spy__handler.html#a871007ad41c2216f90c1bff9c99f7110">history</a> (size_t p_call) const noexcept</td></tr>
+<tr class="memdesc:a871007ad41c2216f90c1bff9c99f7110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return argument from one of call history parameters.  <a href="classhal_1_1spy__handler.html#a871007ad41c2216f90c1bff9c99f7110">More...</a><br /></td></tr>
+<tr class="separator:a871007ad41c2216f90c1bff9c99f7110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4dbc00ce7c0dece6cde8dffe3ac8816"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1spy__handler.html#ad4dbc00ce7c0dece6cde8dffe3ac8816">reset</a> () noexcept</td></tr>
 <tr class="memdesc:ad4dbc00ce7c0dece6cde8dffe3ac8816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset call recordings and turns off error trigger.  <a href="classhal_1_1spy__handler.html#ad4dbc00ce7c0dece6cde8dffe3ac8816">More...</a><br /></td></tr>
 <tr class="separator:ad4dbc00ce7c0dece6cde8dffe3ac8816"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +162,51 @@ template&lt;typename... args_t&gt; </div>
 
 <p>Return the call history of the save function. </p>
 <dl class="section return"><dt>Returns</dt><dd>const auto&amp; - reference to the call history vector </dd></dl>
+
+</div>
+</div>
+<a id="a871007ad41c2216f90c1bff9c99f7110" name="a871007ad41c2216f90c1bff9c99f7110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871007ad41c2216f90c1bff9c99f7110">&#9670;&nbsp;</a></span>history()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... args_t&gt; </div>
+<div class="memtemplate">
+template&lt;size_t ArgumentIndex&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto &amp; <a class="el" href="classhal_1_1spy__handler.html">hal::spy_handler</a>&lt; args_t &gt;::history </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>p_call</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return argument from one of call history parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_call</td><td>- history call from 0 to N </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const auto&amp; - reference to the call history vector </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>- if p_call is beyond the size of call_history </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -233,7 +282,7 @@ template&lt;typename... args_t&gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1spy__handler_ad4dbc00ce7c0dece6cde8dffe3ac8816_icgraph.svg" width="359" height="506"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1spy__handler_ad4dbc00ce7c0dece6cde8dffe3ac8816_icgraph.svg" width="359" height="556"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

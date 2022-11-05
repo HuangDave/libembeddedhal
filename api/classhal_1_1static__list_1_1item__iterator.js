@@ -8,7 +8,7 @@ var classhal_1_1static__list_1_1item__iterator =
     [ "item_iterator", "classhal_1_1static__list_1_1item__iterator.html#abaccbe53a5c7e991a2d00ccdd1eb9f67", null ],
     [ "operator!=", "classhal_1_1static__list_1_1item__iterator.html#abd52213dbd40e00d97b4fd4489aa6227", null ],
     [ "operator*", "classhal_1_1static__list_1_1item__iterator.html#ad25756b6db58be720f00623f6d8d970e", null ],
-    [ "operator*", "classhal_1_1static__list_1_1item__iterator.html#a30eb896dbe98d66a168b19257b02903f", null ],
+    [ "operator*", "classhal_1_1static__list_1_1item__iterator.html#abcb773c46d0a6cd958dce02b9ecd290f", null ],
     [ "operator++", "classhal_1_1static__list_1_1item__iterator.html#a7e7a54cc5c0c1076ff77222a3535ddfb", null ],
     [ "operator++", "classhal_1_1static__list_1_1item__iterator.html#a3eca38754f95bdfaca8648dbe8b45fce", null ],
     [ "operator--", "classhal_1_1static__list_1_1item__iterator.html#a127d4f1ce69c3417f520f986f063afec", null ],

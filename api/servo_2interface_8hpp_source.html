@@ -109,11 +109,14 @@ $(document).ready(function(){initNavTree('servo_2interface_8hpp_source.html','')
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> driver_position(p_position);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> driver_position(<span class="keywordtype">float</span> p_position) <span class="keyword">noexcept</span> = 0;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}  <span class="comment">// namespace hal</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classhal_1_1servo.html#a51214959311c016496ee0edf58bff487">   96</a></span>  <span class="keyword">virtual</span> <a class="code hl_function" href="classhal_1_1servo.html#a51214959311c016496ee0edf58bff487">~servo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a> driver_position(<span class="keywordtype">float</span> p_position) <span class="keyword">noexcept</span> = 0;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}  <span class="comment">// namespace hal</span></div>
 <div class="ttc" id="aclasshal_1_1servo_html"><div class="ttname"><a href="classhal_1_1servo.html">hal::servo</a></div><div class="ttdoc">Hardware abstraction for closed loop positional rotary and linear actuators.</div><div class="ttdef"><b>Definition:</b> interface.hpp:38</div></div>
+<div class="ttc" id="aclasshal_1_1servo_html_a51214959311c016496ee0edf58bff487"><div class="ttname"><a href="classhal_1_1servo.html#a51214959311c016496ee0edf58bff487">hal::servo::~servo</a></div><div class="ttdeci">virtual ~servo()=default</div></div>
 <div class="ttc" id="aclasshal_1_1servo_html_abc6a66d48a9b55b6345ad7894fd6ba74"><div class="ttname"><a href="classhal_1_1servo.html#abc6a66d48a9b55b6345ad7894fd6ba74">hal::servo::position</a></div><div class="ttdeci">status position(float p_position) noexcept</div><div class="ttdoc">Set the position of the servo.</div><div class="ttdef"><b>Definition:</b> interface.hpp:91</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
 <div class="ttc" id="anamespacehal_html_a1607e3547737e35235f946a9c67b61cf"><div class="ttname"><a href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">hal::status</a></div><div class="ttdeci">result&lt; void &gt; status</div><div class="ttdef"><b>Definition:</b> error.hpp:16</div></div>

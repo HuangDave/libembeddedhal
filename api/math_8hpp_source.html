@@ -99,138 +99,139 @@ $(document).ready(function(){initNavTree('math_8hpp_source.html',''); initResiza
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;concepts&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="error_8hpp.html">error.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehal.html">hal</a> {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90">   30</a></span>[[nodiscard]] <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;T&gt;</a> <a class="code hl_function" href="group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90">multiply</a>(T p_lhs, T p_rhs) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordflow">if</span> (p_lhs == 0 || p_rhs == 0) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> T{ 0 };</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  T <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a> = p_lhs * p_rhs;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">if</span> (p_lhs != <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a> / p_rhs) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacehal.html#a09499a696428213091b196699563099f">hal::new_error</a>(std::errc::result_out_of_range);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">   63</a></span>[[nodiscard]] <span class="keyword">constexpr</span> T <a class="code hl_function" href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">absolute_value</a>(T p_value) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_unsigned_v&lt;T&gt;) {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> p_value;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">if</span> (p_value &gt;= 0) {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keywordflow">return</span> p_value;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span> (p_value == std::numeric_limits&lt;T&gt;::min()) {</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <span class="keywordflow">return</span> std::numeric_limits&lt;T&gt;::max();</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> -p_value;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="group__utility.html#ga58a3550a3236310f20b92eacf593c2f0">   89</a></span>[[nodiscard]] <span class="keyword">constexpr</span> T <a class="code hl_function" href="group__utility.html#ga58a3550a3236310f20b92eacf593c2f0">rounding_division</a>(T p_numerator,</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                            T p_denominator) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordtype">bool</span> num_sign = p_numerator &gt;= 0;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">bool</span> den_sign = p_denominator &gt;= 0;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keyword">auto</span> numerator = <a class="code hl_function" href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">absolute_value</a>(p_numerator);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keyword">auto</span> denominator = <a class="code hl_function" href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">absolute_value</a>(p_denominator);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordflow">if</span> (denominator &gt; numerator || denominator == 0) {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> T{ 0 };</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keyword">const</span> T remainder = numerator % denominator;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keyword">const</span> T half_denominator = (denominator / 2);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  T quotient = numerator / denominator;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="comment">// Round if remainder is greater than half of the denominator</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordflow">if</span> (half_denominator != 0 &amp;&amp; remainder &gt;= half_denominator) {</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    quotient++;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordflow">if</span> (num_sign != den_sign) {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordflow">return</span> -quotient;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordflow">return</span> quotient;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15">  128</a></span>[[nodiscard]] <span class="keyword">constexpr</span> T <a class="code hl_function" href="group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15">distance</a>(T p_left, T p_right) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>{</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordflow">if</span> (p_right &gt; p_left) {</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">return</span> p_right - p_left;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">return</span> p_left - p_right;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">int</span>egral T&gt;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="namespacehal.html#gafcd717bac7dd9983e8027bd45b7c3d15">  150</a></span>[[nodiscard]] <span class="keyword">constexpr</span> std::make_unsigned_t&lt;T&gt; <a class="code hl_function" href="group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15">distance</a>(T p_left,</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                                                         T p_right) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>{</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(T) &lt;= <span class="keyword">sizeof</span>(int32_t));</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keyword">using </span>unsigned_t = std::make_unsigned_t&lt;T&gt;;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="comment">// Put left and right values into 64-bit containers to prevent overflow</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  int64_t left{ p_left };</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  int64_t right{ p_right };</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keywordflow">if</span> (right &gt; left) {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="comment">// Subtraction operation on right to left in this order can never overflow</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="comment">// because the maximum resultant of left and right being INT32_MAX and</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="comment">// INT32_MIN, will equal UINT32_MAX which can be stored within an int64_t</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="comment">// value.</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    int64_t difference = right - left;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="comment">// Casting this value to the unsigned variant will always fit as the</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="comment">// distance between any 32-bit signed numbers can always fit in a 32-bit</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="comment">// unsigned number.</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>unsigned_t<span class="keyword">&gt;</span>(difference);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="comment">// Same logic as the if statement block above.</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    int64_t difference = left - right;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>unsigned_t<span class="keyword">&gt;</span>(difference);</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  }</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="group__utility.html#ga0edbd3360d379f8c1864447f60a79271">  185</a></span><span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group__utility.html#ga0edbd3360d379f8c1864447f60a79271">equals</a>(std::floating_point <span class="keyword">auto</span> p_value1,</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                             std::floating_point <span class="keyword">auto</span> p_value2,</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                             <span class="keywordtype">float</span> p_epsilon = 1e-9f)</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>{</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  <span class="keywordflow">if</span> (p_value1 == p_value2) {</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  }</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keyword">auto</span> value1_abs = std::abs(p_value1);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keyword">auto</span> value2_abs = std::abs(p_value2);</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keyword">auto</span> diff = std::abs(p_value1 - p_value2);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keyword">auto</span> absolute_values_sum = value1_abs + value2_abs;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="keyword">using </span>float_t = <span class="keyword">decltype</span>(absolute_values_sum);</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keywordflow">if</span> (p_value1 == 0 || p_value2 == 0 ||</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>      (absolute_values_sum &lt; std::numeric_limits&lt;float_t&gt;::min())) {</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordflow">return</span> diff &lt; (p_epsilon * std::numeric_limits&lt;float_t&gt;::min());</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">auto</span> relative_error =</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      diff / std::min(absolute_values_sum, std::numeric_limits&lt;float_t&gt;::max());</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">return</span> relative_error &lt; p_epsilon;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  }</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}  <span class="comment">// namespace hal</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="error_8hpp.html">error.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehal.html">hal</a> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90">   31</a></span>[[nodiscard]] <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result&lt;T&gt;</a> <a class="code hl_function" href="group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90">multiply</a>(T p_lhs, T p_rhs) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordflow">if</span> (p_lhs == 0 || p_rhs == 0) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> T{ 0 };</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  T <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a> = p_lhs * p_rhs;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordflow">if</span> (p_lhs != <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a> / p_rhs) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacehal.html#a09499a696428213091b196699563099f">hal::new_error</a>(std::errc::result_out_of_range);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">result</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">   64</a></span>[[nodiscard]] <span class="keyword">constexpr</span> T <a class="code hl_function" href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">absolute_value</a>(T p_value) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_unsigned_v&lt;T&gt;) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> p_value;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">if</span> (p_value &gt;= 0) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="keywordflow">return</span> p_value;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span> (p_value == std::numeric_limits&lt;T&gt;::min()) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="keywordflow">return</span> std::numeric_limits&lt;T&gt;::max();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">return</span> -p_value;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="group__utility.html#ga58a3550a3236310f20b92eacf593c2f0">   90</a></span>[[nodiscard]] <span class="keyword">constexpr</span> T <a class="code hl_function" href="group__utility.html#ga58a3550a3236310f20b92eacf593c2f0">rounding_division</a>(T p_numerator,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                                            T p_denominator) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>{</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">bool</span> num_sign = p_numerator &gt;= 0;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">bool</span> den_sign = p_denominator &gt;= 0;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keyword">auto</span> numerator = <a class="code hl_function" href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">absolute_value</a>(p_numerator);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">auto</span> denominator = <a class="code hl_function" href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">absolute_value</a>(p_denominator);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordflow">if</span> (denominator &gt; numerator || denominator == 0) {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">return</span> T{ 0 };</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keyword">const</span> T remainder = numerator % denominator;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">const</span> T half_denominator = (denominator / 2);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  T quotient = numerator / denominator;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="comment">// Round if remainder is greater than half of the denominator</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordflow">if</span> (half_denominator != 0 &amp;&amp; remainder &gt;= half_denominator) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    quotient++;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordflow">if</span> (num_sign != den_sign) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span> -quotient;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">return</span> quotient;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15">  129</a></span>[[nodiscard]] <span class="keyword">constexpr</span> T <a class="code hl_function" href="group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15">distance</a>(T p_left, T p_right) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>{</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keywordflow">if</span> (p_right &gt; p_left) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">return</span> p_right - p_left;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> p_left - p_right;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">int</span>egral T&gt;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="namespacehal.html#gafcd717bac7dd9983e8027bd45b7c3d15">  151</a></span>[[nodiscard]] <span class="keyword">constexpr</span> std::make_unsigned_t&lt;T&gt; <a class="code hl_function" href="group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15">distance</a>(T p_left,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                                                         T p_right) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>{</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(T) &lt;= <span class="keyword">sizeof</span>(int32_t));</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keyword">using </span>unsigned_t = std::make_unsigned_t&lt;T&gt;;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="comment">// Put left and right values into 64-bit containers to prevent overflow</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  int64_t left{ p_left };</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  int64_t right{ p_right };</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="keywordflow">if</span> (right &gt; left) {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="comment">// Subtraction operation on right to left in this order can never overflow</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="comment">// because the maximum resultant of left and right being INT32_MAX and</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="comment">// INT32_MIN, will equal UINT32_MAX which can be stored within an int64_t</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="comment">// value.</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    int64_t difference = right - left;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="comment">// Casting this value to the unsigned variant will always fit as the</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="comment">// distance between any 32-bit signed numbers can always fit in a 32-bit</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="comment">// unsigned number.</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>unsigned_t<span class="keyword">&gt;</span>(difference);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="comment">// Same logic as the if statement block above.</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    int64_t difference = left - right;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>unsigned_t<span class="keyword">&gt;</span>(difference);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>}</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="group__utility.html#ga0edbd3360d379f8c1864447f60a79271">  186</a></span><span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group__utility.html#ga0edbd3360d379f8c1864447f60a79271">equals</a>(std::floating_point <span class="keyword">auto</span> p_value1,</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                             std::floating_point <span class="keyword">auto</span> p_value2,</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                             <span class="keywordtype">float</span> p_epsilon = 1e-9f)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>{</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keywordflow">if</span> (p_value1 == p_value2) {</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  }</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keyword">auto</span> value1_abs = std::abs(p_value1);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keyword">auto</span> value2_abs = std::abs(p_value2);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keyword">auto</span> diff = std::abs(p_value1 - p_value2);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keyword">auto</span> absolute_values_sum = value1_abs + value2_abs;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keyword">using </span>float_t = <span class="keyword">decltype</span>(absolute_values_sum);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="keywordflow">if</span> (p_value1 == 0 || p_value2 == 0 ||</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      (absolute_values_sum &lt; std::numeric_limits&lt;float_t&gt;::min())) {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordflow">return</span> diff &lt; (p_epsilon * std::numeric_limits&lt;float_t&gt;::min());</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">auto</span> relative_error =</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      diff / std::min(absolute_values_sum, std::numeric_limits&lt;float_t&gt;::max());</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordflow">return</span> relative_error &lt; p_epsilon;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>}</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>}  <span class="comment">// namespace hal</span></div>
 <div class="ttc" id="aerror_8hpp_html"><div class="ttname"><a href="error_8hpp.html">error.hpp</a></div></div>
-<div class="ttc" id="agroup__utility_html_ga0edbd3360d379f8c1864447f60a79271"><div class="ttname"><a href="group__utility.html#ga0edbd3360d379f8c1864447f60a79271">hal::equals</a></div><div class="ttdeci">static constexpr bool equals(std::floating_point auto p_value1, std::floating_point auto p_value2, float p_epsilon=1e-9f)</div><div class="ttdoc">Determines if two values are equal within a relative error.</div><div class="ttdef"><b>Definition:</b> math.hpp:185</div></div>
-<div class="ttc" id="agroup__utility_html_ga43fd2fa3493be5292dc4ea824e944d90"><div class="ttname"><a href="group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90">hal::multiply</a></div><div class="ttdeci">result&lt; T &gt; multiply(T p_lhs, T p_rhs) noexcept</div><div class="ttdoc">Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ...</div><div class="ttdef"><b>Definition:</b> math.hpp:30</div></div>
-<div class="ttc" id="agroup__utility_html_ga58a3550a3236310f20b92eacf593c2f0"><div class="ttname"><a href="group__utility.html#ga58a3550a3236310f20b92eacf593c2f0">hal::rounding_division</a></div><div class="ttdeci">constexpr T rounding_division(T p_numerator, T p_denominator) noexcept</div><div class="ttdoc">Perform integer division and round the value up if the next decimal place is greater than or equal to...</div><div class="ttdef"><b>Definition:</b> math.hpp:89</div></div>
-<div class="ttc" id="agroup__utility_html_gaac86abb9a38f4962ded5507e15dca4b9"><div class="ttname"><a href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">hal::absolute_value</a></div><div class="ttdeci">constexpr T absolute_value(T p_value) noexcept</div><div class="ttdoc">Generic absolute value function that works for integer types.</div><div class="ttdef"><b>Definition:</b> math.hpp:63</div></div>
-<div class="ttc" id="agroup__utility_html_gafcd717bac7dd9983e8027bd45b7c3d15"><div class="ttname"><a href="group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15">hal::distance</a></div><div class="ttdeci">constexpr T distance(T p_left, T p_right) noexcept</div><div class="ttdoc">Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of the...</div><div class="ttdef"><b>Definition:</b> math.hpp:128</div></div>
+<div class="ttc" id="agroup__utility_html_ga0edbd3360d379f8c1864447f60a79271"><div class="ttname"><a href="group__utility.html#ga0edbd3360d379f8c1864447f60a79271">hal::equals</a></div><div class="ttdeci">static constexpr bool equals(std::floating_point auto p_value1, std::floating_point auto p_value2, float p_epsilon=1e-9f)</div><div class="ttdoc">Determines if two values are equal within a relative error.</div><div class="ttdef"><b>Definition:</b> math.hpp:186</div></div>
+<div class="ttc" id="agroup__utility_html_ga43fd2fa3493be5292dc4ea824e944d90"><div class="ttname"><a href="group__utility.html#ga43fd2fa3493be5292dc4ea824e944d90">hal::multiply</a></div><div class="ttdeci">result&lt; T &gt; multiply(T p_lhs, T p_rhs) noexcept</div><div class="ttdoc">Perform multiply operation and return an error code std::errc::result_out_of_range if the two values ...</div><div class="ttdef"><b>Definition:</b> math.hpp:31</div></div>
+<div class="ttc" id="agroup__utility_html_ga58a3550a3236310f20b92eacf593c2f0"><div class="ttname"><a href="group__utility.html#ga58a3550a3236310f20b92eacf593c2f0">hal::rounding_division</a></div><div class="ttdeci">constexpr T rounding_division(T p_numerator, T p_denominator) noexcept</div><div class="ttdoc">Perform integer division and round the value up if the next decimal place is greater than or equal to...</div><div class="ttdef"><b>Definition:</b> math.hpp:90</div></div>
+<div class="ttc" id="agroup__utility_html_gaac86abb9a38f4962ded5507e15dca4b9"><div class="ttname"><a href="group__utility.html#gaac86abb9a38f4962ded5507e15dca4b9">hal::absolute_value</a></div><div class="ttdeci">constexpr T absolute_value(T p_value) noexcept</div><div class="ttdoc">Generic absolute value function that works for integer types.</div><div class="ttdef"><b>Definition:</b> math.hpp:64</div></div>
+<div class="ttc" id="agroup__utility_html_gafcd717bac7dd9983e8027bd45b7c3d15"><div class="ttname"><a href="group__utility.html#gafcd717bac7dd9983e8027bd45b7c3d15">hal::distance</a></div><div class="ttdeci">constexpr T distance(T p_left, T p_right) noexcept</div><div class="ttdoc">Calculates the distance between two values (L1 Norm or Manhattan distance), the absolute value of the...</div><div class="ttdef"><b>Definition:</b> math.hpp:129</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdef"><b>Definition:</b> interface.hpp:8</div></div>
 <div class="ttc" id="anamespacehal_html_a09499a696428213091b196699563099f"><div class="ttname"><a href="namespacehal.html#a09499a696428213091b196699563099f">hal::new_error</a></div><div class="ttdeci">auto new_error(Item &amp;&amp;... p_item) noexcept</div><div class="ttdef"><b>Definition:</b> error.hpp:55</div></div>
 <div class="ttc" id="anamespacehal_html_a22b1708df761b2dc40dd4afa2ac0c401"><div class="ttname"><a href="namespacehal.html#a22b1708df761b2dc40dd4afa2ac0c401">hal::result</a></div><div class="ttdeci">boost::leaf::result&lt; T &gt; result</div><div class="ttdef"><b>Definition:</b> error.hpp:15</div></div>

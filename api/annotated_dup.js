@@ -6,6 +6,7 @@ var annotated_dup =
       ] ],
       [ "mock", "namespacehal_1_1mock.html", [
         [ "adc", "structhal_1_1mock_1_1adc.html", "structhal_1_1mock_1_1adc" ],
+        [ "can", "structhal_1_1mock_1_1can.html", "structhal_1_1mock_1_1can" ],
         [ "dac", "structhal_1_1mock_1_1dac.html", "structhal_1_1mock_1_1dac" ],
         [ "input_pin", "structhal_1_1mock_1_1input__pin.html", "structhal_1_1mock_1_1input__pin" ],
         [ "interrupt_pin", "structhal_1_1mock_1_1interrupt__pin.html", "structhal_1_1mock_1_1interrupt__pin" ],
@@ -39,7 +40,6 @@ var annotated_dup =
       [ "static_callable", "classhal_1_1static__callable.html", null ],
       [ "static_callable< owner_class, reference_designator, return_t(args_t... p_args)>", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4" ],
       [ "static_list", "classhal_1_1static__list.html", "classhal_1_1static__list" ],
-      [ "static_memory_resource", "classhal_1_1static__memory__resource.html", "classhal_1_1static__memory__resource" ],
       [ "steady_clock", "classhal_1_1steady__clock.html", "classhal_1_1steady__clock" ],
       [ "steady_clock_timeout", "classhal_1_1steady__clock__timeout.html", "classhal_1_1steady__clock__timeout" ],
       [ "timer", "classhal_1_1timer.html", "classhal_1_1timer" ]

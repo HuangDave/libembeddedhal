@@ -128,12 +128,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9686e3308b95d3ad2d2f3110e2a1734c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#a9686e3308b95d3ad2d2f3110e2a1734c">schedule</a> (std::function&lt; void(void)&gt; p_callback, <a class="el" href="group__utility.html#ga858b08a6e4e3eb5752d8e0daaad5ed00">hal::time_duration</a> p_delay) noexcept</td></tr>
 <tr class="memdesc:a9686e3308b95d3ad2d2f3110e2a1734c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an callback be be executed after the delay time.  <a href="classhal_1_1timer.html#a9686e3308b95d3ad2d2f3110e2a1734c">More...</a><br /></td></tr>
 <tr class="separator:a9686e3308b95d3ad2d2f3110e2a1734c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf27697c5512202ac99f8b0f159e441"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1timer.html#aebf27697c5512202ac99f8b0f159e441">~timer</a> ()=default</td></tr>
+<tr class="separator:aebf27697c5512202ac99f8b0f159e441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Timer hardware abstraction interface. </p>
 <p >Use this interface for devices and peripherals that have timer like capabilities, such that, when a timer's time has expired, an event, interrupt, or signal is generated.</p>
 <p >Timer drivers tick period must be an integer multiple of 1 nanosecond, meaning that the only tick period allowed are 1ns, 2ns, up to the maximum holdable in a std::chrono::nanosecond type. sub-nanosecond tick periods are not allowed. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aebf27697c5512202ac99f8b0f159e441" name="aebf27697c5512202ac99f8b0f159e441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf27697c5512202ac99f8b0f159e441">&#9670;&nbsp;</a></span>~timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual hal::timer::~timer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a80f5a2b63c3cef43ee2b40d621c6ca1a" name="a80f5a2b63c3cef43ee2b40d621c6ca1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80f5a2b63c3cef43ee2b40d621c6ca1a">&#9670;&nbsp;</a></span>cancel()</h2>
 

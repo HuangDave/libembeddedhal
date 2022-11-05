@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.9.4" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>libhal: /github/workspace/include/libhal/static_memory_resource.hpp File Reference</title>
+  <title>libhal: /github/workspace/include/libhal/can/mock.hpp File Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -73,7 +73,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('static__memory__resource_8hpp.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('can_2mock_8hpp.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -95,24 +95,25 @@ $(document).ready(function(){initNavTree('static__memory__resource_8hpp.html',''
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">static_memory_resource.hpp File Reference</div></div>
+  <div class="headertitle"><div class="title">mock.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
-<code>#include &lt;memory_resource&gt;</code><br />
-<code>#include &quot;<a class="el" href="units_8hpp_source.html">units.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="testing_8hpp_source.html">../testing.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="can_2interface_8hpp_source.html">interface.hpp</a>&quot;</code><br />
 </div>
-<p><a href="static__memory__resource_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="can_2mock_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1static__memory__resource.html">hal::static_memory_resource&lt; BufferSize &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classhal_1_1static__memory__resource.html" title="The static_memory_resource is the polymorphic memory resource allocator that allows libhal&#39;s librarie...">static_memory_resource</a> is the polymorphic memory resource allocator that allows libhal's libraries to use a C++ standard container such as std::pmr::vector, std::pmr::string, std::pmr::unordered_map, and more without requiring dynamic memory allocation from the heap. It provides a simple way to create an allocator with built in storage, with its size indicated by a single template parameter. It also provides statistics regarding the amount of memory allocated such that developers can determine if they need to reduce or increase the size of the buffer. Memory statistics can also give programs the insight into how much memory space is available and make decisions based on that. In the event that the memory of the static allocator is exceeded, a std::bad_alloc exception is thrown. Without exceptions being enabled this will terminate the program so great care must be taken when using this allocator.  <a href="classhal_1_1static__memory__resource.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1mock_1_1can.html">hal::mock::can</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mock can implementation for use in unit tests and simulations.  <a href="structhal_1_1mock_1_1can.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacehal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html">hal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacehal_1_1mock"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal_1_1mock.html">hal::mock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -120,7 +121,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_6f6138918d4430761755642443839fe1.html">libhal</a></li><li class="navelem"><a class="el" href="static__memory__resource_8hpp.html">static_memory_resource.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_6f6138918d4430761755642443839fe1.html">libhal</a></li><li class="navelem"><a class="el" href="dir_2f5068785988f516822d761fe16d825f.html">can</a></li><li class="navelem"><a class="el" href="can_2mock_8hpp.html">mock.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

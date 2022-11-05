@@ -57,6 +57,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -66,8 +67,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adc_2interface_8hpp.html",
-"dac_2interface_8hpp.html",
-"static__callable_8hpp_source.html"
+"concepthal_1_1convertible__to__bytes.html",
+"serial_2util_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

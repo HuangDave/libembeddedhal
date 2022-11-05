@@ -1,0 +1,4 @@
+<map id="hal::mock::can" name="hal::mock::can">
+<area shape="rect" id="node1" title="Mock can implementation for use in unit tests and simulations." alt="" coords="5,80,109,107"/>
+<area shape="rect" id="node2" href="$classhal_1_1can.html" title="Controller Area Network (CAN bus) hardware abstraction interface." alt="" coords="24,5,91,32"/>
+</map>

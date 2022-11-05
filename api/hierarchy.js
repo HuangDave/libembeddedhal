@@ -4,7 +4,9 @@ var hierarchy =
       [ "hal::mock::adc", "structhal_1_1mock_1_1adc.html", null ]
     ] ],
     [ "hal::bit_limits< BitWidth, int_t >", "structhal_1_1bit__limits.html", null ],
-    [ "hal::can", "classhal_1_1can.html", null ],
+    [ "hal::can", "classhal_1_1can.html", [
+      [ "hal::mock::can", "structhal_1_1mock_1_1can.html", null ]
+    ] ],
     [ "hal::dac", "classhal_1_1dac.html", [
       [ "hal::mock::dac", "structhal_1_1mock_1_1dac.html", null ]
     ] ],
@@ -22,9 +24,6 @@ var hierarchy =
     ] ],
     [ "hal::static_list< Object >::item", "classhal_1_1static__list_1_1item.html", null ],
     [ "hal::static_list< Object >::item_iterator", "classhal_1_1static__list_1_1item__iterator.html", null ],
-    [ "std::pmr::memory_resource", null, [
-      [ "hal::static_memory_resource< BufferSize >", "classhal_1_1static__memory__resource.html", null ]
-    ] ],
     [ "hal::can::message_t", "structhal_1_1can_1_1message__t.html", null ],
     [ "hal::motor", "classhal_1_1motor.html", [
       [ "hal::mock::motor", "structhal_1_1mock_1_1motor.html", null ]
@@ -62,6 +61,7 @@ var hierarchy =
     [ "hal::spy_handler< bool >", "classhal_1_1spy__handler.html", null ],
     [ "hal::spy_handler< float >", "classhal_1_1spy__handler.html", null ],
     [ "hal::spy_handler< hertz >", "classhal_1_1spy__handler.html", null ],
+    [ "hal::spy_handler< message_t >", "classhal_1_1spy__handler.html", null ],
     [ "hal::spy_handler< settings >", "classhal_1_1spy__handler.html", null ],
     [ "hal::static_callable< owner_class, reference_designator, signature >", "classhal_1_1static__callable.html", null ],
     [ "hal::static_callable< owner_class, reference_designator, return_t(args_t... p_args)>", "classhal_1_1static__callable_3_01owner__class_00_01reference__designator_00_01return__t_07args__t_8_8_8_01p__args_08_4.html", null ],

@@ -6,6 +6,7 @@ var group__i2c =
         [ "operator==", "structhal_1_1i2c_1_1settings.html#a14d2a0afad4c6c449af7b844da807427", null ],
         [ "clock_rate", "structhal_1_1i2c_1_1settings.html#a92a633a400d7a56b17352427cf12514b", null ]
       ] ],
+      [ "~i2c", "classhal_1_1i2c.html#a7d4c54ed02f916538e7d5815232103e7", null ],
       [ "configure", "classhal_1_1i2c.html#a7ac33fb7d29ee15ea0297b07948bf8b7", null ],
       [ "transaction", "classhal_1_1i2c.html#a6fdda0db9f4e4aaa48750914d02b4a73", null ]
     ] ],

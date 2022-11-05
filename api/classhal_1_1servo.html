@@ -115,6 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc6a66d48a9b55b6345ad7894fd6ba74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehal.html#a1607e3547737e35235f946a9c67b61cf">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1servo.html#abc6a66d48a9b55b6345ad7894fd6ba74">position</a> (float p_position) noexcept</td></tr>
 <tr class="memdesc:abc6a66d48a9b55b6345ad7894fd6ba74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of the servo.  <a href="classhal_1_1servo.html#abc6a66d48a9b55b6345ad7894fd6ba74">More...</a><br /></td></tr>
 <tr class="separator:abc6a66d48a9b55b6345ad7894fd6ba74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51214959311c016496ee0edf58bff487"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1servo.html#a51214959311c016496ee0edf58bff487">~servo</a> ()=default</td></tr>
+<tr class="separator:a51214959311c016496ee0edf58bff487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Hardware abstraction for closed loop positional rotary and linear actuators. </p>
@@ -129,7 +131,33 @@ Public Member Functions</h2></td></tr>
 <li>Relative position servos, at power on, cannot determine their position and thus start at position angle 0. Generally, if a relative position servo is powered on and it commanded to move to position 0, meaning its center position it will not move. With a 180 degree rotary servo, if it is commanded to move to 50%, this corresponds to 45 degrees to the right, and thus the motor will move 45 degrees to the right relative to where it started.</li>
 <li>Absolute position servos, at power on, can determine the position of their output shaft relative to their servo housing. When these servos are commanded to move to their center position, they will be able to move to that position no matter the original position of the rotor at power on. </li>
 </ul>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a51214959311c016496ee0edf58bff487" name="a51214959311c016496ee0edf58bff487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51214959311c016496ee0edf58bff487">&#9670;&nbsp;</a></span>~servo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual hal::servo::~servo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="abc6a66d48a9b55b6345ad7894fd6ba74" name="abc6a66d48a9b55b6345ad7894fd6ba74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc6a66d48a9b55b6345ad7894fd6ba74">&#9670;&nbsp;</a></span>position()</h2>
 

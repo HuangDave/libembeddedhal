@@ -29,6 +29,7 @@ var group__serial =
         [ "remaining", "structhal_1_1serial_1_1write__t.html#afe529ee689b39f53b628073b263916cb", null ],
         [ "transmitted", "structhal_1_1serial_1_1write__t.html#a17f7f6dd1083b7f1c1dac4c677b8de58", null ]
       ] ],
+      [ "~serial", "classhal_1_1serial.html#ada7d8f7769ca8616f01a0d314bd09a52", null ],
       [ "configure", "classhal_1_1serial.html#ad3d247776562df9621fd002333677ca5", null ],
       [ "flush", "classhal_1_1serial.html#a808aec1ec3948baf8b55d115fc3a17da", null ],
       [ "read", "classhal_1_1serial.html#a4fd7b08d681d44a13e2ef5d7254263e6", null ],
